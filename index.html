@@ -703,7 +703,7 @@
       <nav class="seg-nav" id="main-tabs">
         <button data-tab="itinerary" class="seg-btn active">行程</button>
         <button data-tab="spots" class="seg-btn">图鉴</button>
-        <button data-tab="hotels" class="seg-btn">住宿 5/8</button>
+        <button data-tab="hotels" class="seg-btn" id="hotels-tab-btn">住宿 6/8</button>
         <button data-tab="checklist" class="seg-btn" id="todo-tab-btn">清单</button>
       </nav>
     </div>
@@ -800,7 +800,7 @@
         tab: "白沙日落",
         title: "ABQ → Bosque 鹤群 → 开心果园 → 白沙日落",
         stats: ["252 mi", "4.3h 车程", "16:57 日落"],
-        routeUrl: "https://www.google.com/maps/dir/3400+University+Blvd+SE,+Albuquerque,+NM/Bosque+del+Apache+National+Wildlife+Refuge+Visitor+Center/McGinn's+PistachioLand,+Alamogordo,+NM/White+Sands+National+Park+Visitor+Center/Alamogordo,+NM",
+        routeUrl: "https://www.google.com/maps/dir/3400+University+Blvd+SE,+Albuquerque,+NM/Bosque+del+Apache+National+Wildlife+Refuge+Visitor+Center/McGinn's+PistachioLand,+Alamogordo,+NM/White+Sands+National+Park+Visitor+Center/Home2+Suites+by+Hilton+Alamogordo,+NM",
         routePoints: "263,292 240,413 256,395 305,435 316,492 300,514 317,502",
         photos: [
           { src: "images/white-sands.jpg", name: "White Sands National Park", q: "White Sands National Park sunset" },
@@ -811,10 +811,10 @@
           { t: "12:45", text: "Bosque del Apache 游客中心及观景台短停 20 分钟看越冬鹤群", map: "Bosque del Apache National Wildlife Refuge Visitor Center" },
           { t: "15:05", text: "McGinn's PistachioLand 拍世界最大开心果、买开心果冰淇淋", map: "McGinn's PistachioLand Alamogordo NM" },
           { t: "15:40", text: "White Sands 国家公园漫步石膏沙丘，守候 16:57 日落", map: "White Sands National Park Visitor Center" },
-          { t: "17:30", text: "抵达 Alamogordo 入住晚餐", map: "Alamogordo NM" }
+          { t: "17:30", text: "抵达 Home2 Suites Alamogordo 入住晚餐", map: "Home2 Suites by Hilton Alamogordo NM" }
         ],
-        stay: "Alamogordo · 待订",
-        booked: false,
+        stay: "Home2 Suites Alamogordo",
+        booked: true,
         note: "电子年卡免票 · 不进 Bosque 砂石环线"
       },
       {
@@ -823,7 +823,7 @@
         tab: "林肯森林",
         title: "Alamogordo → Cloudcroft 森林栈桥 → Carlsbad",
         stats: ["150 mi", "3.2h 车程", "16:52 日落"],
-        routeUrl: "https://www.google.com/maps/dir/Alamogordo,+NM/Tunnel+Vista+Observation+Site/Trestle+Vista+Observation+Site,+Cloudcroft,+NM/Carlsbad,+NM",
+        routeUrl: "https://www.google.com/maps/dir/Home2+Suites+by+Hilton+Alamogordo,+NM/Tunnel+Vista+Observation+Site/Trestle+Vista+Observation+Site,+Cloudcroft,+NM/Carlsbad,+NM",
         routePoints: "317,502 336,496 445,498 461,549",
         photos: [
           { src: "images/cloudcroft-trestle.jpg", name: "Mexican Canyon Trestle · Cloudcroft", q: "Mexican Canyon Trestle Cloudcroft" }
@@ -1005,7 +1005,7 @@
 
     const HOTELS = [
       { date: "11/27 周五", city: "ABQ Airport", name: "Holiday Inn & Suites Albuquerque Airport", q: "Holiday Inn & Suites Albuquerque Airport 1501 Sunport Place", meta: "1501 Sunport Pl · 24h 班车 (505-944-2255)", status: "已订 · $46 (CSP -$100)", ok: true },
-      { date: "11/28 周六", city: "Alamogordo", name: "Fairfield Inn ($155) / HIX ($169) / Home2 ($190)", q: "Fairfield Inn & Suites Alamogordo NM", meta: "全员含早+免费停车 · 距白沙 18 分钟", status: "待订 · 可用第2张 CSP -$100", ok: false },
+      { date: "11/28 周六", city: "Alamogordo", name: "Home2 Suites by Hilton Alamogordo", q: "Home2 Suites by Hilton Alamogordo NM", meta: "3400 N White Sands Blvd · 含热早+免费停车 · 距白沙 18min", status: "已订", ok: true },
       { date: "11/29 周日", city: "Carlsbad", name: "Hyatt House Carlsbad", q: "Hyatt House Carlsbad NM", meta: "凯悦官网直订含早 · 攒房晚+点亮品牌章", status: "待订 · $149 税后 (或 8k 分)", ok: false },
       { date: "11/30 周一", city: "Roswell", name: "Holiday Inn Express & Suites Roswell", q: "Holiday Inn Express & Suites Roswell NM", meta: "含热早+免费停车 · 11/23 前免费退", status: "已订 · $21 (Delta -$100)", ok: true },
       { date: "12/01 周二", city: "Santa Fe", name: "La Posada de Santa Fe, Tribute Portfolio", q: "La Posada de Santa Fe", meta: "16:00 入住 / 12:00 退房 · $46 Resort Fee 含 Valet", status: "已订 · 35k FN + 11k 分", ok: true },
@@ -1018,7 +1018,7 @@
       { id: "pass", title: "电子版国家公园年卡 (America the Beautiful)", sub: "已存入 Apple Wallet · 进园随身带驾照核验姓名", url: "https://www.recreation.gov/pass", link: "已办妥", defaultDone: true },
       { id: "cave", title: "11/30 Carlsbad Caverns 入洞预约 (09:30–10:30)", sub: "已出票 · 2 人", url: "https://www.recreation.gov/ticket/234637/ticket/10086811", link: "已办妥", defaultDone: true },
       { id: "tent", title: "12/04 Kasha-Katuwe Tent Rocks 联邦票 + 部落通行证", sub: "双票已出 · 当天 08:00–13:00 导至 Cochiti Visitor Center", url: "https://www.recreation.gov/ticket/10065449/ticket/10065449", link: "已办妥", defaultDone: true },
-      { id: "hotels3", title: "补齐剩余 3 晚单晚住宿 (11/28 · 11/29 · 12/02)", sub: "Alamogordo · Carlsbad (Hyatt House) · Farmington", url: "https://www.hyatt.com/", link: "去预订 ↗", defaultDone: false },
+      { id: "hotels3", title: "补齐剩余 2 晚单晚住宿 (11/29 · 12/02)", sub: "Carlsbad (Hyatt House) · Farmington", url: "https://www.hyatt.com/", link: "去预订 ↗", defaultDone: false },
       { id: "plaza", title: "登记领取 12/02 Plaza Blanca 铁门密码", sub: "两位成人分别填姓名邮箱当场显示 Gate Code · 截图保存", url: "https://daralislam.org/", link: "领密码 ↗", defaultDone: false },
       { id: "delta_ride", title: "Amex App 激活 Delta 卡 $10/月 Rideshare 报销", sub: "11 月与 12 月各可报 $10 打车费 · 顺查 Resy $50 额度", url: "https://www.americanexpress.com/", link: "去激活 ↗", defaultDone: false },
       { id: "roads", title: "行前核查白沙 SIXT 条款与 11/29 · 12/02 实时路况", sub: "Cloudcroft (US-82) 与北线风雪状态", url: "https://www.nmroads.com/", link: "NMRoads ↗", defaultDone: false }
@@ -1160,6 +1160,8 @@
     }
 
     function renderHotels() {
+      const bookedCount = HOTELS.filter(h => h.ok).length;
+      document.getElementById("hotels-tab-btn").textContent = `住宿 ${bookedCount}/${HOTELS.length}`;
       document.getElementById("hotels-ledger").innerHTML = HOTELS.map(h => `
         <div class="ledger-row">
           <div>
