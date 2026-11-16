@@ -696,7 +696,7 @@
           </div>
           <div class="kpi-box">
             <div class="kpi-label">收官连住</div>
-            <div class="kpi-val">ABQ 北区 2晚</div>
+            <div class="kpi-val">Tamaya 2晚</div>
           </div>
         </div>
       </div>
@@ -704,8 +704,8 @@
       <div class="toolbar">
         <nav class="tabs" id="main-tabs">
           <button data-tab="itinerary" class="btn active">🗺️ 路线地图与逐日行程</button>
-          <button data-tab="spots" class="btn">📸 核心景点图鉴 (11处)</button>
-          <button data-tab="hotels" class="btn">🏨 万豪 35k FN &amp; IHG 住宿表</button>
+          <button data-tab="spots" class="btn">📸 核心景点图鉴 (13处)</button>
+          <button data-tab="hotels" class="btn">🏨 全程 8 晚酒店进度表</button>
           <button data-tab="compare" class="btn">⚖️ 优化前后对比</button>
           <button data-tab="checklist" class="btn">✅ 行前必约清单 <span id="todo-badge" style="margin-left:3px; opacity:0.85;">(0/6)</span></button>
         </nav>
@@ -805,9 +805,9 @@
     <!-- TAB 2: VISUAL ATTRACTION GALLERY -->
     <section id="tab-spots" class="tab-panel hidden" style="display:flex; flex-direction:column; gap:16px;">
       <div class="card" style="padding:16px 20px;">
-        <h2>📸 沿途 11 大核心景观图鉴 &amp; 一键 Google 链接</h2>
+        <h2>📸 沿途 13 大核心景观图鉴 &amp; 一键 Google 链接</h2>
         <p class="muted" style="font-size:13px; margin-top:4px;">
-          每个景点均配有实景图、Google Maps 精准定位、Google 搜索评价/更多美图，以及官方信息入口（已含开心果园 PistachioLand）。
+          每个景点均配有实景图、Google Maps 精准定位、Google 搜索评价/更多美图，以及官方信息入口（已含开心果园、Chimayó 教堂与 Plaza Blanca）。
         </p>
       </div>
       <div class="three-col" id="spots-grid"></div>
@@ -980,6 +980,16 @@
       },
       {
         day: "12/01 · D5 (可选)",
+        name: "El Santuario de Chimayó · 奇马约百年圣土小教堂",
+        img: "images/chimayo.jpg",
+        desc: "距 Santa Fe 仅 35 分钟全铺装公路。200 多年历史的西南土坯朝圣小教堂，内有挂满感恩拐杖的传奇“圣土小室”（09:00–17:00 免费开放）。",
+        mapQ: "El Santuario de Chimayo 15 Santuario Dr Chimayo NM",
+        searchQ: "El Santuario de Chimayo New Mexico",
+        web: "https://www.holychimayo.us/",
+        webLabel: "教堂官网"
+      },
+      {
+        day: "12/01 · D5 (可选)",
         name: "Meow Wolf Santa Fe · 喵狼奇幻沉浸馆 (House of Eternal Return)",
         img: "images/meow-wolf.jpg",
         desc: "《权力的游戏》作者马丁投资打造的沉浸式艺术馆鼻祖：推开普通美式住宅的冰箱门或壁炉，跌入科幻异次元迷宫。",
@@ -997,6 +1007,16 @@
         searchQ: "Bandelier National Monument cliff dwellings ladders",
         web: "https://www.nps.gov/band/index.htm",
         webLabel: "NPS 官网"
+      },
+      {
+        day: "12/02 · D6 (顺路)",
+        name: "Plaza Blanca (“The White Place”) · 纯白奇岩迷谷",
+        img: "images/plaza-blanca.jpg",
+        desc: "乔治亚·奥基夫笔下的纯白尖塔砂岩恶地迷谷（就在 Abiquiu 镇口）。需提前在 Dar al Islam 官网免费填表秒领铁门密码，晴干天进入。",
+        mapQ: "Plaza Blanca Abiquiu NM",
+        searchQ: "Plaza Blanca Abiquiu New Mexico",
+        web: "https://daralislam.org/",
+        webLabel: "免费领开门密码"
       },
       {
         day: "12/02 · D6",
@@ -1159,89 +1179,90 @@
       {
         id: 5,
         date: "12/01 周二",
-        short: "D5 圣达菲庄园",
-        title: "北上 Santa Fe · 住 La Posada 庄园 + 可选 Meow Wolf",
+        short: "D5 圣达菲+教堂",
+        title: "北上 Santa Fe · 住 La Posada 庄园 + Chimayó 圣土教堂 / Meow Wolf",
         driveHours: 3.6,
-        driveText: "约 3.5 – 3.8 小时",
-        miles: "~192 mi",
-        stay: "Santa Fe (La Posada)",
+        driveText: "约 3.5 – 4.2 小时",
+        miles: "~192–245 mi",
+        stay: "✅ La Posada de Santa Fe (已订)",
         sunset: "16:51 日落",
-        routePoints: "437,454 365,315 319,228",
-        badges: ["烧 35k FN", "弹性半日"],
+        routePoints: "437,454 365,315 319,228 320,198 319,228",
+        badges: ["✅ 35k FN 已订", "Chimayó 圣堂"],
         photos: [
           { src: "images/santa-fe.jpg", caption: "Santa Fe 历史土坯街区与中央广场", searchQ: "Santa Fe Plaza La Posada" },
-          { src: "images/meow-wolf.jpg", caption: "Meow Wolf · House of Eternal Return 奇幻馆", searchQ: "Meow Wolf Santa Fe House of Eternal Return" }
+          { src: "images/chimayo.jpg", caption: "El Santuario de Chimayó · 百年圣土小教堂", searchQ: "El Santuario de Chimayo New Mexico" }
         ],
         links: [
           { type: "maps", label: "📍 La Posada 庄园导航", url: gMap("La Posada de Santa Fe") },
-          { type: "maps", label: "📍 Meow Wolf 导航", url: gMap("Meow Wolf Santa Fe") },
-          { type: "google", label: "🔎 Google 搜 Meow Wolf 实景", url: gSearch("Meow Wolf Santa Fe House of Eternal Return photos") }
+          { type: "maps", label: "📍 Chimayó 教堂导航 (35min)", url: gMap("El Santuario de Chimayo") },
+          { type: "maps", label: "📍 Meow Wolf 导航", url: gMap("Meow Wolf Santa Fe") }
         ],
         timeline: [
           { time: "09:00", event: "Roswell 出发沿 US-285 北上，中途加油简餐，13:00–13:30 抵达 Santa Fe" },
-          { time: "13:30", event: "抵达 La Posada de Santa Fe：官方 16:00 Check-in，可先将车交门口 Valet 并寄存行李（周二淡季若有空房常可提前入住）" },
-          { time: "14:30", event: "【二选一不贪多】① 若 Meow Wolf 当天营业且想玩，去体验 2 小时超现实异次元迷宫；② 或直接在庄园烤火、步行 5 分钟溜达老城广场" }
+          { time: "13:30", event: "抵达 La Posada de Santa Fe：先将车交门口 Valet 并寄存行李（若有空房常可提前入住）" },
+          { time: "14:15", event: "【下午轻松三选一】① 往北开 35 分钟全铺装路去 El Santuario de Chimayó 奇马约圣土小教堂（17:00 关门，隔壁 Rancho de Chimayó 可用餐）；② 若想去 Meow Wolf 则看周二是否营业；③ 或直接泡庄园溜达老城广场" }
         ],
-        hotelTip: "唯一 1 张万豪 35k FN（+补分）住 La Posada de Santa Fe；到店自付 $40+税 Resort Fee（已含代客泊车 Valet），次日 12:00 退房。",
-        caution: "Meow Wolf 冬季部分周二可能店休，出发前看一眼官网售票日历即可。"
+        hotelTip: "✅ 已订妥 La Posada de Santa Fe（35k FN + 11k 分）；到店含税 $46.13 Resort Fee 已包含代客泊车 Valet Parking。",
+        caution: "Chimayó 教堂冬季 17:00 关门，若要去建议 14:30 前从 Santa Fe 出发，天黑前回到庄园烤火品酒。"
       },
       {
         id: 6,
         date: "12/02 周三",
-        short: "D6 崖居+回音石窟",
-        title: "Bandelier 近看崖居 → Echo 回音石窟红岩路 → Farmington",
-        driveHours: 4.1,
-        driveText: "约 4 – 4.2 小时",
-        miles: "~220 mi",
+        short: "D6 崖居+白石谷",
+        title: "Bandelier 崖居 → Plaza Blanca 白石谷 → Echo 回音石窟 → Farmington",
+        driveHours: 4.3,
+        driveText: "约 4.2 – 4.4 小时",
+        miles: "~228 mi",
         stay: "Farmington",
         sunset: "16:56 日落",
-        routePoints: "319,228 292,215 270,162 195,134 131,126",
-        badges: ["替代 Mesa Verde", "红岩景观路"],
+        routePoints: "319,228 292,215 297,175 270,162 195,134 131,126",
+        badges: ["崖居+白石恶地", "红岩景观路"],
         photos: [
           { src: "images/bandelier.jpg", caption: "Bandelier 峡谷史前遗址与崖居石窟", searchQ: "Bandelier National Monument cliff dwellings" },
-          { src: "images/echo-amphitheater.jpg", caption: "US-84 Abiquiu 红黄砂岩断崖与回音石窟走廊", searchQ: "Echo Amphitheater Ghost Ranch New Mexico" }
+          { src: "images/plaza-blanca.jpg", caption: "Plaza Blanca 纯白尖塔奇岩迷谷", searchQ: "Plaza Blanca Abiquiu New Mexico" }
         ],
         links: [
-          { type: "maps", label: "📍 Bandelier 游客中心导航", url: gMap("Bandelier National Monument Visitor Center") },
-          { type: "maps", label: "📍 Echo Amphitheater 导航", url: gMap("Echo Amphitheater Abiquiu NM") },
-          { type: "google", label: "🔎 Google 搜 Echo 回音石窟", url: gSearch("Echo Amphitheater New Mexico photos") }
+          { type: "maps", label: "🗺️ 今日完整串联路线", url: "https://www.google.com/maps/dir/La+Posada+de+Santa+Fe/Bandelier+National+Monument+Visitor+Center/Plaza+Blanca,+Abiquiu,+NM/Echo+Amphitheater,+NM/Farmington,+NM" },
+          { type: "maps", label: "📍 Bandelier 导航", url: gMap("Bandelier National Monument Visitor Center") },
+          { type: "maps", label: "📍 Plaza Blanca 导航", url: gMap("Plaza Blanca Abiquiu NM") },
+          { type: "maps", label: "📍 Echo 回音石窟导航", url: gMap("Echo Amphitheater Abiquiu NM") }
         ],
         timeline: [
-          { time: "09:00", event: "Santa Fe 退房出发，途经《奥本海默》小镇 Los Alamos（NM-502 路边 Anderson Overlook 可停 5 分钟俯瞰大裂谷）" },
-          { time: "10:00", event: "抵达 Bandelier National Monument：12 月无接驳车限制，直接开车进谷底，走平路近看史前崖居、爬短木梯进石窟（约 2 小时）" },
-          { time: "12:30", event: "午餐后沿 US-84 北上穿过 Abiquiu / Ghost Ranch 红黄断崖走廊，在马路正边的 Echo Amphitheater 停 30 分钟（走 5 分钟平路进百米高天然回音石窟）" },
-          { time: "16:30", event: "转 US-64 西行抵达 Farmington 酒店入住休息" }
+          { time: "08:30", event: "今天看点丰富，提早半小时于 08:30 从 Santa Fe 退房出发（途经《奥本海默》小镇 Los Alamos 裂谷观景台）" },
+          { time: "09:20", event: "游览 Bandelier National Monument：直接开车进谷底，走平路近看史前崖居、爬短木梯进石窟（约 2 小时，亮电子年卡免票）" },
+          { time: "12:20", event: "沿 US-84 北上至 Abiquiu 拐入 Plaza Blanca（凭提前在 daralislam.org 免费领好的密码开铁门，走 1 小时纯白奇岩迷谷；若遇雨雪泥泞则跳过）" },
+          { time: "13:50", event: "继续沿 US-84 停马路正边的 Echo Amphitheater（走 5 分钟平路进百米高天然回音石窟，停 25 分钟）" },
+          { time: "16:40", event: "赶在 16:56 日落前稳稳抵达 Farmington 酒店入住休息" }
         ],
-        hotelTip: "万豪选 TownePlace Suites Farmington 或 Fairfield Inn（评分均近 9.0、免费停车含早）；IHG 可选 Holiday Inn Express。",
-        caution: "Bandelier 谷底冬季餐厅歇业，前一天在 Santa Fe 备好饮水和简餐零食。"
+        hotelTip: "万豪选 TownePlace Suites Farmington 或 Fairfield Inn（评分均近 9.0、免费停车含早）；IHG 可选 Holiday Inn Express ($112+税)。",
+        caution: "⚠️ Plaza Blanca 必须提前在 daralislam.org 免费填表截图保存开门密码（Gate Code）；门内最后 1 公里为平整砂石路，仅在晴干天进入。"
       },
       {
         id: 7,
         date: "12/03 周四",
-        short: "D7 Shiprock神山",
-        title: "远眺火山神山 Shiprock → US-550 台地恶地走廊 → ABQ 北区",
-        driveHours: 4.0,
-        driveText: "约 4 小时",
-        miles: "~245 mi",
-        stay: "Albuquerque 北区 (连住第1晚)",
+        short: "D7 Shiprock+Tamaya",
+        title: "远眺火山神山 Shiprock → US-550 台地走廊 → 入住 Tamaya 度假村",
+        driveHours: 3.9,
+        driveText: "约 3.8 – 4 小时",
+        miles: "~238 mi",
+        stay: "✅ Hyatt Regency Tamaya (连住第1晚)",
         sunset: "16:53 日落",
-        routePoints: "131,126 78,129 131,126 218,215 268,277",
-        badges: ["经典地标", "开启2晚连住"],
+        routePoints: "131,126 78,129 131,126 218,215 268,266",
+        badges: ["经典地标", "✅ 凯悦度假村已订"],
         photos: [
           { src: "images/shiprock.jpg", caption: "Shiprock 荒漠火山孤峰与巨型玄武岩墙", searchQ: "Shiprock Pinnacle New Mexico" }
         ],
         links: [
           { type: "maps", label: "📍 Shiprock 铺装路观景口(IR-13)", url: gMap("36.6152,-108.7385") },
-          { type: "maps", label: "📍 Aztec Ruins 遗址(可选)", url: gMap("Aztec Ruins National Monument") },
-          { type: "google", label: "🔎 Google 搜 Shiprock 视角", url: gSearch("Shiprock New Mexico US 491 IR 13 viewpoint") }
+          { type: "maps", label: "📍 Hyatt Regency Tamaya 导航", url: gMap("Hyatt Regency Tamaya Resort and Spa") }
         ],
         timeline: [
           { time: "09:00", event: "Farmington 退房出发，沿 US-64 西行约 40 分钟前往 Shiprock 区域" },
           { time: "09:45", event: "从 US-491 南下拐入全程铺装柏油路 Indian Route 13 (IR-13)，穿过巨型黑色火山岩墙豁口安全远眺拍摄 Shiprock（约 30–40 分钟）" },
-          { time: "11:00", event: "若精力充沛可顺看 Farmington 旁平地世界遗产 Aztec Ruins 大地穴；随后沿四车道 US-550 南下（Cuba 至 San Ysidro 公路两侧尽是红白彩绘恶地台地）" },
-          { time: "15:30", event: "抵达 Albuquerque 北区 Journal Center 套房酒店办理 2 晚连住" }
+          { time: "11:00", event: "沿四车道 US-550 南下（Cuba 至 San Ysidro 公路两侧尽是红白彩绘恶地台地），无需进市区，在 Bernalillo 直接拐入度假村" },
+          { time: "15:15", event: "抵达新墨西哥头牌度假村 Hyatt Regency Tamaya Resort & Spa 办理 2 晚连住，后院直面桑迪亚雪山日落金山" }
         ],
-        hotelTip: "连住 2 晚：IHG 选 Staybridge Suites Albuquerque North，或万豪选 SpringHill Suites Albuquerque North/Journal Center（免费停车+含热早，治安清静）。",
+        hotelTip: "✅ 已订妥 Hyatt Regency Tamaya Resort & Spa（1.2w 分/晚 × 2 晚，积分房全免每日 $40 Resort Fee 及停车费）。",
         caution: "在 Shiprock 车轮严禁离开柏油路（通往岩体底部的土路禁止游客进入且违反租车合同），禁飞无人机。"
       },
       {
@@ -1249,29 +1270,29 @@
         date: "12/04 周五",
         short: "D8 帐篷岩+缆车",
         title: "王牌收官：Kasha-Katuwe 帐篷岩峡谷 + 桑迪亚峰高空缆车日落",
-        driveHours: 1.9,
-        driveText: "约 1.8 – 2 小时（短途往返）",
-        miles: "~95 mi",
-        stay: "Albuquerque 北区 (连住第2晚)",
+        driveHours: 1.5,
+        driveText: "约 1.5 小时（度假村短途往返）",
+        miles: "~75 mi",
+        stay: "✅ Hyatt Regency Tamaya (连住第2晚)",
         sunset: "16:53 日落",
-        routePoints: "268,277 280,238 268,277 282,275",
-        badges: ["双票预约", "3163m 高空日落"],
+        routePoints: "268,266 280,238 268,266 282,275",
+        badges: ["✅ 双票已买妥", "3163m 高空日落"],
         photos: [
           { src: "images/tent-rocks.jpg", caption: "Kasha-Katuwe Tent Rocks 锥形火山奇岩", searchQ: "Kasha-Katuwe Tent Rocks National Monument" },
           { src: "images/sandia-tramway.jpg", caption: "Sandia Peak Tramway 直登 3,163 米山巅看日落", searchQ: "Sandia Peak Tramway Albuquerque sunset" }
         ],
         links: [
-          { type: "maps", label: "📍 Cochiti 游客中心(帐篷岩报到)", url: gMap("Cochiti Visitor Center NM") },
-          { type: "maps", label: "📍 Sandia Peak 缆车站导航", url: gMap("Sandia Peak Tramway Albuquerque") },
+          { type: "maps", label: "📍 Cochiti 游客中心(帐篷岩报到·28min)", url: gMap("Cochiti Visitor Center NM") },
+          { type: "maps", label: "📍 Sandia Peak 缆车站(20min)", url: gMap("Sandia Peak Tramway Albuquerque") },
           { type: "google", label: "🔎 Google 搜帐篷岩徒步", url: gSearch("Kasha-Katuwe Tent Rocks Slot Canyon Trail") }
         ],
         timeline: [
-          { time: "08:45", event: "从北区酒店轻装出发（免退房！），沿 I-25 北上 45 分钟直达 Cochiti Visitor Center 核验双票，跟随部落前导车进山" },
-          { time: "09:45", event: "徒步 Kasha-Katuwe Tent Rocks 锥形火山奇岩与一线天窄缝峡谷（约 2–2.5 小时），中午回城吃顿新墨西哥餐" },
-          { time: "15:15", event: "从酒店开 15 分钟到 Sandia Peak Tramway，乘高空缆车 15 分钟直上海拔 3,163 米山顶，看 16:53 壮阔日落与城市亮灯" },
-          { time: "18:00", event: "下山回同一套房收拾行李，准备次日返程" }
+          { time: "09:00", event: "从 Tamaya 度假村轻装出发（免退房！），沿 I-25 北上仅 28 分钟直达 Cochiti Visitor Center 核验双票，跟每 15 分钟一班的前导车进山" },
+          { time: "10:00", event: "自由徒步 Kasha-Katuwe Tent Rocks 锥形火山奇岩与一线天窄缝峡谷（约 2–2.5 小时），中午回庄园或周边午餐休整" },
+          { time: "15:15", event: "从度假村开 20 分钟到 Sandia Peak Tramway，乘高空缆车 15 分钟直上海拔 3,163 米山顶，看 16:53 壮阔日落与城市亮灯" },
+          { time: "18:00", event: "下山回 Tamaya 庄园收拾行李，准备次日返程" }
         ],
-        hotelTip: "继续住 Albuquerque 北区同一间套房（停车过夜同样记得清空车厢内一切物品）。",
+        hotelTip: "✅ 继续住 Hyatt Regency Tamaya 第 2 晚（庄园位于印第安保护地内，私密安全）。",
         caution: "Tent Rocks 导航务必搜 Cochiti Visitor Center（勿直接导山谷坐标）；3,163 米山顶比山下冷 10–15°C，穿厚羽绒服。"
       },
       {
@@ -1306,7 +1327,7 @@
 
     const MAP_NODES = [
       { name: "ABQ 机场", x: 263, y: 292, dayIdx: 0, type: "stay", labelDx: -56, labelDy: 15 },
-      { name: "ABQ 北区 / 缆车", x: 268, y: 277, dayIdx: 7, type: "stay", labelDx: 10, labelDy: 5 },
+      { name: "Tamaya 度假村", x: 268, y: 266, dayIdx: 6, type: "stay", labelDx: 10, labelDy: 5 },
       { name: "PistachioLand", x: 316, y: 492, dayIdx: 1, type: "park", labelDx: -84, labelDy: -5 },
       { name: "White Sands 白沙", x: 300, y: 514, dayIdx: 1, type: "park", labelDx: -96, labelDy: 6 },
       { name: "Alamogordo", x: 317, y: 502, dayIdx: 1, type: "stay", labelDx: 9, labelDy: 14 },
@@ -1314,9 +1335,11 @@
       { name: "Carlsbad", x: 461, y: 549, dayIdx: 2, type: "stay", labelDx: 9, labelDy: 4 },
       { name: "Caverns 大溶洞", x: 444, y: 573, dayIdx: 3, type: "park", labelDx: -40, labelDy: 18 },
       { name: "Roswell", x: 437, y: 454, dayIdx: 3, type: "stay", labelDx: 10, labelDy: 4 },
-      { name: "Santa Fe (La Posada)", x: 319, y: 228, dayIdx: 4, type: "stay", labelDx: 10, labelDy: 4 },
-      { name: "Bandelier 崖居", x: 292, y: 215, dayIdx: 5, type: "park", labelDx: -88, labelDy: -5 },
-      { name: "Echo 回音石窟", x: 270, y: 162, dayIdx: 5, type: "park", labelDx: 9, labelDy: -4 },
+      { name: "Santa Fe (La Posada)", x: 319, y: 228, dayIdx: 4, type: "stay", labelDx: 10, labelDy: 5 },
+      { name: "Chimayó 教堂", x: 320, y: 198, dayIdx: 4, type: "park", labelDx: 9, labelDy: -2 },
+      { name: "Bandelier 崖居", x: 292, y: 215, dayIdx: 5, type: "park", labelDx: -88, labelDy: -4 },
+      { name: "Plaza Blanca", x: 297, y: 175, dayIdx: 5, type: "park", labelDx: 9, labelDy: 3 },
+      { name: "Echo 回音石窟", x: 270, y: 162, dayIdx: 5, type: "park", labelDx: -86, labelDy: -4 },
       { name: "Farmington", x: 131, y: 126, dayIdx: 5, type: "stay", labelDx: -10, labelDy: 19 },
       { name: "Shiprock", x: 78, y: 129, dayIdx: 6, type: "park", labelDx: -18, labelDy: -10 },
       { name: "Tent Rocks 帐篷岩", x: 280, y: 238, dayIdx: 7, type: "park", labelDx: -105, labelDy: 4 }
@@ -1326,44 +1349,44 @@
       {
         date: "11/27 周五",
         area: "ABQ 机场",
-        best: "Sheraton Albuquerque Airport Hotel (万豪)",
+        best: "✅ Holiday Inn & Suites Albuquerque Airport (已订)",
         marriott: "Sheraton Albuquerque Airport Hotel",
-        ihg: "Holiday Inn & Suites Albuquerque Airport",
+        ihg: "✅ Holiday Inn & Suites Albuquerque Airport (已订)",
         qMap: {
-          best: "Sheraton Albuquerque Airport Hotel",
+          best: "Holiday Inn & Suites Albuquerque Airport 1501 Sunport Pl",
           marriott: "Sheraton Albuquerque Airport Hotel",
-          ihg: "Holiday Inn & Suites Albuquerque Airport"
+          ihg: "Holiday Inn & Suites Albuquerque Airport 1501 Sunport Pl"
         },
-        pay: "现金 ($110–$140) 或小额积分",
-        note: "22:56 落地无车，Sheraton 就在航站楼对面（步行5分钟/24h班车），当晚无车免停车费；次日打 Uber 3 分钟去租车中心"
+        pay: "✅ 已用 CSP 预订 (报销 $100 后实付 $46.25)",
+        note: "1501 Sunport Place · 24h 免费班车（落地拨 505-944-2255 召唤接机），次日早也可送租车中心"
       },
       {
         date: "11/28 周六",
         area: "Alamogordo",
-        best: "Holiday Inn Express & Suites Alamogordo (IHG)",
+        best: "Home2 Suites by Hilton 或 Holiday Inn Express",
         marriott: "Fairfield Inn & Suites Alamogordo",
         ihg: "Holiday Inn Express & Suites Alamogordo",
         qMap: {
-          best: "Holiday Inn Express & Suites Alamogordo NM",
+          best: "Home2 Suites by Hilton Alamogordo White Sands",
           marriott: "Fairfield Inn & Suites Alamogordo NM",
           ihg: "Holiday Inn Express & Suites Alamogordo NM"
         },
-        pay: "感恩节周六若涨破 $180 用 IHG 积分/FN，否则现金",
-        note: "本地口碑第一 (~8.9分)，含热早+免费停车，距白沙 15–20 分钟；感恩节周末务必尽早订房"
+        pay: "可用第 2 张 CSP 报销 $100 或付现",
+        note: "Home2 Suites 为全镇最新套房；HIX 评分最高 (~9.0分)，均免费停车+含热早，距白沙 15–20 分钟"
       },
       {
         date: "11/29 周日",
         area: "Carlsbad",
-        best: "TownePlace Suites Carlsbad (万豪) 或 HIX (IHG)",
+        best: "Hyatt House Carlsbad (凯悦 · 性价比最高)",
         marriott: "TownePlace Suites by Marriott Carlsbad",
         ihg: "Holiday Inn Express & Suites Carlsbad",
         qMap: {
-          best: "TownePlace Suites by Marriott Carlsbad NM",
+          best: "Hyatt House Carlsbad NM",
           marriott: "TownePlace Suites by Marriott Carlsbad NM",
           ihg: "Holiday Inn Express & Suites Carlsbad NM"
         },
-        pay: "现金 ($145–$180) 或 2w–3w 积分",
-        note: "TownePlace 较新带厨房含早；HIX 含热早及室内泳池/热水池。油田城周日价格比周中温和"
+        pay: "凯悦官网现金 $149 税后 (或 8k 凯悦分换套房)",
+        note: "比同城 IHG ($187–$213) 便宜 $40+，全员含热早，官网直订还可累积凯悦房晚与点亮 Hyatt House 品牌章"
       },
       {
         date: "11/30 周一",
@@ -1376,27 +1399,27 @@
           marriott: "TownePlace Suites by Marriott Roswell NM",
           ihg: "Holiday Inn Express & Suites Roswell NM"
         },
-        pay: "直接现金 ($105–$130) 或小额积分",
-        note: "HIX 安静干净 (~8.8+分)、含热早+免费停车；万豪选 TownePlace 比靠大路的 Fairfield 安静"
+        pay: "直接现金 ($100+税 ≈ $113)",
+        note: "HIX 安静干净 (~8.8+分)、含热早+免费停车；刷 IHG 卡拿 26x 积分回血"
       },
       {
         date: "12/01 周二",
         area: "Santa Fe",
-        best: "🌟 La Posada de Santa Fe, Tribute Portfolio (万豪)",
-        marriott: "🌟 La Posada de Santa Fe, Tribute Portfolio",
+        best: "✅ La Posada de Santa Fe, Tribute Portfolio (已订)",
+        marriott: "✅ La Posada de Santa Fe, Tribute Portfolio (已订)",
         ihg: "Holiday Inn Express & Suites Santa Fe (备选)",
         qMap: {
           best: "La Posada de Santa Fe",
           marriott: "La Posada de Santa Fe",
           ihg: "Holiday Inn Express & Suites Santa Fe NM"
         },
-        pay: "✅ 使用唯一 1 张万豪 35k FN (+补分)",
-        note: "16:00 入住/12:00 退房；到店自付 $40+税 Resort Fee（已含代客泊车 Valet），步行 5 分钟到老城广场"
+        pay: "✅ 已用万豪 35k FN + 11k 分锁定",
+        note: "16:00 入住/12:00 退房；含税 $46.13 Resort Fee 已包代客泊车 Valet Parking，步行 5 分钟至老城广场"
       },
       {
         date: "12/02 周三",
         area: "Farmington",
-        best: "TownePlace Suites 或 Fairfield Inn Farmington (万豪)",
+        best: "TownePlace Suites Farmington (万豪) 或 HIX (IHG)",
         marriott: "TownePlace Suites Farmington",
         ihg: "Holiday Inn Express Farmington Bloomfield",
         qMap: {
@@ -1404,36 +1427,36 @@
           marriott: "TownePlace Suites by Marriott Farmington NM",
           ihg: "Holiday Inn Express & Suites Farmington Bloomfield NM"
         },
-        pay: "现金 ($115–$140) 或小额积分",
-        note: "两家万豪评分均近 9.0、免费停车+含热早（避开不含早且偏旧的 Courtyard）"
+        pay: "现金 (~$112–$125+税)",
+        note: "评分近 9.0、免费停车+含热早"
       },
       {
         date: "12/03 周四",
-        area: "ABQ 北区 (连住1)",
-        best: "Staybridge Suites North (IHG) 或 SpringHill North (万豪)",
-        marriott: "SpringHill Suites Albuquerque North Journal Center",
+        area: "Bernalillo 北郊 (连住1)",
+        best: "✅ Hyatt Regency Tamaya Resort & Spa (已订)",
+        marriott: "SpringHill Suites Albuquerque North",
         ihg: "Staybridge Suites Albuquerque North",
         qMap: {
-          best: "Staybridge Suites Albuquerque North",
+          best: "Hyatt Regency Tamaya Resort and Spa",
           marriott: "SpringHill Suites Albuquerque North Journal Center",
           ihg: "Staybridge Suites Albuquerque North"
         },
-        pay: "现金 ($115–$140) 或积分 (连住2晚)",
-        note: "商务园区清静安全、免费停车+免费热早，距桑迪亚峰缆车仅 15 分钟"
+        pay: "✅ 已用凯悦 1.2w 分/晚锁定 (免 Resort Fee)",
+        note: "新墨西哥头牌印第安庄园度假村，US-550 下来直达，去帐篷岩 28 分钟、去桑迪亚峰缆车 20 分钟"
       },
       {
         date: "12/04 周五",
-        area: "ABQ 北区 (连住2)",
-        best: "同上连住第 2 晚（免打包搬酒店！）",
-        marriott: "SpringHill Suites Albuquerque North Journal Center",
+        area: "Bernalillo 北郊 (连住2)",
+        best: "✅ Hyatt Regency Tamaya Resort & Spa (连住第2晚)",
+        marriott: "SpringHill Suites Albuquerque North",
         ihg: "Staybridge Suites Albuquerque North",
         qMap: {
-          best: "Staybridge Suites Albuquerque North",
+          best: "Hyatt Regency Tamaya Resort and Spa",
           marriott: "SpringHill Suites Albuquerque North Journal Center",
           ihg: "Staybridge Suites Albuquerque North"
         },
-        pay: "现金或积分",
-        note: "周六早走 I-25 南下仅 18 分钟即达机场租车中心；过夜切记清空车厢一切可见物品"
+        pay: "✅ 已用凯悦 1.2w 分/晚锁定 ($0 自付)",
+        note: "周六早 09:30 退房走 I-25 南下约 25 分钟直达机场租车中心加满油还车"
       }
     ];
 
@@ -1461,6 +1484,14 @@
         desc: "11/28 是感恩节周六，Alamogordo 的 Holiday Inn Express 房源紧俏建议最先订；其余各站可订入住前 1–2 天免费取消的弹性房价。",
         url: "https://www.marriott.com/",
         linkText: "打开 Marriott 官网"
+      },
+      {
+        id: "plazablanca",
+        tag: "免费领密码",
+        title: "出发前在 Dar al Islam 官网免费登记领取 12/02 Plaza Blanca 铁门密码",
+        desc: "两位成人分别填姓名邮箱即可当场弹出开门密码（Gate Code），截图保存；仅在当天晴好路面干燥时进入。",
+        url: "https://daralislam.org/",
+        linkText: "前往 Dar al Islam 官网登记"
       },
       {
         id: "meowwolf",

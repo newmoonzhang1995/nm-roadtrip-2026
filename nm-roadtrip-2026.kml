@@ -49,9 +49,19 @@
       <Point><coordinates>-105.9964,35.6542,0</coordinates></Point>
     </Placemark>
     <Placemark>
+      <name>D5 El Santuario de Chimayó 奇马约圣土小教堂</name>
+      <description>12/01 下午可选 · 15 Santuario Dr, Chimayo, NM · 09:00–17:00 开放，全程柏油路距 Santa Fe 35 分钟</description>
+      <Point><coordinates>-105.9317,35.9892,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
       <name>D6 Bandelier National Monument 班德利尔史前崖居</name>
       <description>12/02 上午 · 冬季免接驳车直开谷底停车场，平路近看崖居爬短木梯</description>
       <Point><coordinates>-106.2708,35.7789,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>D6 Plaza Blanca 白色广场奇岩谷 (需提前免费领密码)</name>
+      <description>12/02 中午顺路 · Abiquiu · 出发前在 daralislam.org 免费登记拿铁门密码，晴干天进入</description>
+      <Point><coordinates>-106.1997,36.2325,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>D6 Echo Amphitheater 回音巨型天然石窟</name>
