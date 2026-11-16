@@ -704,8 +704,8 @@
       <div class="toolbar">
         <nav class="tabs" id="main-tabs">
           <button data-tab="itinerary" class="btn active">🗺️ 路线地图与逐日行程</button>
-          <button data-tab="spots" class="btn">📸 核心景点图鉴 (13处)</button>
-          <button data-tab="hotels" class="btn">🏨 全程 8 晚酒店进度表</button>
+          <button data-tab="spots" class="btn">📸 核心景点图鉴 (14处)</button>
+          <button data-tab="hotels" class="btn">🏨 全程 8 晚酒店进度表 (已订5/8)</button>
           <button data-tab="compare" class="btn">⚖️ 优化前后对比</button>
           <button data-tab="checklist" class="btn">✅ 行前必约清单 <span id="todo-badge" style="margin-left:3px; opacity:0.85;">(0/6)</span></button>
         </nav>
@@ -805,9 +805,9 @@
     <!-- TAB 2: VISUAL ATTRACTION GALLERY -->
     <section id="tab-spots" class="tab-panel hidden" style="display:flex; flex-direction:column; gap:16px;">
       <div class="card" style="padding:16px 20px;">
-        <h2>📸 沿途 13 大核心景观图鉴 &amp; 一键 Google 链接</h2>
+        <h2>📸 沿途 14 大核心景观图鉴 &amp; 一键 Google 链接</h2>
         <p class="muted" style="font-size:13px; margin-top:4px;">
-          每个景点均配有实景图、Google Maps 精准定位、Google 搜索评价/更多美图，以及官方信息入口（已含开心果园、Chimayó 教堂与 Plaza Blanca）。
+          每个景点均配有实景图、Google Maps 精准定位、Google 搜索评价/更多美图，以及官方信息入口（已含 Bosque del Apache 越冬鹤群、开心果园、Chimayó 教堂与 Plaza Blanca）。
         </p>
       </div>
       <div class="three-col" id="spots-grid"></div>
@@ -928,6 +928,16 @@
     const gSearch = q => `https://www.google.com/search?q=${encodeURIComponent(q)}`;
 
     const SPOTS = [
+      {
+        day: "11/28 · D2 (顺路)",
+        name: "Bosque del Apache · 阿帕奇森林越冬沙丘鹤与雪雁保护区",
+        img: "images/bosque-cranes.jpg",
+        desc: "11 月底–12 月初正是数万只雪雁与沙丘鹤越冬的全年巅峰！南下白沙途中在铺装游客中心及湿地观景台短停 20 分钟（年卡免票，不进砂石大环线以免耽误白沙日落）。",
+        mapQ: "Bosque del Apache National Wildlife Refuge Visitor Center",
+        searchQ: "Bosque del Apache Sandhill Cranes Snow Geese December",
+        web: "https://www.fws.gov/refuge/bosque-del-apache",
+        webLabel: "保护区官网"
+      },
       {
         day: "11/28 · D2",
         name: "McGinn's PistachioLand · 开心果园 (世界最大开心果)",
@@ -1090,30 +1100,31 @@
       {
         id: 2,
         date: "11/28 周六",
-        short: "D2 开心果+白沙",
-        title: "SIXT 取车南下 → PistachioLand 开心果园 → White Sands 日落",
-        driveHours: 4.1,
-        driveText: "约 4 – 4.2 小时",
-        miles: "~240 mi",
-        stay: "Alamogordo",
+        short: "D2 鹤群+白沙",
+        title: "SIXT 取车南下 → Bosque 越冬鹤群 → 开心果园 → White Sands 日落",
+        driveHours: 4.3,
+        driveText: "约 4.2 – 4.4 小时",
+        miles: "~252 mi",
+        stay: "⏳ Alamogordo (待订)",
         sunset: "16:57 日落",
-        routePoints: "263,292 256,395 305,435 316,492 300,514 317,502",
-        badges: ["感恩节周六", "顺停开心果园", "国家公园 #1"],
+        routePoints: "263,292 240,413 256,395 305,435 316,492 300,514 317,502",
+        badges: ["感恩节周六", "越冬鹤群+开心果", "国家公园 #1"],
         photos: [
           { src: "images/white-sands.jpg", caption: "White Sands 纯白石膏沙海日落", searchQ: "White Sands National Park sunset" },
-          { src: "images/pistachioland.jpg", caption: "McGinn's PistachioLand · 世界最大开心果雕像", searchQ: "McGinn's PistachioLand World's Largest Pistachio" }
+          { src: "images/bosque-cranes.jpg", caption: "Bosque del Apache 冬季雪雁与沙丘鹤巅峰季", searchQ: "Bosque del Apache Sandhill Cranes" }
         ],
         links: [
-          { type: "maps", label: "🗺️ 今日串联路线(含开心果园)", url: "https://www.google.com/maps/dir/3400+University+Blvd+SE,+Albuquerque,+NM/McGinn's+PistachioLand,+Alamogordo,+NM/White+Sands+National+Park+Visitor+Center/Alamogordo,+NM" },
+          { type: "maps", label: "🗺️ 今日完整串联路线", url: "https://www.google.com/maps/dir/3400+University+Blvd+SE,+Albuquerque,+NM/Bosque+del+Apache+National+Wildlife+Refuge+Visitor+Center/McGinn's+PistachioLand,+Alamogordo,+NM/White+Sands+National+Park+Visitor+Center/Alamogordo,+NM" },
+          { type: "maps", label: "📍 Bosque 游客中心导航", url: gMap("Bosque del Apache National Wildlife Refuge Visitor Center") },
           { type: "maps", label: "📍 PistachioLand 导航", url: gMap("McGinn's PistachioLand 7320 US-54 Alamogordo NM") },
-          { type: "maps", label: "📍 White Sands 导航", url: gMap("White Sands National Park Visitor Center") },
-          { type: "google", label: "🔎 Google 搜开心果园", url: gSearch("McGinn's PistachioLand ice cream") }
+          { type: "maps", label: "📍 White Sands 导航", url: gMap("White Sands National Park Visitor Center") }
         ],
         timeline: [
-          { time: "10:35", event: "酒店退房，直接打 Uber（3–5 分钟）定位 3400 University Blvd SE 租车中心，11:00 在 SIXT 提车" },
-          { time: "11:30", event: "沿 I-25 S → US-380 E → US-54 S 南下，中途简餐加油 30 分钟" },
-          { time: "14:55", event: "顺路停靠 US-54 路边的 McGinn's PistachioLand 开心果园（约 15–20 分钟，0 绕路！拍巨型开心果雕像、尝开心果冰淇淋）" },
-          { time: "15:35", event: "抵达 White Sands 国家公园，在获准且合法停车的石膏沙丘区游玩约 1.5 小时，守候 16:57 粉紫色日落" },
+          { time: "10:35", event: "酒店免费班车或打 Uber 3 分钟至 3400 University Blvd SE 租车中心，11:00 在 SIXT 提车出发" },
+          { time: "12:45", event: "沿 I-25 S 至 San Antonio 出口拐入 Bosque del Apache Visitor Center 铺装区与门口湿地观景台短停 20 分钟看越冬鹤群（⚠️ 不进 12 英里砂石环线，避免违约及耽误白沙日落）" },
+          { time: "13:15", event: "转 US-380 E → US-54 S 继续南下，途中简餐加油" },
+          { time: "15:05", event: "顺停 US-54 路边的 McGinn's PistachioLand 开心果园（15 分钟拍世界最大开心果雕像、买开心果冰淇淋）" },
+          { time: "15:40", event: "抵达 White Sands 国家公园（亮电子年卡免票），游玩石膏沙海并守候 16:57 粉紫色日落" },
           { time: "17:30", event: "出园开 20 分钟抵达 Alamogordo 酒店入住晚餐" }
         ],
         hotelTip: "优先订 IHG 的 Holiday Inn Express Alamogordo（本地评分 ~8.9 最佳）；万豪选 Fairfield Inn。感恩节周六务必尽早锁房！",
@@ -1327,6 +1338,7 @@
 
     const MAP_NODES = [
       { name: "ABQ 机场", x: 263, y: 292, dayIdx: 0, type: "stay", labelDx: -56, labelDy: 15 },
+      { name: "Bosque 鹤群", x: 240, y: 413, dayIdx: 1, type: "park", labelDx: -78, labelDy: 4 },
       { name: "Tamaya 度假村", x: 268, y: 266, dayIdx: 6, type: "stay", labelDx: 10, labelDy: 5 },
       { name: "PistachioLand", x: 316, y: 492, dayIdx: 1, type: "park", labelDx: -84, labelDy: -5 },
       { name: "White Sands 白沙", x: 300, y: 514, dayIdx: 1, type: "park", labelDx: -96, labelDy: 6 },
@@ -1363,21 +1375,21 @@
       {
         date: "11/28 周六",
         area: "Alamogordo",
-        best: "Home2 Suites by Hilton 或 Holiday Inn Express",
-        marriott: "Fairfield Inn & Suites Alamogordo",
-        ihg: "Holiday Inn Express & Suites Alamogordo",
+        best: "⏳ 待订：Fairfield ($155) / HIX ($169) / Home2 ($190)",
+        marriott: "⏳ Fairfield Inn & Suites Alamogordo ($154.75)",
+        ihg: "⏳ Holiday Inn Express & Suites Alamogordo ($169)",
         qMap: {
-          best: "Home2 Suites by Hilton Alamogordo White Sands",
+          best: "Fairfield Inn & Suites Alamogordo NM",
           marriott: "Fairfield Inn & Suites Alamogordo NM",
           ihg: "Holiday Inn Express & Suites Alamogordo NM"
         },
-        pay: "可用第 2 张 CSP 报销 $100 或付现",
-        note: "Home2 Suites 为全镇最新套房；HIX 评分最高 (~9.0分)，均免费停车+含热早，距白沙 15–20 分钟"
+        pay: "⏳ 待订 · 可用第 2 张 CSP 报销 $100",
+        note: "实测含税价：Fairfield $154.75 最省；HIX $169 口碑 ~9.0；Home2 Suites $189.79 全镇最新套房"
       },
       {
         date: "11/29 周日",
         area: "Carlsbad",
-        best: "Hyatt House Carlsbad (凯悦 · 性价比最高)",
+        best: "⏳ 待订：Hyatt House Carlsbad (凯悦 · $149 税后)",
         marriott: "TownePlace Suites by Marriott Carlsbad",
         ihg: "Holiday Inn Express & Suites Carlsbad",
         qMap: {
@@ -1385,22 +1397,22 @@
           marriott: "TownePlace Suites by Marriott Carlsbad NM",
           ihg: "Holiday Inn Express & Suites Carlsbad NM"
         },
-        pay: "凯悦官网现金 $149 税后 (或 8k 凯悦分换套房)",
+        pay: "⏳ 待订 · 凯悦官网现金 $149.18 (或 8k 凯悦分)",
         note: "比同城 IHG ($187–$213) 便宜 $40+，全员含热早，官网直订还可累积凯悦房晚与点亮 Hyatt House 品牌章"
       },
       {
         date: "11/30 周一",
         area: "Roswell",
-        best: "Holiday Inn Express & Suites Roswell (IHG)",
+        best: "✅ Holiday Inn Express & Suites Roswell (已订)",
         marriott: "TownePlace Suites by Marriott Roswell",
-        ihg: "Holiday Inn Express & Suites Roswell",
+        ihg: "✅ Holiday Inn Express & Suites Roswell (已订)",
         qMap: {
           best: "Holiday Inn Express & Suites Roswell NM",
           marriott: "TownePlace Suites by Marriott Roswell NM",
           ihg: "Holiday Inn Express & Suites Roswell NM"
         },
-        pay: "直接现金 ($100+税 ≈ $113)",
-        note: "HIX 安静干净 (~8.8+分)、含热早+免费停车；刷 IHG 卡拿 26x 积分回血"
+        pay: "✅ 已用 Delta Gold 预订 (减 $100 后实付 $21.43)",
+        note: "9.2 高分 · 含热早+免费停车 · 11/23 前可免费全额退改"
       },
       {
         date: "12/01 周二",
@@ -1419,16 +1431,16 @@
       {
         date: "12/02 周三",
         area: "Farmington",
-        best: "TownePlace Suites Farmington (万豪) 或 HIX (IHG)",
-        marriott: "TownePlace Suites Farmington",
-        ihg: "Holiday Inn Express Farmington Bloomfield",
+        best: "⏳ 待订：TownePlace Suites (万豪) 或 HIX ($112+税)",
+        marriott: "⏳ TownePlace Suites Farmington",
+        ihg: "⏳ Holiday Inn Express Farmington Bloomfield",
         qMap: {
           best: "TownePlace Suites by Marriott Farmington NM",
           marriott: "TownePlace Suites by Marriott Farmington NM",
           ihg: "Holiday Inn Express & Suites Farmington Bloomfield NM"
         },
-        pay: "现金 (~$112–$125+税)",
-        note: "评分近 9.0、免费停车+含热早"
+        pay: "⏳ 待订 · 现金 (~$112–$125+税)",
+        note: "评分近 9.0、免费停车+含热早（可先翻一眼万豪卡或 Chase 卡里的 10%–15% 返现 Offer）"
       },
       {
         date: "12/03 周四",
