@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>2026 新墨西哥冬日奇观环线 (11/27 – 12/05)</name>
+    <description>9天8晚顺畅环线全部核心景点与过夜坐标（全程铺装柏油路 · SIXT 合规）</description>
+    <Placemark>
+      <name>D1/D9 ABQ Sunport 租车中心 (SIXT)</name>
+      <description>3400 University Blvd SE, Albuquerque, NM · 11/28 11:00 提车 / 12/05 10:30 还车</description>
+      <Point><coordinates>-106.6258,35.0419,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>D2 McGinn's PistachioLand 开心果园 (世界最大开心果)</name>
+      <description>11/28 下午南下必经路边 (7320 US-54, Alamogordo) · 停 15 分钟买开心果冰淇淋拍巨型开心果雕像</description>
+      <Point><coordinates>-105.9631,32.9876,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>D2 White Sands National Park 白沙国家公园</name>
+      <description>11/28 下午游玩 1.5h，约 16:57 看日落</description>
+      <Point><coordinates>-106.1719,32.7797,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>D3 Tunnel Vista Overlook 观景台</name>
+      <description>11/29 US-82 盘山路旁铺装观景台，俯瞰白沙盆地</description>
+      <Point><coordinates>-105.8722,32.9562,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>D3 Mexican Canyon Trestle Vista 森林木栈桥观景台</name>
+      <description>11/29 Cloudcroft 进镇前路边铺装观景台，看 1899 年木制铁路栈桥</description>
+      <Point><coordinates>-105.7519,32.9617,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>D4 Carlsbad Caverns National Park 卡尔斯巴德大溶洞</name>
+      <description>11/30 预约 10:00 入洞，电梯上下游览 Big Room</description>
+      <Point><coordinates>-104.4452,32.1753,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>D4 Roswell UFO McDonald's 飞碟麦当劳 (顺路)</name>
+      <description>720 N Main St, Roswell, NM · 北上顺路外观打卡</description>
+      <Point><coordinates>-104.5230,33.4005,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>D5 La Posada de Santa Fe (万豪 35k FN)</name>
+      <description>12/01 入住 · 330 E Palace Ave, Santa Fe, NM · 步行 5 分钟至老城广场</description>
+      <Point><coordinates>-105.9333,35.6865,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>D5 Meow Wolf Santa Fe 喵狼奇幻沉浸馆 (可选)</name>
+      <description>1352 Rufina Cir, Santa Fe, NM · House of Eternal Return</description>
+      <Point><coordinates>-105.9964,35.6542,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>D6 Bandelier National Monument 班德利尔史前崖居</name>
+      <description>12/02 上午 · 冬季免接驳车直开谷底停车场，平路近看崖居爬短木梯</description>
+      <Point><coordinates>-106.2708,35.7789,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>D6 Echo Amphitheater 回音巨型天然石窟</name>
+      <description>12/02 下午 · US-84 铺装停车场旁，步行 5 分钟进百米高红黄色回音石壁</description>
+      <Point><coordinates>-106.5339,36.3592,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>D7 Shiprock 合法铺装远眺口 (US-491 &amp; IR-13)</name>
+      <description>12/03 上午 · 仅走 US-491 与 IR-13 铺装柏油路穿过火山岩墙，严禁下土路</description>
+      <Point><coordinates>-108.7385,36.6152,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>D8 Cochiti Visitor Center (Kasha-Katuwe Tent Rocks 报到点)</name>
+      <description>12/04 上午 · 必须先导此游客中心核验联邦票+部落通行证，跟前导车进山</description>
+      <Point><coordinates>-106.3501,35.6085,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>D8 Sandia Peak Aerial Tramway 桑迪亚峰高空缆车</name>
+      <description>12/04 下午 · 30 Tramway Rd NE, Albuquerque · 15 分钟直上 3,163 米看日落</description>
+      <Point><coordinates>-106.4796,35.1916,0</coordinates></Point>
+    </Placemark>
+  </Document>
+</kml>
