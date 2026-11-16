@@ -703,7 +703,7 @@
       <nav class="seg-nav" id="main-tabs">
         <button data-tab="itinerary" class="seg-btn active">行程</button>
         <button data-tab="spots" class="seg-btn">图鉴</button>
-        <button data-tab="hotels" class="seg-btn" id="hotels-tab-btn">住宿 6/8</button>
+        <button data-tab="hotels" class="seg-btn" id="hotels-tab-btn">住宿 7/8</button>
         <button data-tab="checklist" class="seg-btn" id="todo-tab-btn">清单</button>
       </nav>
     </div>
@@ -823,7 +823,7 @@
         tab: "林肯森林",
         title: "Alamogordo → Cloudcroft 森林栈桥 → Carlsbad",
         stats: ["150 mi", "3.2h 车程", "16:52 日落"],
-        routeUrl: "https://www.google.com/maps/dir/Home2+Suites+by+Hilton+Alamogordo,+NM/Tunnel+Vista+Observation+Site/Trestle+Vista+Observation+Site,+Cloudcroft,+NM/Carlsbad,+NM",
+        routeUrl: "https://www.google.com/maps/dir/Home2+Suites+by+Hilton+Alamogordo,+NM/Tunnel+Vista+Observation+Site/Trestle+Vista+Observation+Site,+Cloudcroft,+NM/Hyatt+House+Carlsbad,+NM",
         routePoints: "317,502 336,496 445,498 461,549",
         photos: [
           { src: "images/cloudcroft-trestle.jpg", name: "Mexican Canyon Trestle · Cloudcroft", q: "Mexican Canyon Trestle Cloudcroft" }
@@ -831,10 +831,10 @@
         stops: [
           { t: "09:00", text: "沿 US-82 盘山穿入 Lincoln National Forest (海拔 2,640m)", map: "Cloudcroft NM" },
           { t: "09:30", text: "停 Tunnel Vista 俯瞰白沙盆地 & Trestle Vista 看百年森林木栈桥", map: "Trestle Vista Observation Site Cloudcroft NM" },
-          { t: "12:45", text: "经 Artesia 抵达 Carlsbad，午餐后下午休整", map: "Hyatt House Carlsbad NM" }
+          { t: "12:45", text: "经 Artesia 抵达 Hyatt House Carlsbad 入住休整", map: "Hyatt House Carlsbad NM" }
         ],
-        stay: "Carlsbad · 待订 (推荐 Hyatt House)",
-        booked: false,
+        stay: "Hyatt House Carlsbad",
+        booked: true,
         note: "出发前查 NMRoads 确认 US-82 无冰雪"
       },
       {
@@ -843,7 +843,7 @@
         tab: "大溶洞",
         title: "Carlsbad Caverns 大溶洞 → Roswell",
         stats: ["115 mi", "2.8h 车程", "16:53 日落"],
-        routeUrl: "https://www.google.com/maps/dir/Carlsbad,+NM/Carlsbad+Caverns+National+Park+Visitor+Center/720+N+Main+St,+Roswell,+NM/Holiday+Inn+Express+Roswell,+NM",
+        routeUrl: "https://www.google.com/maps/dir/Hyatt+House+Carlsbad,+NM/Carlsbad+Caverns+National+Park+Visitor+Center/720+N+Main+St,+Roswell,+NM/Holiday+Inn+Express+Roswell,+NM",
         routePoints: "461,549 444,573 461,549 437,454",
         photos: [
           { src: "images/carlsbad-caverns.jpg", name: "Carlsbad Caverns · Big Room", q: "Carlsbad Caverns Big Room" },
@@ -1006,7 +1006,7 @@
     const HOTELS = [
       { date: "11/27 周五", city: "ABQ Airport", name: "Holiday Inn & Suites Albuquerque Airport", q: "Holiday Inn & Suites Albuquerque Airport 1501 Sunport Place", meta: "1501 Sunport Pl · 24h 班车 (505-944-2255)", status: "已订 · $46 (CSP -$100)", ok: true },
       { date: "11/28 周六", city: "Alamogordo", name: "Home2 Suites by Hilton Alamogordo", q: "Home2 Suites by Hilton Alamogordo NM", meta: "3400 N White Sands Blvd · 含热早+免费停车 · 距白沙 18min", status: "已订", ok: true },
-      { date: "11/29 周日", city: "Carlsbad", name: "Hyatt House Carlsbad", q: "Hyatt House Carlsbad NM", meta: "凯悦官网直订含早 · 攒房晚+点亮品牌章", status: "待订 · $149 税后 (或 8k 分)", ok: false },
+      { date: "11/29 周日", city: "Carlsbad", name: "Hyatt House Carlsbad", q: "Hyatt House Carlsbad NM", meta: "4019 National Parks Hwy · 含热早+免费停车 · 15:00 入住", status: "已订 · $149", ok: true },
       { date: "11/30 周一", city: "Roswell", name: "Holiday Inn Express & Suites Roswell", q: "Holiday Inn Express & Suites Roswell NM", meta: "含热早+免费停车 · 11/23 前免费退", status: "已订 · $21 (Delta -$100)", ok: true },
       { date: "12/01 周二", city: "Santa Fe", name: "La Posada de Santa Fe, Tribute Portfolio", q: "La Posada de Santa Fe", meta: "16:00 入住 / 12:00 退房 · $46 Resort Fee 含 Valet", status: "已订 · 35k FN + 11k 分", ok: true },
       { date: "12/02 周三", city: "Farmington", name: "TownePlace Suites 或 Holiday Inn Express", q: "TownePlace Suites by Marriott Farmington NM", meta: "含热早+免费停车", status: "待订 · ~$125 税后", ok: false },
@@ -1018,7 +1018,7 @@
       { id: "pass", title: "电子版国家公园年卡 (America the Beautiful)", sub: "已存入 Apple Wallet · 进园随身带驾照核验姓名", url: "https://www.recreation.gov/pass", link: "已办妥", defaultDone: true },
       { id: "cave", title: "11/30 Carlsbad Caverns 入洞预约 (09:30–10:30)", sub: "已出票 · 2 人", url: "https://www.recreation.gov/ticket/234637/ticket/10086811", link: "已办妥", defaultDone: true },
       { id: "tent", title: "12/04 Kasha-Katuwe Tent Rocks 联邦票 + 部落通行证", sub: "双票已出 · 当天 08:00–13:00 导至 Cochiti Visitor Center", url: "https://www.recreation.gov/ticket/10065449/ticket/10065449", link: "已办妥", defaultDone: true },
-      { id: "hotels3", title: "补齐剩余 2 晚单晚住宿 (11/29 · 12/02)", sub: "Carlsbad (Hyatt House) · Farmington", url: "https://www.hyatt.com/", link: "去预订 ↗", defaultDone: false },
+      { id: "hotels3", title: "预订最后 1 晚住宿 (12/02 Farmington)", sub: "Farmington 单晚过夜", url: "https://www.marriott.com/", link: "去预订 ↗", defaultDone: false },
       { id: "plaza", title: "登记领取 12/02 Plaza Blanca 铁门密码", sub: "两位成人分别填姓名邮箱当场显示 Gate Code · 截图保存", url: "https://daralislam.org/", link: "领密码 ↗", defaultDone: false },
       { id: "delta_ride", title: "Amex App 激活 Delta 卡 $10/月 Rideshare 报销", sub: "11 月与 12 月各可报 $10 打车费 · 顺查 Resy $50 额度", url: "https://www.americanexpress.com/", link: "去激活 ↗", defaultDone: false },
       { id: "roads", title: "行前核查白沙 SIXT 条款与 11/29 · 12/02 实时路况", sub: "Cloudcroft (US-82) 与北线风雪状态", url: "https://www.nmroads.com/", link: "NMRoads ↗", defaultDone: false }
