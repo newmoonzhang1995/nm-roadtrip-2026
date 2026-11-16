@@ -3,499 +3,474 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>2026 新墨西哥冬日奇观环线自驾规划 (11/27 – 12/05)</title>
-  <meta name="description" content="2026年11月27日–12月5日 新墨西哥州9天8晚顺畅环线：白沙日落 · 卡尔斯巴德大溶洞 · 圣达菲庄园 · Bandelier 崖居 · Echo 回音石窟 · Shiprock · 帐篷岩 & 桑迪亚峰缆车" />
-  <meta property="og:title" content="2026 新墨西哥冬日奇观环线自驾规划 (9天8晚)" />
-  <meta property="og:description" content="白沙日落 · 大溶洞 · 圣达菲 La Posada · Bandelier 崖居 · 回音石窟 · Shiprock · 帐篷岩 & 高空缆车｜含实景图鉴、Google 导航、万豪/IHG住宿与预约清单" />
+  <title>New Mexico · 2026.11.27 – 12.05</title>
+  <meta property="og:title" content="New Mexico · 2026.11.27 – 12.05" />
+  <meta property="og:description" content="9 Days · Albuquerque → White Sands → Carlsbad Caverns → Santa Fe → Bandelier → Shiprock → Tamaya" />
   <meta property="og:image" content="images/white-sands.jpg" />
   <meta property="og:type" content="website" />
   <style>
     :root {
-      --bg: #faf7f2;
-      --surface: #f2ece2;
+      --bg: #f8f6f2;
+      --surface: #efeae1;
       --card: #ffffff;
-      --border: #e3d9c8;
-      --fg: #1f1b16;
-      --muted: #6b6054;
-      --primary: #c05621;
+      --border: #e4ddd1;
+      --fg: #1c1917;
+      --muted: #78716c;
+      --primary: #c2410c;
       --primary-fg: #ffffff;
-      --primary-soft: rgba(192, 86, 33, 0.12);
-      --turquoise: #0f766e;
-      --turquoise-soft: rgba(15, 118, 110, 0.12);
-      --google-soft: rgba(37, 99, 235, 0.1);
-      --google-fg: #1d4ed8;
-      --warning: #d97706;
-      --danger: #dc2626;
-      --link: #0f766e;
-      --shadow: 0 2px 12px rgba(31, 27, 22, 0.06);
+      --primary-soft: rgba(194, 65, 12, 0.09);
+      --ok: #15803d;
+      --ok-soft: rgba(21, 128, 61, 0.1);
+      --pend: #b45309;
+      --pend-soft: rgba(180, 83, 9, 0.1);
+      --teal: #0f766e;
     }
 
     html.dark {
-      --bg: #131210;
-      --surface: #1c1a17;
-      --card: #24211d;
-      --border: #38332c;
-      --fg: #f5efe6;
-      --muted: #a89d8f;
-      --primary: #ed8936;
-      --primary-fg: #18130d;
-      --primary-soft: rgba(237, 137, 54, 0.16);
-      --turquoise: #2dd4bf;
-      --turquoise-soft: rgba(45, 212, 191, 0.14);
-      --google-soft: rgba(96, 165, 250, 0.15);
-      --google-fg: #93c5fd;
-      --warning: #fbbf24;
-      --danger: #f87171;
-      --link: #2dd4bf;
-      --shadow: 0 4px 20px rgba(0, 0, 0, 0.32);
+      --bg: #121110;
+      --surface: #1c1a18;
+      --card: #211f1c;
+      --border: #332f2a;
+      --fg: #f5f2ed;
+      --muted: #9ca3af;
+      --primary: #fb923c;
+      --primary-fg: #18130e;
+      --primary-soft: rgba(251, 146, 60, 0.14);
+      --ok: #4ade80;
+      --ok-soft: rgba(74, 222, 128, 0.13);
+      --pend: #fbbf24;
+      --pend-soft: rgba(251, 191, 36, 0.13);
+      --teal: #2dd4bf;
     }
 
     * { box-sizing: border-box; }
 
     body {
       margin: 0;
-      padding: 14px;
+      padding: 16px;
       background: var(--bg);
       color: var(--fg);
-      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-      line-height: 1.55;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Hiragino Sans GB", sans-serif;
+      line-height: 1.5;
       -webkit-font-smoothing: antialiased;
     }
 
     @media (min-width: 768px) {
-      body { padding: 26px; }
+      body { padding: 32px 28px; }
     }
 
-    .container {
-      max-width: 1180px;
+    .wrap {
+      max-width: 1120px;
       margin: 0 auto;
       display: flex;
       flex-direction: column;
-      gap: 18px;
+      gap: 20px;
     }
 
-    .card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 18px;
-      box-shadow: var(--shadow);
-    }
+    a { color: inherit; }
 
-    @media (min-width: 768px) {
-      .card { padding: 22px; }
-    }
-
-    .subcard {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 12px 14px;
-    }
-
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      padding: 3px 10px;
-      border-radius: 999px;
-      font-size: 12px;
-      font-weight: 600;
-      border: 1px solid var(--border);
-      background: var(--surface);
-      color: var(--muted);
-    }
-
-    .badge-primary {
-      background: var(--primary);
-      color: var(--primary-fg);
-      border-color: var(--primary);
-    }
-
-    .badge-teal {
-      background: var(--turquoise-soft);
-      color: var(--turquoise);
-      border-color: transparent;
-    }
-
-    .header-top {
+    /* Top Bar */
+    .topbar {
       display: flex;
       flex-direction: column;
       gap: 14px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
     }
 
-    @media (min-width: 920px) {
-      .header-top {
+    @media (min-width: 820px) {
+      .topbar {
         flex-direction: row;
-        align-items: flex-start;
+        align-items: baseline;
         justify-content: space-between;
       }
     }
 
-    h1 {
-      margin: 6px 0 4px;
-      font-size: 22px;
-      line-height: 1.25;
-      letter-spacing: -0.02em;
+    .brand {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 12px;
     }
 
-    @media (min-width: 768px) {
-      h1 { font-size: 26px; }
-    }
-
-    h2 { margin: 0; font-size: 17px; line-height: 1.35; }
-    h3 { margin: 0; font-size: 15.5px; line-height: 1.35; }
-    p { margin: 0; }
-    .muted { color: var(--muted); }
-
-    .kpi-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 8px;
-      min-width: 0;
-    }
-
-    @media (min-width: 560px) {
-      .kpi-grid { grid-template-columns: repeat(4, minmax(112px, 1fr)); }
-    }
-
-    .kpi-box {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 8px 10px;
-      text-align: center;
-    }
-
-    .kpi-label { font-size: 11.5px; color: var(--muted); }
-    .kpi-val {
-      font-size: 14px;
+    .brand h1 {
+      margin: 0;
+      font-size: 26px;
       font-weight: 700;
-      margin-top: 2px;
-      font-variant-numeric: tabular-nums;
+      letter-spacing: -0.03em;
     }
 
-    .toolbar {
+    .brand .dates {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 13.5px;
+      color: var(--muted);
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .nav-row {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
-      gap: 10px;
-      margin-top: 16px;
-      padding-top: 14px;
-      border-top: 1px solid var(--border);
+      gap: 12px;
     }
 
-    .tabs {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 7px;
-    }
-
-    button { font: inherit; cursor: pointer; }
-
-    .btn {
+    .seg-nav {
       display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 7px 13px;
-      border-radius: 10px;
+      background: var(--surface);
+      padding: 3px;
+      border-radius: 11px;
+      border: 1px solid var(--border);
+      gap: 2px;
+    }
+
+    .seg-btn {
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      font: inherit;
       font-size: 13px;
       font-weight: 600;
-      border: 1px solid var(--border);
-      background: var(--surface);
-      color: var(--muted);
-      transition: all 0.16s ease;
+      padding: 6px 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.15s ease;
     }
 
-    .btn:hover:not(:disabled) {
+    .seg-btn:hover { color: var(--fg); }
+
+    .seg-btn.active {
+      background: var(--card);
       color: var(--fg);
-      border-color: var(--muted);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
     }
 
-    .btn:disabled { opacity: 0.35; cursor: not-allowed; }
-
-    .btn.active {
-      background: var(--primary);
-      color: var(--primary-fg);
-      border-color: var(--primary);
-    }
-
-    .btn-ghost {
-      padding: 6px 10px;
+    .pill-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 6px 11px;
+      border-radius: 9px;
+      border: 1px solid var(--border);
+      background: var(--card);
+      color: var(--fg);
+      font: inherit;
       font-size: 12.5px;
-      background: transparent;
+      font-weight: 500;
+      text-decoration: none;
+      cursor: pointer;
+      transition: border-color 0.15s ease;
+    }
+
+    .pill-link:hover { border-color: var(--muted); }
+
+    .pill-link.accent {
+      border-color: var(--primary);
+      color: var(--primary);
+      background: var(--primary-soft);
+      font-weight: 600;
     }
 
     .hidden { display: none !important; }
 
-    /* Day Pills */
-    .day-pills {
+    /* Day Strip */
+    .day-strip {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 6px;
-      margin-top: 8px;
     }
 
-    @media (min-width: 640px) {
-      .day-pills { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+    @media (min-width: 600px) {
+      .day-strip { grid-template-columns: repeat(5, minmax(0, 1fr)); }
     }
 
-    @media (min-width: 960px) {
-      .day-pills { grid-template-columns: repeat(9, minmax(0, 1fr)); }
+    @media (min-width: 920px) {
+      .day-strip { grid-template-columns: repeat(9, minmax(0, 1fr)); }
     }
 
-    .day-pill {
+    .day-tab {
       text-align: left;
-      padding: 7px 9px;
+      padding: 8px 10px;
       border-radius: 10px;
       border: 1px solid var(--border);
-      background: var(--surface);
+      background: var(--card);
       color: var(--muted);
+      font: inherit;
+      cursor: pointer;
       transition: all 0.15s ease;
     }
 
-    .day-pill:hover { color: var(--fg); }
+    .day-tab:hover { color: var(--fg); border-color: var(--muted); }
 
-    .day-pill.active {
+    .day-tab.active {
       background: var(--primary);
-      color: var(--primary-fg);
       border-color: var(--primary);
+      color: var(--primary-fg);
     }
 
-    .day-pill .d-date {
+    .day-tab .dt-num {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
       font-size: 11.5px;
-      opacity: 0.9;
+      opacity: 0.85;
+    }
+
+    .day-tab .dt-label {
+      font-size: 13px;
+      font-weight: 600;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+      margin-top: 1px;
     }
 
-    .day-pill .d-name {
-      font-size: 12.5px;
-      font-weight: 700;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-
-    /* Main Split Grid */
-    .main-grid {
+    /* Split Itinerary Layout */
+    .split {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 16px;
+      gap: 18px;
       align-items: start;
     }
 
-    @media (min-width: 960px) {
-      .main-grid { grid-template-columns: 5fr 7fr; }
+    @media (min-width: 920px) {
+      .split { grid-template-columns: 440px 1fr; }
     }
 
-    .map-wrap {
-      background: var(--surface);
+    .map-card {
+      background: var(--card);
       border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 8px;
-      margin: 10px 0;
+      border-radius: 16px;
+      padding: 12px;
     }
 
-    .active-leg { filter: drop-shadow(0 0 6px var(--primary)); }
+    @media (min-width: 920px) {
+      .map-card { position: sticky; top: 20px; }
+    }
+
+    .active-leg { filter: drop-shadow(0 0 5px var(--primary)); }
 
     .map-node {
       cursor: pointer;
-      transition: transform 0.18s ease;
+      transition: transform 0.16s ease;
       transform-box: fill-box;
       transform-origin: center;
     }
 
     .map-node:hover { transform: scale(1.22); }
 
-    /* Day Hero Photos */
-    .day-photo-grid {
+    /* Editorial Day Card */
+    .day-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .hero-grid {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 10px;
-      margin: 12px 0;
+      gap: 2px;
+      background: var(--border);
     }
 
-    .day-photo-grid.two-photos {
-      grid-template-columns: 1fr;
+    @media (min-width: 540px) {
+      .hero-grid.two { grid-template-columns: 1fr 1fr; }
     }
 
-    @media (min-width: 560px) {
-      .day-photo-grid.two-photos {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-
-    .photo-box {
+    .hero-item {
       position: relative;
-      border-radius: 12px;
+      height: 210px;
       overflow: hidden;
-      border: 1px solid var(--border);
+      display: block;
       background: var(--surface);
-      height: 195px;
     }
 
-    .photo-box img {
+    .hero-item img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       display: block;
-      transition: transform 0.35s ease;
+      transition: transform 0.4s ease;
     }
 
-    .photo-box:hover img {
-      transform: scale(1.04);
-    }
+    .hero-item:hover img { transform: scale(1.04); }
 
-    .photo-caption {
+    .hero-tag {
       position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      padding: 24px 12px 9px;
-      background: linear-gradient(to top, rgba(0,0,0,0.78), rgba(0,0,0,0));
-      color: #ffffff;
+      left: 12px;
+      bottom: 10px;
+      padding: 3px 9px;
+      border-radius: 6px;
+      background: rgba(15, 14, 13, 0.72);
+      backdrop-filter: blur(4px);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    .day-body { padding: 20px 22px; }
+
+    .day-head {
       display: flex;
-      align-items: flex-end;
+      align-items: flex-start;
       justify-content: space-between;
+      gap: 12px;
+    }
+
+    .day-title {
+      margin: 0;
+      font-size: 19px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+
+    .stat-strip {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
       gap: 8px;
-      font-size: 12.5px;
+      margin-top: 6px;
+      font-size: 13px;
+      color: var(--muted);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .stat-strip .dot { opacity: 0.45; }
+
+    .route-jump {
+      color: var(--teal);
+      text-decoration: none;
       font-weight: 600;
     }
 
-    .photo-caption a {
-      color: #fde68a;
+    .route-jump:hover { text-decoration: underline; }
+
+    .arrow-btns {
+      display: flex;
+      gap: 4px;
+      flex-shrink: 0;
+    }
+
+    .icon-btn {
+      width: 30px;
+      height: 30px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--fg);
+      font: inherit;
+      font-size: 14px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .icon-btn:disabled { opacity: 0.3; cursor: not-allowed; }
+
+    /* Clean Schedule Rows */
+    .schedule {
+      margin: 18px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .sched-row {
+      display: grid;
+      grid-template-columns: 54px 1fr auto;
+      align-items: baseline;
+      gap: 12px;
+      padding: 11px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 14px;
+    }
+
+    .sched-time {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    .sched-map {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--teal);
       text-decoration: none;
-      font-size: 11.5px;
       white-space: nowrap;
     }
 
-    .photo-caption a:hover { text-decoration: underline; }
+    .sched-map:hover { text-decoration: underline; }
 
-    .meta-row {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 8px;
-      margin: 12px 0;
-    }
-
-    .timeline {
-      border-left: 2px solid var(--border);
-      margin: 10px 0 14px 8px;
-      padding-left: 16px;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-
-    .tl-item { position: relative; }
-
-    .tl-dot {
-      position: absolute;
-      left: -22px;
-      top: 5px;
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background: var(--primary);
-    }
-
-    .tl-time {
-      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-      font-size: 12.5px;
-      font-weight: 700;
-      color: var(--primary);
-    }
-
-    .tl-desc { font-size: 13.5px; margin-top: 2px; }
-
-    /* Google Chips */
-    .link-group {
+    /* Quiet Footer Bar */
+    .day-foot {
       display: flex;
       flex-wrap: wrap;
-      gap: 7px;
-      margin: 10px 0 12px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      font-size: 13px;
     }
 
-    .chip-maps, .chip-google, .chip-web {
+    .stay-chip {
       display: inline-flex;
       align-items: center;
-      gap: 4px;
-      padding: 5px 10px;
-      border-radius: 8px;
-      font-size: 12px;
+      gap: 7px;
       font-weight: 600;
-      text-decoration: none;
-      border: 1px solid transparent;
-      transition: opacity 0.15s ease;
     }
 
-    .chip-maps {
-      background: var(--turquoise-soft);
-      color: var(--turquoise);
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      display: inline-block;
+      flex-shrink: 0;
     }
 
-    .chip-maps:hover { border-color: var(--turquoise); }
+    .status-dot.ok { background: var(--ok); }
+    .status-dot.pend { background: var(--pend); }
 
-    .chip-google {
-      background: var(--google-soft);
-      color: var(--google-fg);
+    .foot-note {
+      font-size: 12.5px;
+      color: var(--muted);
     }
 
-    .chip-google:hover { border-color: var(--google-fg); }
-
-    .chip-web {
-      background: var(--primary-soft);
-      color: var(--primary);
-    }
-
-    .chip-web:hover { border-color: var(--primary); }
-
-    .two-col {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 12px;
-    }
-
-    @media (min-width: 720px) {
-      .two-col { grid-template-columns: 1fr 1fr; }
-    }
-
-    .three-col {
+    /* Spots Grid */
+    .spots-grid {
       display: grid;
       grid-template-columns: 1fr;
       gap: 14px;
     }
 
-    @media (min-width: 720px) {
-      .three-col { grid-template-columns: repeat(2, 1fr); }
+    @media (min-width: 640px) {
+      .spots-grid { grid-template-columns: repeat(2, 1fr); }
     }
 
-    @media (min-width: 1024px) {
-      .three-col { grid-template-columns: repeat(3, 1fr); }
+    @media (min-width: 980px) {
+      .spots-grid { grid-template-columns: repeat(3, 1fr); }
     }
 
-    /* Gallery Cards */
-    .spot-card {
+    .spot {
       background: var(--card);
       border: 1px solid var(--border);
-      border-radius: 16px;
+      border-radius: 14px;
       overflow: hidden;
-      box-shadow: var(--shadow);
       display: flex;
       flex-direction: column;
     }
 
-    .spot-img-wrap {
+    .spot-pic {
       position: relative;
-      height: 190px;
+      height: 185px;
       background: var(--surface);
       overflow: hidden;
     }
 
-    .spot-img-wrap img {
+    .spot-pic img {
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -503,135 +478,178 @@
       transition: transform 0.35s ease;
     }
 
-    .spot-card:hover .spot-img-wrap img {
-      transform: scale(1.05);
-    }
+    .spot:hover .spot-pic img { transform: scale(1.04); }
 
-    .spot-day-tag {
+    .spot-date {
       position: absolute;
       top: 10px;
       left: 10px;
-      padding: 3px 9px;
-      border-radius: 999px;
+      padding: 2px 8px;
+      border-radius: 6px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
       font-size: 11.5px;
-      font-weight: 700;
-      background: rgba(20, 18, 15, 0.78);
-      color: #ffffff;
+      font-weight: 600;
+      background: rgba(15, 14, 13, 0.72);
+      color: #fff;
       backdrop-filter: blur(4px);
     }
 
-    .spot-body {
-      padding: 15px 16px 16px;
+    .spot-info {
+      padding: 13px 15px;
       display: flex;
-      flex-direction: column;
-      gap: 8px;
-      flex: 1;
-    }
-
-    .spot-links {
-      margin-top: auto;
-      padding-top: 8px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-    }
-
-    /* Table */
-    .table-scroll { overflow-x: auto; margin-top: 12px; }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 13px;
-      min-width: 720px;
-    }
-
-    th, td {
-      padding: 11px 10px;
-      text-align: left;
-      border-bottom: 1px solid var(--border);
-      vertical-align: top;
-    }
-
-    th { color: var(--muted); font-weight: 600; font-size: 12px; }
-    tr.highlight-row { background: var(--primary-soft); }
-
-    .hotel-inline-links {
-      margin-top: 4px;
-      display: flex;
-      gap: 8px;
-      font-size: 11.5px;
-    }
-
-    .hotel-inline-links a {
-      color: var(--link);
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    .hotel-inline-links a:hover { text-decoration: underline; }
-
-    /* Bar chart */
-    .bar-row {
-      display: grid;
-      grid-template-columns: 135px 1fr 48px;
-      align-items: center;
+      align-items: baseline;
+      justify-content: space-between;
       gap: 10px;
+    }
+
+    .spot-name {
+      font-size: 14.5px;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .spot-sub {
       font-size: 12.5px;
-      margin-top: 9px;
+      color: var(--muted);
+      margin-top: 2px;
     }
 
-    @media (min-width: 640px) {
-      .bar-row { grid-template-columns: 185px 1fr 56px; }
+    .spot-actions {
+      display: flex;
+      gap: 10px;
+      padding: 9px 15px 12px;
+      border-top: 1px solid var(--border);
+      font-size: 12px;
+      font-weight: 600;
+      margin-top: auto;
     }
 
-    .bar-track {
-      height: 11px;
-      border-radius: 999px;
-      background: var(--surface);
+    .spot-actions a {
+      text-decoration: none;
+      color: var(--teal);
+    }
+
+    .spot-actions a.muted-link { color: var(--muted); }
+    .spot-actions a:hover { text-decoration: underline; }
+
+    /* Hotels Ledger */
+    .ledger {
+      background: var(--card);
       border: 1px solid var(--border);
+      border-radius: 16px;
       overflow: hidden;
     }
 
-    .bar-fill {
-      height: 100%;
+    .ledger-row {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 6px;
+      padding: 15px 20px;
+      border-bottom: 1px solid var(--border);
+      align-items: center;
+    }
+
+    .ledger-row:last-child { border-bottom: 0; }
+
+    @media (min-width: 760px) {
+      .ledger-row {
+        grid-template-columns: 155px 1fr auto;
+        gap: 16px;
+      }
+    }
+
+    .l-date {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .l-city {
+      font-size: 12.5px;
+      color: var(--muted);
+    }
+
+    .l-hotel a {
+      font-size: 14.5px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .l-hotel a:hover { color: var(--primary); }
+
+    .l-meta {
+      font-size: 12.5px;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+
+    .state-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
       border-radius: 999px;
-      background: var(--primary);
+      font-size: 12px;
+      font-weight: 600;
+      white-space: nowrap;
+      justify-self: start;
+    }
+
+    @media (min-width: 760px) {
+      .state-pill { justify-self: end; }
+    }
+
+    .state-pill.ok {
+      background: var(--ok-soft);
+      color: var(--ok);
+    }
+
+    .state-pill.pend {
+      background: var(--pend-soft);
+      color: var(--pend);
     }
 
     /* Checklist */
-    .todo-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 12px;
-      padding: 14px;
-      border-radius: 12px;
+    .check-card {
+      background: var(--card);
       border: 1px solid var(--border);
-      background: var(--surface);
-      transition: opacity 0.15s ease;
+      border-radius: 16px;
+      overflow: hidden;
     }
 
-    .todo-item.done { opacity: 0.58; }
+    .check-row {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 20px;
+      border-bottom: 1px solid var(--border);
+      font-size: 14px;
+    }
 
-    .todo-item input[type="checkbox"] {
-      margin-top: 4px;
+    .check-row:last-child { border-bottom: 0; }
+    .check-row.done { opacity: 0.5; }
+    .check-row.done .c-title { text-decoration: line-through; }
+
+    .check-row input {
       width: 17px;
       height: 17px;
       accent-color: var(--primary);
       cursor: pointer;
-      flex-shrink: 0;
     }
 
-    .ext-link {
-      display: inline-block;
-      margin-top: 5px;
+    .c-title { font-weight: 600; }
+    .c-sub { font-size: 12.5px; color: var(--muted); margin-top: 1px; }
+
+    .c-link {
       font-size: 12.5px;
       font-weight: 600;
-      color: var(--link);
+      color: var(--teal);
       text-decoration: none;
+      white-space: nowrap;
     }
 
-    .ext-link:hover { text-decoration: underline; }
+    .c-link:hover { text-decoration: underline; }
 
     .toast {
       position: fixed;
@@ -639,15 +657,13 @@
       right: 20px;
       background: var(--fg);
       color: var(--bg);
-      padding: 9px 15px;
-      border-radius: 10px;
-      font-size: 13px;
+      padding: 8px 14px;
+      border-radius: 9px;
+      font-size: 12.5px;
       font-weight: 600;
-      box-shadow: var(--shadow);
       opacity: 0;
       pointer-events: none;
       transition: opacity 0.2s ease;
-      z-index: 50;
     }
 
     .toast.show { opacity: 1; }
@@ -655,8 +671,8 @@
   <script>
     (function () {
       try {
-        var saved = localStorage.getItem("nm_theme");
-        if (saved === "dark" || (!saved && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+        var s = localStorage.getItem("nm_theme");
+        if (s === "dark" || (!s && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
           document.documentElement.classList.add("dark");
         }
       } catch (e) {}
@@ -664,1168 +680,555 @@
   </script>
 </head>
 <body>
-  <div class="container">
+  <div class="wrap">
 
     <!-- Header -->
-    <header class="card">
-      <div class="header-top">
-        <div>
-          <div style="display:flex; flex-wrap:wrap; gap:6px; align-items:center;">
-            <span class="badge badge-primary">优化终版 · 9天8晚</span>
-            <span class="badge">2026/11/27 – 12/05 (MST)</span>
-            <span class="badge badge-teal">全程铺装柏油路 · SIXT 合规</span>
-          </div>
-          <h1>新墨西哥冬日奇观环线自驾规划</h1>
-          <p class="muted" style="font-size:13.5px;">
-            白沙日落 · 卡尔斯巴德大溶洞 · 圣达菲庄园 &amp; Meow Wolf · Bandelier 崖居 · Echo 回音石窟 · Shiprock · 帐篷岩 &amp; 桑迪亚峰缆车
-          </p>
-        </div>
-
-        <div class="kpi-grid">
-          <div class="kpi-box">
-            <div class="kpi-label">总行程</div>
-            <div class="kpi-val">9天 · 8晚</div>
-          </div>
-          <div class="kpi-box">
-            <div class="kpi-label">单日最长驾驶</div>
-            <div class="kpi-val">≤ 4.2 小时</div>
-          </div>
-          <div class="kpi-box">
-            <div class="kpi-label">万豪 35k FN</div>
-            <div class="kpi-val">12/1 La Posada</div>
-          </div>
-          <div class="kpi-box">
-            <div class="kpi-label">收官连住</div>
-            <div class="kpi-val">Tamaya 2晚</div>
-          </div>
-        </div>
+    <header class="topbar">
+      <div class="brand">
+        <h1>New Mexico</h1>
+        <span class="dates">2026.11.27 — 12.05 · 9D8N</span>
       </div>
 
-      <div class="toolbar">
-        <nav class="tabs" id="main-tabs">
-          <button data-tab="itinerary" class="btn active">🗺️ 路线地图与逐日行程</button>
-          <button data-tab="spots" class="btn">📸 核心景点图鉴 (14处)</button>
-          <button data-tab="hotels" class="btn">🏨 全程 8 晚酒店进度表 (已订5/8)</button>
-          <button data-tab="compare" class="btn">⚖️ 优化前后对比</button>
-          <button data-tab="checklist" class="btn">✅ 行前必约清单 <span id="todo-badge" style="margin-left:3px; opacity:0.85;">(0/6)</span></button>
-        </nav>
-
-        <div style="display:flex; flex-wrap:wrap; gap:8px;">
-          <a href="https://maps.app.goo.gl/46N5wSXoz6QZwHLM9" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" style="text-decoration:none; color:var(--primary); border-color:var(--primary);" title="任何手机点开按 Follow 即可整包存入 Google Maps">⭐ 一键存 Google Maps 收藏夹</a>
-          <a href="https://www.google.com/maps/dir/3400+University+Blvd+SE,+Albuquerque,+NM/McGinn's+PistachioLand,+Alamogordo,+NM/White+Sands+National+Park,+NM/Cloudcroft,+NM/Carlsbad+Caverns+National+Park,+NM/Roswell,+NM/La+Posada+de+Santa+Fe,+NM/Bandelier+National+Monument,+NM/Echo+Amphitheater,+NM/Shiprock,+NM/Sandia+Peak+Tramway,+Albuquerque,+NM" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" style="text-decoration:none; color:var(--turquoise); border-color:var(--turquoise);">🗺️ Google Maps 全程连线</a>
-          <a href="nm-roadtrip-2026.kml" download="nm-roadtrip-2026.kml" class="btn btn-ghost" style="text-decoration:none;" title="下载后可在 Google My Maps (google.com/maps/d) 一键导入所有标点">📥 导出 KML 地图包</a>
-          <button id="share-btn" class="btn btn-ghost" title="复制页面链接发给同伴">🔗 复制链接</button>
-          <button id="theme-btn" class="btn btn-ghost" title="切换浅色/深色外观">🌓 外观</button>
-        </div>
+      <div class="actions">
+        <a href="https://maps.app.goo.gl/46N5wSXoz6QZwHLM9" target="_blank" rel="noopener noreferrer" class="pill-link accent">Google Maps 收藏夹 ↗</a>
+        <a href="https://www.google.com/maps/dir/3400+University+Blvd+SE,+Albuquerque,+NM/Bosque+del+Apache+National+Wildlife+Refuge+Visitor+Center/McGinn's+PistachioLand,+Alamogordo,+NM/White+Sands+National+Park,+NM/Cloudcroft,+NM/Carlsbad+Caverns+National+Park,+NM/Roswell,+NM/La+Posada+de+Santa+Fe,+NM/Bandelier+National+Monument,+NM/Echo+Amphitheater,+NM/Shiprock,+NM/Hyatt+Regency+Tamaya+Resort+and+Spa" target="_blank" rel="noopener noreferrer" class="pill-link">全程导航 ↗</a>
+        <a href="nm-roadtrip-2026.kml" download="nm-roadtrip-2026.kml" class="pill-link">KML</a>
+        <button id="share-btn" class="pill-link">分享</button>
+        <button id="theme-btn" class="pill-link" aria-label="切换主题">🌓</button>
       </div>
     </header>
 
-    <!-- TAB 1: MAP + ITINERARY -->
+    <!-- Minimal Segmented Control -->
+    <div class="nav-row">
+      <nav class="seg-nav" id="main-tabs">
+        <button data-tab="itinerary" class="seg-btn active">行程</button>
+        <button data-tab="spots" class="seg-btn">图鉴</button>
+        <button data-tab="hotels" class="seg-btn">住宿 5/8</button>
+        <button data-tab="checklist" class="seg-btn" id="todo-tab-btn">清单</button>
+      </nav>
+    </div>
+
+    <!-- VIEW 1: ITINERARY -->
     <section id="tab-itinerary" class="tab-panel" style="display:flex; flex-direction:column; gap:16px;">
-      <div class="card" style="padding:14px 16px;">
-        <div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:8px;">
-          <span class="muted" style="font-size:12.5px; font-weight:600;">点击日期卡片或地图圆点查看实景配图、当日动线与 Google 导航：</span>
-          <label class="muted" style="font-size:12px; display:flex; align-items:center; gap:6px; cursor:pointer; user-select:none;">
-            <input type="checkbox" id="toggle-old-route" checked style="accent-color:var(--primary);" />
-            显示已精简的科州 Mesa Verde 虚线对比
-          </label>
-        </div>
-        <div class="day-pills" id="day-pills"></div>
-      </div>
+      <div class="day-strip" id="day-strip"></div>
 
-      <div class="main-grid">
-        <!-- SVG Map -->
-        <div class="card">
-          <div style="display:flex; align-items:center; justify-content:space-between; gap:8px;">
-            <h2 style="font-size:15px;">新墨西哥环线地图（真实经纬度投影）</h2>
-            <span id="map-leg-label" style="font-size:12px; font-weight:700; color:var(--primary); font-family:ui-monospace,monospace;"></span>
-          </div>
+      <div class="split">
+        <div class="map-card">
+          <svg id="nm-map" viewBox="0 0 600 625" style="width:100%; height:auto; display:block; user-select:none;">
+            <line x1="40" y1="99" x2="565" y2="99" stroke="var(--border)" stroke-width="1" stroke-dasharray="4 4" />
+            <text x="50" y="88" fill="var(--muted)" font-size="11" opacity="0.7">CO</text>
+            <text x="50" y="117" fill="var(--muted)" font-size="11" opacity="0.7">NM</text>
 
-          <div class="map-wrap">
-            <svg id="nm-map" viewBox="0 0 600 635" style="width:100%; height:auto; display:block; user-select:none;">
-              <line x1="35" y1="99" x2="570" y2="99" stroke="var(--border)" stroke-width="1.5" stroke-dasharray="4 4" />
-              <text x="45" y="88" fill="var(--muted)" font-size="11.5">COLORADO (科罗拉多州 · 冬季高海拔冰雪区)</text>
-              <text x="45" y="118" fill="var(--muted)" font-size="11.5">NEW MEXICO (新墨西哥州)</text>
+            <polygon
+              points="61,99 563,99 558,590 263,590 263,612 61,612"
+              fill="var(--surface)"
+              fill-opacity="0.45"
+              stroke="var(--border)"
+              stroke-width="1.8"
+            />
 
-              <polygon
-                points="61,99 563,99 558,590 263,590 263,612 61,612"
-                fill="var(--card)"
-                fill-opacity="0.7"
-                stroke="var(--border)"
-                stroke-width="2"
-              />
+            <ellipse cx="348" cy="492" rx="32" ry="22" fill="var(--teal)" fill-opacity="0.1" />
+            <ellipse cx="305" cy="195" rx="42" ry="34" fill="var(--teal)" fill-opacity="0.09" />
 
-              <ellipse cx="348" cy="492" rx="34" ry="24" fill="var(--turquoise)" fill-opacity="0.14" stroke="var(--turquoise)" stroke-opacity="0.4" stroke-width="1" />
-              <text x="348" y="463" text-anchor="middle" fill="var(--muted)" font-size="11">Lincoln NF 森林</text>
+            <!-- Full Loop Ghost Line -->
+            <g opacity="0.22">
+              <polyline points="263,292 240,413 256,395 305,435 316,492 300,514 317,502" fill="none" stroke="var(--fg)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+              <polyline points="317,502 336,496 445,498 461,549" fill="none" stroke="var(--fg)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+              <polyline points="461,549 444,573 461,549 437,454" fill="none" stroke="var(--fg)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+              <polyline points="437,454 365,315 319,228 320,198 319,228" fill="none" stroke="var(--fg)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+              <polyline points="319,228 292,215 297,175 270,162 195,134 131,126" fill="none" stroke="var(--fg)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+              <polyline points="131,126 78,129 131,126 218,215 268,266" fill="none" stroke="var(--fg)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+              <polyline points="268,266 280,238 268,266 282,275" fill="none" stroke="var(--fg)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+              <polyline points="268,266 263,292" fill="none" stroke="var(--fg)" stroke-width="2.2" stroke-linecap="round" />
+            </g>
 
-              <ellipse cx="305" cy="195" rx="44" ry="36" fill="var(--turquoise)" fill-opacity="0.11" stroke="var(--turquoise)" stroke-opacity="0.3" stroke-width="1" />
-
-              <g id="old-route-layer">
-                <polyline
-                  points="131,126 110,76 99,65 78,129"
-                  fill="none"
-                  stroke="var(--danger)"
-                  stroke-width="2"
-                  stroke-dasharray="5 5"
-                  opacity="0.7"
-                />
-                <circle cx="105" cy="68" r="4.5" fill="var(--danger)" opacity="0.8" />
-                <text x="116" y="64" fill="var(--danger)" font-size="11">Mesa Verde / Cortez (已砍)</text>
-              </g>
-
-              <g opacity="0.28">
-                <polyline points="263,292 256,395 305,435 300,514 317,502" fill="none" stroke="var(--fg)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-                <polyline points="317,502 336,496 445,498 461,549" fill="none" stroke="var(--fg)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-                <polyline points="461,549 444,573 461,549 437,454" fill="none" stroke="var(--fg)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-                <polyline points="437,454 365,315 319,228" fill="none" stroke="var(--fg)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-                <polyline points="319,228 292,215 270,162 195,134 131,126" fill="none" stroke="var(--fg)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-                <polyline points="131,126 78,129 131,126 218,215 268,277" fill="none" stroke="var(--fg)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-                <polyline points="268,277 280,238 268,277 282,275" fill="none" stroke="var(--fg)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-                <polyline points="268,277 263,292" fill="none" stroke="var(--fg)" stroke-width="2.5" stroke-linecap="round" />
-              </g>
-
-              <polyline id="active-route-path" points="" fill="none" stroke="var(--primary)" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round" class="active-leg" />
-
-              <g id="map-nodes-layer"></g>
-            </svg>
-          </div>
-
-          <div style="display:flex; flex-wrap:wrap; justify-content:space-between; gap:8px; font-size:12px;" class="muted">
-            <span style="display:flex; align-items:center; gap:6px;"><span style="width:12px; height:4px; border-radius:2px; background:var(--primary); display:inline-block;"></span> 当日高亮车程</span>
-            <span style="display:flex; align-items:center; gap:6px;"><span style="width:9px; height:9px; border-radius:50%; background:var(--primary); display:inline-block;"></span> 过夜城市</span>
-            <span style="display:flex; align-items:center; gap:6px;"><span style="width:9px; height:9px; border-radius:50%; background:var(--turquoise); display:inline-block;"></span> 景区打卡点</span>
-          </div>
+            <polyline id="active-route-path" points="" fill="none" stroke="var(--primary)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="active-leg" />
+            <g id="map-nodes-layer"></g>
+          </svg>
         </div>
 
-        <!-- Day Detail Card -->
-        <div class="card" id="day-detail-card"></div>
+        <div class="day-card" id="day-card"></div>
       </div>
     </section>
 
-    <!-- TAB 2: VISUAL ATTRACTION GALLERY -->
-    <section id="tab-spots" class="tab-panel hidden" style="display:flex; flex-direction:column; gap:16px;">
-      <div class="card" style="padding:16px 20px;">
-        <h2>📸 沿途 14 大核心景观图鉴 &amp; 一键 Google 链接</h2>
-        <p class="muted" style="font-size:13px; margin-top:4px;">
-          每个景点均配有实景图、Google Maps 精准定位、Google 搜索评价/更多美图，以及官方信息入口（已含 Bosque del Apache 越冬鹤群、开心果园、Chimayó 教堂与 Plaza Blanca）。
-        </p>
-      </div>
-      <div class="three-col" id="spots-grid"></div>
+    <!-- VIEW 2: SPOTS GALLERY -->
+    <section id="tab-spots" class="tab-panel hidden">
+      <div class="spots-grid" id="spots-grid"></div>
     </section>
 
-    <!-- TAB 3: HOTELS -->
-    <section id="tab-hotels" class="tab-panel hidden" style="display:flex; flex-direction:column; gap:16px;">
-      <div class="three-col">
-        <div class="card">
-          <div style="font-size:12px; font-weight:700; color:var(--primary); margin-bottom:4px;">唯一 1 张万豪 35k FN 落位</div>
-          <h3>12/1 周二 · La Posada de Santa Fe</h3>
-          <p class="muted" style="font-size:12.5px; margin-top:6px;">
-            现金价常在 $300–$450+，周二淡季积分约 45k–60k（35k 券最高可补 25k 分至 60k）。16:00 入住 / 12:00 退房，13:30 到可先交门口 Valet 寄存行李（含在 $40+税 Resort Fee 内）。
-          </p>
-        </div>
-        <div class="card">
-          <div style="font-size:12px; font-weight:700; color:var(--turquoise); margin-bottom:4px;">IHG 优势点 + 收官连住</div>
-          <h3>小城 HIX 口碑稳 · 最后 2 晚免搬家</h3>
-          <p class="muted" style="font-size:12.5px; margin-top:6px;">
-            Alamogordo、Roswell 的 Holiday Inn Express 评分优于同城老牌大车店；12/3–12/4 连住 2 晚 ABQ 北区（Journal Center）套房，清静安全、去缆车 15 分钟、还车 18 分钟。
-          </p>
-        </div>
-        <div class="card">
-          <div style="font-size:12px; font-weight:700; color:var(--warning); margin-bottom:4px;">两个关键机场避坑</div>
-          <h3>11/27 深夜班车 &amp; ABQ 停车防盗</h3>
-          <p class="muted" style="font-size:12.5px; margin-top:6px;">
-            11/27 22:56 落地选航站楼对面的 Sheraton（无车免停车费，步行 5 分钟/24h 班车）；次日打 Uber 3 分钟直达 SIXT 租车中心。ABQ 停车过夜务必清空车厢内一切物品。
-          </p>
-        </div>
-      </div>
-
-      <div class="card">
-        <div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:10px;">
-          <h2>8 晚逐日酒店方案表（附 Google 地图与评价直达）</h2>
-          <div style="display:flex; flex-wrap:wrap; gap:6px;">
-            <button data-hfilter="best" class="btn hfilter-btn active" style="padding:5px 11px; font-size:12px;">⭐ 混合最优推荐</button>
-            <button data-hfilter="marriott" class="btn hfilter-btn" style="padding:5px 11px; font-size:12px;">主刷万豪 Marriott</button>
-            <button data-hfilter="ihg" class="btn hfilter-btn" style="padding:5px 11px; font-size:12px;">主刷洲际 IHG</button>
-          </div>
-        </div>
-
-        <div class="table-scroll">
-          <table>
-            <thead>
-              <tr>
-                <th>日期</th>
-                <th>住宿区域</th>
-                <th id="hotel-col-title">混合最优酒店 (万豪+IHG择优)</th>
-                <th>建议支付方式</th>
-                <th>实操要点（停车 / 早餐 / 接驳）</th>
-              </tr>
-            </thead>
-            <tbody id="hotel-table-body"></tbody>
-          </table>
-        </div>
-      </div>
+    <!-- VIEW 3: HOTELS LEDGER -->
+    <section id="tab-hotels" class="tab-panel hidden">
+      <div class="ledger" id="hotels-ledger"></div>
     </section>
 
-    <!-- TAB 4: COMPARE -->
-    <section id="tab-compare" class="tab-panel hidden" style="display:flex; flex-direction:column; gap:16px;">
-      <div class="two-col">
-        <div class="card">
-          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
-            <span class="badge">调整前原方案 (12/1–12/4)</span>
-            <span style="font-size:12px; color:var(--danger); font-weight:600;">天天换酒店 · 冬季景点残血</span>
-          </div>
-          <h3>绕行科罗拉多 Mesa Verde + Cortez</h3>
-          <ul class="muted" style="font-size:13px; padding-left:18px; margin:10px 0 0; display:flex; flex-direction:column; gap:8px;">
-            <li><strong style="color:var(--fg);">Mesa Verde 冬季仅剩 25% 体验</strong>：崖居导览全停、Cliff Palace Loop 12/1 起封车、山顶考古博物馆装修闭馆、山上无餐厅，往返还需盘山近 2 小时。</li>
-            <li><strong style="color:var(--fg);">8 晚换 8 家酒店</strong>：全程零连住，每天早上都在打包退房。</li>
-            <li><strong style="color:var(--fg);">12/4 返程压迫感强</strong>：Cortez → Shiprock → ABQ 机场单日开 5 小时+，下午早早困在荒凉的机场区。</li>
-          </ul>
-        </div>
-
-        <div class="card" style="border:2px solid var(--primary);">
-          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
-            <span class="badge badge-primary">优化终版方案 (12/1–12/4)</span>
-            <span style="font-size:12px; color:var(--turquoise); font-weight:700;">少走弯路 · 景点全满血开放</span>
-          </div>
-          <h3>新墨西哥北环精华闭环 + 王牌收官日</h3>
-          <ul class="muted" style="font-size:13px; padding-left:18px; margin:10px 0 0; display:flex; flex-direction:column; gap:8px;">
-            <li><strong style="color:var(--fg);">Bandelier 完美上位替代崖居</strong>：12 月免接驳车直接开进峡谷谷底，走平路到史前崖居正下方、亲手爬短木梯进石窟，博物馆正常开放。</li>
-            <li><strong style="color:var(--fg);">顺路串联高人气打卡点</strong>：12/1 下午可选网红鼻祖 <strong style="color:var(--fg);">Meow Wolf</strong>；12/2 顺停路边 <strong style="color:var(--fg);">Echo Amphitheater 回音巨型红岩石窟</strong>；12/3 保住 <strong style="color:var(--fg);">Shiprock</strong>。</li>
-            <li><strong style="color:var(--fg);">12/4 王牌收官不空耗</strong>：上午 <strong style="color:var(--fg);">Kasha-Katuwe Tent Rocks 帐篷岩峡谷</strong> + 下午 <strong style="color:var(--fg);">Sandia Peak 3,163m 高空缆车日落</strong>，最后 2 晚连住北区套房免搬家。</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="card">
-        <div style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:8px; margin-bottom:6px;">
-          <h3>优化后每日纯驾驶时长分布（全部控制在舒适阈值 ≤ 4.2h）</h3>
-          <span class="muted" style="font-size:12px;">不含游玩与餐饮停留</span>
-        </div>
-        <div id="drive-bars"></div>
-      </div>
-    </section>
-
-    <!-- TAB 5: CHECKLIST -->
+    <!-- VIEW 4: CHECKLIST -->
     <section id="tab-checklist" class="tab-panel hidden">
-      <div class="card">
-        <div style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:10px; padding-bottom:14px; border-bottom:1px solid var(--border); margin-bottom:14px;">
-          <div>
-            <h2>行前必约与现场核查清单（勾选自动保存在当前浏览器）</h2>
-            <p class="muted" style="font-size:12.5px; margin-top:2px;">距离 11/27 出发不到两周，建议优先锁定溶洞门票、帐篷岩双票及感恩节周六住宿</p>
-          </div>
-          <button id="reset-todos" class="btn btn-ghost">重置勾选</button>
-        </div>
-        <div id="checklist-items" style="display:flex; flex-direction:column; gap:10px;"></div>
-      </div>
+      <div class="check-card" id="checklist-box"></div>
     </section>
 
   </div>
 
-  <div id="toast" class="toast">已复制页面分享链接！</div>
+  <div id="toast" class="toast">链接已复制</div>
 
   <script>
     const gMap = q => `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}`;
     const gSearch = q => `https://www.google.com/search?q=${encodeURIComponent(q)}`;
 
-    const SPOTS = [
+    const DAYS = [
       {
-        day: "11/28 · D2 (顺路)",
-        name: "Bosque del Apache · 阿帕奇森林越冬沙丘鹤与雪雁保护区",
-        img: "images/bosque-cranes.jpg",
-        desc: "11 月底–12 月初正是数万只雪雁与沙丘鹤越冬的全年巅峰！南下白沙途中在铺装游客中心及湿地观景台短停 20 分钟（年卡免票，不进砂石大环线以免耽误白沙日落）。",
-        mapQ: "Bosque del Apache National Wildlife Refuge Visitor Center",
-        searchQ: "Bosque del Apache Sandhill Cranes Snow Geese December",
-        web: "https://www.fws.gov/refuge/bosque-del-apache",
-        webLabel: "保护区官网"
+        date: "11/27",
+        wk: "周五",
+        tab: "抵达 ABQ",
+        title: "抵达 Albuquerque",
+        stats: ["0h 车程", "22:56 落地"],
+        routeUrl: gMap("Holiday Inn & Suites Albuquerque Airport 1501 Sunport Place"),
+        routePoints: "263,292",
+        photos: [
+          { src: "images/albuquerque.jpg", name: "Albuquerque", q: "Albuquerque Sandia Mountains" }
+        ],
+        stops: [
+          { t: "22:56", text: "落地 ABQ 航站楼，提取行李后致电 505-944-2255 叫 24h 班车", map: "Albuquerque International Sunport" },
+          { t: "23:20", text: "入住 Holiday Inn & Suites Albuquerque Airport (1501 Sunport Pl)", map: "Holiday Inn & Suites Albuquerque Airport 1501 Sunport Place" }
+        ],
+        stay: "Holiday Inn & Suites ABQ Airport",
+        booked: true,
+        note: "认准 1501 Sunport Pl（非 Express）"
       },
       {
-        day: "11/28 · D2",
-        name: "McGinn's PistachioLand · 开心果园 (世界最大开心果)",
-        img: "images/pistachioland.jpg",
-        desc: "去白沙途中 US-54 公路正边上的趣味地标！打卡近 10 米高的世界最大开心果雕像，买一杯现做开心果冰淇淋与烤开心果。",
-        mapQ: "McGinn's PistachioLand 7320 US-54 Alamogordo NM",
-        searchQ: "McGinn's PistachioLand World's Largest Pistachio Alamogordo",
-        web: "https://pistachioland.com/",
-        webLabel: "庄园官网"
+        date: "11/28",
+        wk: "周六",
+        tab: "白沙日落",
+        title: "ABQ → Bosque 鹤群 → 开心果园 → 白沙日落",
+        stats: ["252 mi", "4.3h 车程", "16:57 日落"],
+        routeUrl: "https://www.google.com/maps/dir/3400+University+Blvd+SE,+Albuquerque,+NM/Bosque+del+Apache+National+Wildlife+Refuge+Visitor+Center/McGinn's+PistachioLand,+Alamogordo,+NM/White+Sands+National+Park+Visitor+Center/Alamogordo,+NM",
+        routePoints: "263,292 240,413 256,395 305,435 316,492 300,514 317,502",
+        photos: [
+          { src: "images/white-sands.jpg", name: "White Sands National Park", q: "White Sands National Park sunset" },
+          { src: "images/bosque-cranes.jpg", name: "Bosque del Apache", q: "Bosque del Apache Sandhill Cranes" }
+        ],
+        stops: [
+          { t: "11:00", text: "SIXT 租车中心提车出发 (3400 University Blvd SE)", map: "3400 University Blvd SE Albuquerque NM" },
+          { t: "12:45", text: "Bosque del Apache 游客中心及观景台短停 20 分钟看越冬鹤群", map: "Bosque del Apache National Wildlife Refuge Visitor Center" },
+          { t: "15:05", text: "McGinn's PistachioLand 拍世界最大开心果、买开心果冰淇淋", map: "McGinn's PistachioLand Alamogordo NM" },
+          { t: "15:40", text: "White Sands 国家公园漫步石膏沙丘，守候 16:57 日落", map: "White Sands National Park Visitor Center" },
+          { t: "17:30", text: "抵达 Alamogordo 入住晚餐", map: "Alamogordo NM" }
+        ],
+        stay: "Alamogordo · 待订",
+        booked: false,
+        note: "电子年卡免票 · 不进 Bosque 砂石环线"
       },
       {
-        day: "11/28 · D2",
-        name: "White Sands National Park · 白沙国家公园",
-        img: "images/white-sands.jpg",
-        desc: "世界最大的石膏结晶沙丘群。下午抵达在合法停车区漫步纯白沙海，守候 16:57 粉紫色荒原日落。",
-        mapQ: "White Sands National Park Visitor Center NM",
-        searchQ: "White Sands National Park New Mexico sunset",
-        web: "https://www.nps.gov/whsa/index.htm",
-        webLabel: "NPS 官网"
+        date: "11/29",
+        wk: "周日",
+        tab: "林肯森林",
+        title: "Alamogordo → Cloudcroft 森林栈桥 → Carlsbad",
+        stats: ["150 mi", "3.2h 车程", "16:52 日落"],
+        routeUrl: "https://www.google.com/maps/dir/Alamogordo,+NM/Tunnel+Vista+Observation+Site/Trestle+Vista+Observation+Site,+Cloudcroft,+NM/Carlsbad,+NM",
+        routePoints: "317,502 336,496 445,498 461,549",
+        photos: [
+          { src: "images/cloudcroft-trestle.jpg", name: "Mexican Canyon Trestle · Cloudcroft", q: "Mexican Canyon Trestle Cloudcroft" }
+        ],
+        stops: [
+          { t: "09:00", text: "沿 US-82 盘山穿入 Lincoln National Forest (海拔 2,640m)", map: "Cloudcroft NM" },
+          { t: "09:30", text: "停 Tunnel Vista 俯瞰白沙盆地 & Trestle Vista 看百年森林木栈桥", map: "Trestle Vista Observation Site Cloudcroft NM" },
+          { t: "12:45", text: "经 Artesia 抵达 Carlsbad，午餐后下午休整", map: "Hyatt House Carlsbad NM" }
+        ],
+        stay: "Carlsbad · 待订 (推荐 Hyatt House)",
+        booked: false,
+        note: "出发前查 NMRoads 确认 US-82 无冰雪"
       },
       {
-        day: "11/29 · D3",
-        name: "Mexican Canyon Trestle & Cloudcroft · 林肯国家森林木栈桥",
-        img: "images/cloudcroft-trestle.jpg",
-        desc: "沿 US-82 从荒漠一口气爬升至海拔 2,640 米高山针叶林，路边铺装观景台远眺 1899 年森林峡谷百年铁路木栈桥。",
-        mapQ: "Trestle Vista Observation Site Cloudcroft NM",
-        searchQ: "Mexican Canyon Trestle Cloudcroft New Mexico",
-        web: "https://www.fs.usda.gov/recarea/lincoln/recarea/?recid=34224",
-        webLabel: "林务局介绍"
+        date: "11/30",
+        wk: "周一",
+        tab: "大溶洞",
+        title: "Carlsbad Caverns 大溶洞 → Roswell",
+        stats: ["115 mi", "2.8h 车程", "16:53 日落"],
+        routeUrl: "https://www.google.com/maps/dir/Carlsbad,+NM/Carlsbad+Caverns+National+Park+Visitor+Center/720+N+Main+St,+Roswell,+NM/Holiday+Inn+Express+Roswell,+NM",
+        routePoints: "461,549 444,573 461,549 437,454",
+        photos: [
+          { src: "images/carlsbad-caverns.jpg", name: "Carlsbad Caverns · Big Room", q: "Carlsbad Caverns Big Room" },
+          { src: "images/roswell.jpg", name: "Roswell", q: "Roswell UFO McDonald's" }
+        ],
+        stops: [
+          { t: "09:00", text: "退房前往溶洞，09:45 到游客中心刷年卡+核验 9:30–10:30 预约票", map: "Carlsbad Caverns National Park Visitor Center" },
+          { t: "10:00", text: "乘电梯直降地下 230m 走 Big Room 环线 (2–2.5h)", map: "Carlsbad Caverns Big Room" },
+          { t: "13:00", text: "沿 US-285 北上，顺路过飞碟麦当劳，15:15 入住 Roswell", map: "720 N Main St Roswell NM" }
+        ],
+        stay: "Holiday Inn Express Roswell",
+        booked: true,
+        note: "注意洞区手机基站偶跳德州中部时间"
       },
       {
-        day: "11/30 · D4",
-        name: "Carlsbad Caverns · 卡尔斯巴德大溶洞 Big Room",
-        img: "images/carlsbad-caverns.jpg",
-        desc: "乘电梯直降地下 230 米，走进堪比十几个足球场大的地下钟乳石宫殿 Big Room，洞内恒温 13°C 平坦好走。",
-        mapQ: "Carlsbad Caverns National Park Visitor Center",
-        searchQ: "Carlsbad Caverns Big Room New Mexico",
-        web: "https://www.recreation.gov/ticket/234637/ticket/10086811",
-        webLabel: "预约时段票"
+        date: "12/01",
+        wk: "周二",
+        tab: "Santa Fe",
+        title: "Roswell → Santa Fe 庄园 · Chimayó 教堂 / Meow Wolf",
+        stats: ["192 mi", "3.6h 车程", "16:51 日落"],
+        routeUrl: "https://www.google.com/maps/dir/Roswell,+NM/La+Posada+de+Santa+Fe/El+Santuario+de+Chimayo",
+        routePoints: "437,454 365,315 319,228 320,198 319,228",
+        photos: [
+          { src: "images/santa-fe.jpg", name: "Santa Fe Historic Plaza", q: "La Posada de Santa Fe" },
+          { src: "images/chimayo.jpg", name: "El Santuario de Chimayó", q: "El Santuario de Chimayo" }
+        ],
+        stops: [
+          { t: "09:00", text: "沿 US-285 北上，13:15 抵 La Posada 交 Valet 泊车寄存行李", map: "La Posada de Santa Fe" },
+          { t: "14:15", text: "可选北上 35 分钟访 Chimayó 百年圣土教堂，或看 Meow Wolf / 逛老城广场", map: "El Santuario de Chimayo" },
+          { t: "17:00", text: "回 La Posada 庄园烤火、用 Resy 晚餐", map: "Santa Fe Plaza" }
+        ],
+        stay: "La Posada de Santa Fe",
+        booked: true,
+        note: "Resort Fee 已含不限次代客泊车"
       },
       {
-        day: "12/01 · D5",
-        name: "Santa Fe Historic Plaza & La Posada · 圣达菲老城与庄园",
-        img: "images/santa-fe.jpg",
-        desc: "全美最古老州府的西南土坯建筑群。用万豪 35k 房券入住百年庄园 La Posada，步行 5 分钟即达老城中央广场。",
-        mapQ: "La Posada de Santa Fe",
-        searchQ: "La Posada de Santa Fe Historic Plaza",
-        web: "https://www.marriott.com/en-us/hotels/safak-la-posada-de-santa-fe-a-tribute-portfolio-resort-and-spa/overview/",
-        webLabel: "酒店主页"
+        date: "12/02",
+        wk: "周三",
+        tab: "崖居·白石谷",
+        title: "Bandelier 崖居 → Plaza Blanca → Echo 石窟 → Farmington",
+        stats: ["228 mi", "4.3h 车程", "16:56 日落"],
+        routeUrl: "https://www.google.com/maps/dir/La+Posada+de+Santa+Fe/Bandelier+National+Monument+Visitor+Center/Plaza+Blanca,+Abiquiu,+NM/Echo+Amphitheater,+NM/Farmington,+NM",
+        routePoints: "319,228 292,215 297,175 270,162 195,134 131,126",
+        photos: [
+          { src: "images/bandelier.jpg", name: "Bandelier Cliff Dwellings", q: "Bandelier National Monument" },
+          { src: "images/plaza-blanca.jpg", name: "Plaza Blanca · Abiquiu", q: "Plaza Blanca New Mexico" }
+        ],
+        stops: [
+          { t: "08:30", text: "退房经 Los Alamos 裂谷观景台前往 Bandelier", map: "Anderson Overlook Los Alamos NM" },
+          { t: "09:20", text: "Bandelier 车直开谷底，走平路近看史前崖居、爬木梯进石窟 (2h)", map: "Bandelier National Monument Visitor Center" },
+          { t: "12:20", text: "Abiquiu 拐入 Plaza Blanca 凭密码进门走白石迷谷 (仅晴干天进入)", map: "Plaza Blanca Abiquiu NM" },
+          { t: "13:50", text: "US-84 路边停 Echo Amphitheater 走 5 分钟进百米回音石壁", map: "Echo Amphitheater Abiquiu NM" },
+          { t: "16:40", text: "日落前抵达 Farmington 入住", map: "Farmington NM" }
+        ],
+        stay: "Farmington · 待订",
+        booked: false,
+        note: "车上自备简餐 · 提前领 Plaza Blanca 密码"
       },
       {
-        day: "12/01 · D5 (可选)",
-        name: "El Santuario de Chimayó · 奇马约百年圣土小教堂",
-        img: "images/chimayo.jpg",
-        desc: "距 Santa Fe 仅 35 分钟全铺装公路。200 多年历史的西南土坯朝圣小教堂，内有挂满感恩拐杖的传奇“圣土小室”（09:00–17:00 免费开放）。",
-        mapQ: "El Santuario de Chimayo 15 Santuario Dr Chimayo NM",
-        searchQ: "El Santuario de Chimayo New Mexico",
-        web: "https://www.holychimayo.us/",
-        webLabel: "教堂官网"
+        date: "12/03",
+        wk: "周四",
+        tab: "Shiprock",
+        title: "Shiprock 火山神山 → US-550 台地走廊 → Tamaya 度假村",
+        stats: ["238 mi", "3.9h 车程", "16:53 日落"],
+        routeUrl: "https://www.google.com/maps/dir/Farmington,+NM/36.6152,-108.7385/Hyatt+Regency+Tamaya+Resort+and+Spa",
+        routePoints: "131,126 78,129 131,126 218,215 268,266",
+        photos: [
+          { src: "images/shiprock.jpg", name: "Shiprock Pinnacle", q: "Shiprock New Mexico" }
+        ],
+        stops: [
+          { t: "09:00", text: "西行至 US-491 转铺装路 IR-13 穿过火山岩墙远眺拍摄 Shiprock", map: "36.6152,-108.7385" },
+          { t: "11:00", text: "沿四车道 US-550 南下穿过 Cuba 彩绘台地走廊", map: "Cuba NM" },
+          { t: "15:15", text: "Bernalillo 拐入 Hyatt Regency Tamaya 庄园连住 2 晚，看桑迪亚日落金山", map: "Hyatt Regency Tamaya Resort and Spa" }
+        ],
+        stay: "Hyatt Regency Tamaya (1/2)",
+        booked: true,
+        note: "Shiprock 车轮严禁下土路 · 禁飞无人机"
       },
       {
-        day: "12/01 · D5 (可选)",
-        name: "Meow Wolf Santa Fe · 喵狼奇幻沉浸馆 (House of Eternal Return)",
-        img: "images/meow-wolf.jpg",
-        desc: "《权力的游戏》作者马丁投资打造的沉浸式艺术馆鼻祖：推开普通美式住宅的冰箱门或壁炉，跌入科幻异次元迷宫。",
-        mapQ: "Meow Wolf Santa Fe 1352 Rufina Cir",
-        searchQ: "Meow Wolf Santa Fe House of Eternal Return",
-        web: "https://tickets.meowwolf.com/santa-fe/",
-        webLabel: "官网查票"
+        date: "12/04",
+        wk: "周五",
+        tab: "帐篷岩·缆车",
+        title: "Kasha-Katuwe 帐篷岩窄谷 + 桑迪亚峰高空缆车日落",
+        stats: ["75 mi", "1.5h 车程", "16:53 日落"],
+        routeUrl: "https://www.google.com/maps/dir/Hyatt+Regency+Tamaya+Resort+and+Spa/Cochiti+Visitor+Center,+NM/Sandia+Peak+Tramway",
+        routePoints: "268,266 280,238 268,266 282,275",
+        photos: [
+          { src: "images/tent-rocks.jpg", name: "Kasha-Katuwe Tent Rocks", q: "Kasha-Katuwe Tent Rocks" },
+          { src: "images/sandia-tramway.jpg", name: "Sandia Peak Tramway (3,163m)", q: "Sandia Peak Tramway sunset" }
+        ],
+        stops: [
+          { t: "09:00", text: "开 28 分钟至 Cochiti Visitor Center 验双票，跟前导车进山", map: "Cochiti Visitor Center NM" },
+          { t: "10:00", text: "徒步 Tent Rocks 圆锥火山奇岩与一线天窄谷 (2–2.5h)", map: "Kasha-Katuwe Tent Rocks National Monument" },
+          { t: "15:15", text: "乘 Sandia Peak 高空缆车 15 分钟登顶 3,163m 看日落与城市亮灯", map: "Sandia Peak Tramway Albuquerque" }
+        ],
+        stay: "Hyatt Regency Tamaya (2/2)",
+        booked: true,
+        note: "山顶比谷底低 12°C+ 需穿厚羽绒"
       },
       {
-        day: "12/02 · D6",
-        name: "Bandelier National Monument · 班德利尔史前崖居",
-        img: "images/bandelier.jpg",
-        desc: "完美替代冬季残血的 Mesa Verde！12 月免接驳车直开谷底，走平缓步道到凝灰岩崖居正下方，亲手爬短木梯进石窟。",
-        mapQ: "Bandelier National Monument Visitor Center",
-        searchQ: "Bandelier National Monument cliff dwellings ladders",
-        web: "https://www.nps.gov/band/index.htm",
-        webLabel: "NPS 官网"
-      },
-      {
-        day: "12/02 · D6 (顺路)",
-        name: "Plaza Blanca (“The White Place”) · 纯白奇岩迷谷",
-        img: "images/plaza-blanca.jpg",
-        desc: "乔治亚·奥基夫笔下的纯白尖塔砂岩恶地迷谷（就在 Abiquiu 镇口）。需提前在 Dar al Islam 官网免费填表秒领铁门密码，晴干天进入。",
-        mapQ: "Plaza Blanca Abiquiu NM",
-        searchQ: "Plaza Blanca Abiquiu New Mexico",
-        web: "https://daralislam.org/",
-        webLabel: "免费领开门密码"
-      },
-      {
-        day: "12/02 · D6",
-        name: "Abiquiu / Ghost Ranch & Echo Amphitheater · 幽灵牧场与回音石窟",
-        img: "images/echo-amphitheater.jpg",
-        desc: "US-84 红黄分层断崖景观走廊。车停马路正边的铺装停车场，走 5 分钟平路即可站进近百米高的天然弧形回音石壁下。",
-        mapQ: "Echo Amphitheater Abiquiu NM",
-        searchQ: "Echo Amphitheater Ghost Ranch New Mexico",
-        web: "https://www.fs.usda.gov/recarea/carson/recarea/?recid=44092",
-        webLabel: "林务局介绍"
-      },
-      {
-        day: "12/03 · D7",
-        name: "Shiprock Pinnacle (Tsé Bitʼaʼí) · 船岩火山孤峰",
-        img: "images/shiprock.jpg",
-        desc: "荒漠平原拔地而起近 500 米的纳瓦霍圣山。沿铺装路 US-491 与 IR-13 穿过数公里长的黑色火山岩墙安全远眺。",
-        mapQ: "36.6152,-108.7385",
-        searchQ: "Shiprock Pinnacle New Mexico IR 13 view",
-        web: "https://farmingtonnm.org/listings/shiprock-pinnacle",
-        webLabel: "合规观赏指南"
-      },
-      {
-        day: "12/04 · D8",
-        name: "Kasha-Katuwe Tent Rocks · 帐篷岩与一线天窄谷",
-        img: "images/tent-rocks.jpg",
-        desc: "火山喷发雕琢出的成片巨型圆锥状“帐篷奇岩”与蜿蜒窄缝峡谷，高人气王牌徒步点（需提前网约联邦票+部落通行证）。",
-        mapQ: "Cochiti Visitor Center NM",
-        searchQ: "Kasha-Katuwe Tent Rocks National Monument",
-        web: "https://www.recreation.gov/ticket/10065449/ticket/10065449",
-        webLabel: "预约双票"
-      },
-      {
-        day: "12/04 · D8",
-        name: "Sandia Peak Aerial Tramway · 桑迪亚峰高空缆车",
-        img: "images/sandia-tramway.jpg",
-        desc: "全美最著名高山跨谷缆车之一，15 分钟直冲海拔 3,163 米山脊之巅，俯瞰新墨西哥大平原壮阔日落与万家灯火。",
-        mapQ: "Sandia Peak Tramway Albuquerque NM",
-        searchQ: "Sandia Peak Tramway sunset Albuquerque",
-        web: "https://sandiapeak.com/",
-        webLabel: "缆车官网"
+        date: "12/05",
+        wk: "周六",
+        tab: "满油还车",
+        title: "Tamaya 退房 → 满油还车 → 15:38 返程航班",
+        stats: ["24 mi", "0.5h 车程", "11:00 还车"],
+        routeUrl: "https://www.google.com/maps/dir/Hyatt+Regency+Tamaya+Resort+and+Spa/3400+University+Blvd+SE,+Albuquerque,+NM",
+        routePoints: "268,266 263,292",
+        photos: [
+          { src: "images/albuquerque.jpg", name: "ABQ Sunport Departure", q: "Albuquerque International Sunport" }
+        ],
+        stops: [
+          { t: "09:30", text: "退房沿 I-25 南下，机场旁加满油留小票", map: "Gas station near 3400 University Blvd SE Albuquerque" },
+          { t: "10:30", text: "抵达 3400 University Blvd SE，11:00 前完成 SIXT 还车", map: "3400 University Blvd SE Albuquerque NM" },
+          { t: "15:38", text: "ABQ 航班起飞返程", map: "Albuquerque International Sunport" }
+        ],
+        stay: "返程",
+        booked: true,
+        note: "卡准 11:00 满 7 整天计费点"
       }
     ];
 
-    const DAYS = [
-      {
-        id: 1,
-        date: "11/27 周五",
-        short: "D1 抵达ABQ",
-        title: "深夜抵达 Albuquerque · 机场旁休整",
-        driveHours: 0,
-        driveText: "0 小时（接驳/步行 5–10 分钟）",
-        miles: "0 mi",
-        stay: "Albuquerque 机场旁",
-        sunset: "—",
-        routePoints: "263,292",
-        badges: ["无租车", "深夜落地"],
-        photos: [
-          { src: "images/albuquerque.jpg", caption: "Albuquerque 远眺桑迪亚山脉", searchQ: "Albuquerque New Mexico Sandia Mountains" }
-        ],
-        links: [
-          { type: "maps", label: "📍 Sheraton 机场酒店地图", url: gMap("Sheraton Albuquerque Airport Hotel") },
-          { type: "google", label: "🔎 Google 搜索酒店", url: gSearch("Sheraton Albuquerque Airport Hotel shuttle") }
-        ],
-        timeline: [
-          { time: "22:56", event: "航班抵达 Albuquerque (ABQ)，提取行李" },
-          { time: "23:20", event: "前往机场旁酒店直接入住休息（多数大车店班车 23:00–24:00 停运，选航站楼对面的 Sheraton 步行 5 分钟或 24h 班车最稳，或打 Uber 约 $10）" }
-        ],
-        hotelTip: "万豪选 Sheraton ABQ Airport（当晚无车不用交 $15 停车费，离航站楼最近）；IHG 选 Holiday Inn & Suites Airport（避开无班车的 HIX）。",
-        caution: "落地面前先致电酒店前台确认班车司机是否在岗。"
-      },
-      {
-        id: 2,
-        date: "11/28 周六",
-        short: "D2 鹤群+白沙",
-        title: "SIXT 取车南下 → Bosque 越冬鹤群 → 开心果园 → White Sands 日落",
-        driveHours: 4.3,
-        driveText: "约 4.2 – 4.4 小时",
-        miles: "~252 mi",
-        stay: "⏳ Alamogordo (待订)",
-        sunset: "16:57 日落",
-        routePoints: "263,292 240,413 256,395 305,435 316,492 300,514 317,502",
-        badges: ["感恩节周六", "越冬鹤群+开心果", "国家公园 #1"],
-        photos: [
-          { src: "images/white-sands.jpg", caption: "White Sands 纯白石膏沙海日落", searchQ: "White Sands National Park sunset" },
-          { src: "images/bosque-cranes.jpg", caption: "Bosque del Apache 冬季雪雁与沙丘鹤巅峰季", searchQ: "Bosque del Apache Sandhill Cranes" }
-        ],
-        links: [
-          { type: "maps", label: "🗺️ 今日完整串联路线", url: "https://www.google.com/maps/dir/3400+University+Blvd+SE,+Albuquerque,+NM/Bosque+del+Apache+National+Wildlife+Refuge+Visitor+Center/McGinn's+PistachioLand,+Alamogordo,+NM/White+Sands+National+Park+Visitor+Center/Alamogordo,+NM" },
-          { type: "maps", label: "📍 Bosque 游客中心导航", url: gMap("Bosque del Apache National Wildlife Refuge Visitor Center") },
-          { type: "maps", label: "📍 PistachioLand 导航", url: gMap("McGinn's PistachioLand 7320 US-54 Alamogordo NM") },
-          { type: "maps", label: "📍 White Sands 导航", url: gMap("White Sands National Park Visitor Center") }
-        ],
-        timeline: [
-          { time: "10:35", event: "酒店免费班车或打 Uber 3 分钟至 3400 University Blvd SE 租车中心，11:00 在 SIXT 提车出发" },
-          { time: "12:45", event: "沿 I-25 S 至 San Antonio 出口拐入 Bosque del Apache Visitor Center 铺装区与门口湿地观景台短停 20 分钟看越冬鹤群（⚠️ 不进 12 英里砂石环线，避免违约及耽误白沙日落）" },
-          { time: "13:15", event: "转 US-380 E → US-54 S 继续南下，途中简餐加油" },
-          { time: "15:05", event: "顺停 US-54 路边的 McGinn's PistachioLand 开心果园（15 分钟拍世界最大开心果雕像、买开心果冰淇淋）" },
-          { time: "15:40", event: "抵达 White Sands 国家公园（亮电子年卡免票），游玩石膏沙海并守候 16:57 粉紫色日落" },
-          { time: "17:30", event: "出园开 20 分钟抵达 Alamogordo 酒店入住晚餐" }
-        ],
-        hotelTip: "优先订 IHG 的 Holiday Inn Express Alamogordo（本地评分 ~8.9 最佳）；万豪选 Fairfield Inn。感恩节周六务必尽早锁房！",
-        caution: "提车时核实 SIXT 合同对 Dunes Drive 硬实石膏沙路面的规定；出发前查 NPS 是否有导弹靶场短时封路。"
-      },
-      {
-        id: 3,
-        date: "11/29 周日",
-        short: "D3 穿林肯森林",
-        title: "横穿林肯国家森林 (Cloudcroft) → Carlsbad",
-        driveHours: 3.2,
-        driveText: "约 3 – 3.5 小时",
-        miles: "~150 mi",
-        stay: "Carlsbad",
-        sunset: "16:52 日落",
-        routePoints: "317,502 336,496 445,498 461,549",
-        badges: ["高山森林景观路", "下午休整"],
-        photos: [
-          { src: "images/cloudcroft-trestle.jpg", caption: "Cloudcroft · 林肯国家森林百年铁路木栈桥", searchQ: "Mexican Canyon Trestle Cloudcroft" }
-        ],
-        links: [
-          { type: "maps", label: "📍 Tunnel Vista 观景台", url: gMap("Tunnel Vista Observation Site Alamogordo NM") },
-          { type: "maps", label: "📍 Trestle 木栈桥观景台", url: gMap("Trestle Vista Observation Site Cloudcroft NM") },
-          { type: "google", label: "🔎 Google 搜 Cloudcroft 景观", url: gSearch("Mexican Canyon Trestle Cloudcroft Lincoln National Forest") }
-        ],
-        timeline: [
-          { time: "09:00", event: "从 Alamogordo 出发，沿 US-82 东行盘山穿入 Lincoln National Forest（海拔爬升至 2,640 米高山针叶林海）" },
-          { time: "09:30", event: "路边铺装观景台随停 20–30 分钟：Tunnel Vista（回望白沙盆地）与 Trestle Vista（看百年森林木制铁路栈桥）" },
-          { time: "12:45", event: "出山经 Artesia 平原抵达 Carlsbad，午餐后下午从容休息" }
-        ],
-        hotelTip: "油田城房价略高：万豪选较新的 TownePlace Suites Carlsbad（带厨房含早）；IHG 选 Holiday Inn Express Carlsbad（含热早+室内温水池）。",
-        caution: "Cloudcroft 海拔高，早出发前查 NMRoads 确认 US-82 无冰雪。"
-      },
-      {
-        id: 4,
-        date: "11/30 周一",
-        short: "D4 地下大溶洞",
-        title: "Carlsbad Caverns 地心奇观 → 北上住 Roswell",
-        driveHours: 2.8,
-        driveText: "约 2 小时 45 分",
-        miles: "~115 mi",
-        stay: "Roswell",
-        sunset: "16:53 日落",
-        routePoints: "461,549 444,573 461,549 437,454",
-        badges: ["需提前约票", "国家公园 #2"],
-        photos: [
-          { src: "images/carlsbad-caverns.jpg", caption: "Carlsbad Caverns 地下钟乳石大厅 Big Room", searchQ: "Carlsbad Caverns Big Room" },
-          { src: "images/roswell.jpg", caption: "Roswell 北上中转补给点", searchQ: "Roswell New Mexico UFO McDonald's" }
-        ],
-        links: [
-          { type: "maps", label: "📍 溶洞游客中心导航", url: gMap("Carlsbad Caverns National Park Visitor Center") },
-          { type: "maps", label: "📍 Roswell 飞碟麦当劳(顺路)", url: gMap("720 N Main St Roswell NM") },
-          { type: "google", label: "🔎 Google 搜 Big Room 照片", url: gSearch("Carlsbad Caverns Big Room trail photos") }
-        ],
-        timeline: [
-          { time: "09:00", event: "Carlsbad 退房出发，09:40 抵达溶洞游客中心核验预约票" },
-          { time: "10:00", event: "乘电梯直达地下 230 米，游览巨型地下大厅 Big Room（平坦铺装环线，按体力走 2–2.5 小时）" },
-          { time: "12:30", event: "简餐后沿 US-285 北上，约 15:00 抵达 Roswell 入住休息（路过主街可顺手看一眼飞碟造型麦当劳）" }
-        ],
-        hotelTip: "纯过夜补给站，现金约 $105–$130：首选评分近 9.0 的 Holiday Inn Express Roswell，或万豪 TownePlace Suites（勿浪费房券）。",
-        caution: "提前在 Recreation.gov 预订 11/30 10:00 时段的 Timed Entry 门票。"
-      },
-      {
-        id: 5,
-        date: "12/01 周二",
-        short: "D5 圣达菲+教堂",
-        title: "北上 Santa Fe · 住 La Posada 庄园 + Chimayó 圣土教堂 / Meow Wolf",
-        driveHours: 3.6,
-        driveText: "约 3.5 – 4.2 小时",
-        miles: "~192–245 mi",
-        stay: "✅ La Posada de Santa Fe (已订)",
-        sunset: "16:51 日落",
-        routePoints: "437,454 365,315 319,228 320,198 319,228",
-        badges: ["✅ 35k FN 已订", "Chimayó 圣堂"],
-        photos: [
-          { src: "images/santa-fe.jpg", caption: "Santa Fe 历史土坯街区与中央广场", searchQ: "Santa Fe Plaza La Posada" },
-          { src: "images/chimayo.jpg", caption: "El Santuario de Chimayó · 百年圣土小教堂", searchQ: "El Santuario de Chimayo New Mexico" }
-        ],
-        links: [
-          { type: "maps", label: "📍 La Posada 庄园导航", url: gMap("La Posada de Santa Fe") },
-          { type: "maps", label: "📍 Chimayó 教堂导航 (35min)", url: gMap("El Santuario de Chimayo") },
-          { type: "maps", label: "📍 Meow Wolf 导航", url: gMap("Meow Wolf Santa Fe") }
-        ],
-        timeline: [
-          { time: "09:00", event: "Roswell 出发沿 US-285 北上，中途加油简餐，13:00–13:30 抵达 Santa Fe" },
-          { time: "13:30", event: "抵达 La Posada de Santa Fe：先将车交门口 Valet 并寄存行李（若有空房常可提前入住）" },
-          { time: "14:15", event: "【下午轻松三选一】① 往北开 35 分钟全铺装路去 El Santuario de Chimayó 奇马约圣土小教堂（17:00 关门，隔壁 Rancho de Chimayó 可用餐）；② 若想去 Meow Wolf 则看周二是否营业；③ 或直接泡庄园溜达老城广场" }
-        ],
-        hotelTip: "✅ 已订妥 La Posada de Santa Fe（35k FN + 11k 分）；到店含税 $46.13 Resort Fee 已包含代客泊车 Valet Parking。",
-        caution: "Chimayó 教堂冬季 17:00 关门，若要去建议 14:30 前从 Santa Fe 出发，天黑前回到庄园烤火品酒。"
-      },
-      {
-        id: 6,
-        date: "12/02 周三",
-        short: "D6 崖居+白石谷",
-        title: "Bandelier 崖居 → Plaza Blanca 白石谷 → Echo 回音石窟 → Farmington",
-        driveHours: 4.3,
-        driveText: "约 4.2 – 4.4 小时",
-        miles: "~228 mi",
-        stay: "Farmington",
-        sunset: "16:56 日落",
-        routePoints: "319,228 292,215 297,175 270,162 195,134 131,126",
-        badges: ["崖居+白石恶地", "红岩景观路"],
-        photos: [
-          { src: "images/bandelier.jpg", caption: "Bandelier 峡谷史前遗址与崖居石窟", searchQ: "Bandelier National Monument cliff dwellings" },
-          { src: "images/plaza-blanca.jpg", caption: "Plaza Blanca 纯白尖塔奇岩迷谷", searchQ: "Plaza Blanca Abiquiu New Mexico" }
-        ],
-        links: [
-          { type: "maps", label: "🗺️ 今日完整串联路线", url: "https://www.google.com/maps/dir/La+Posada+de+Santa+Fe/Bandelier+National+Monument+Visitor+Center/Plaza+Blanca,+Abiquiu,+NM/Echo+Amphitheater,+NM/Farmington,+NM" },
-          { type: "maps", label: "📍 Bandelier 导航", url: gMap("Bandelier National Monument Visitor Center") },
-          { type: "maps", label: "📍 Plaza Blanca 导航", url: gMap("Plaza Blanca Abiquiu NM") },
-          { type: "maps", label: "📍 Echo 回音石窟导航", url: gMap("Echo Amphitheater Abiquiu NM") }
-        ],
-        timeline: [
-          { time: "08:30", event: "今天看点丰富，提早半小时于 08:30 从 Santa Fe 退房出发（途经《奥本海默》小镇 Los Alamos 裂谷观景台）" },
-          { time: "09:20", event: "游览 Bandelier National Monument：直接开车进谷底，走平路近看史前崖居、爬短木梯进石窟（约 2 小时，亮电子年卡免票）" },
-          { time: "12:20", event: "沿 US-84 北上至 Abiquiu 拐入 Plaza Blanca（凭提前在 daralislam.org 免费领好的密码开铁门，走 1 小时纯白奇岩迷谷；若遇雨雪泥泞则跳过）" },
-          { time: "13:50", event: "继续沿 US-84 停马路正边的 Echo Amphitheater（走 5 分钟平路进百米高天然回音石窟，停 25 分钟）" },
-          { time: "16:40", event: "赶在 16:56 日落前稳稳抵达 Farmington 酒店入住休息" }
-        ],
-        hotelTip: "万豪选 TownePlace Suites Farmington 或 Fairfield Inn（评分均近 9.0、免费停车含早）；IHG 可选 Holiday Inn Express ($112+税)。",
-        caution: "⚠️ Plaza Blanca 必须提前在 daralislam.org 免费填表截图保存开门密码（Gate Code）；门内最后 1 公里为平整砂石路，仅在晴干天进入。"
-      },
-      {
-        id: 7,
-        date: "12/03 周四",
-        short: "D7 Shiprock+Tamaya",
-        title: "远眺火山神山 Shiprock → US-550 台地走廊 → 入住 Tamaya 度假村",
-        driveHours: 3.9,
-        driveText: "约 3.8 – 4 小时",
-        miles: "~238 mi",
-        stay: "✅ Hyatt Regency Tamaya (连住第1晚)",
-        sunset: "16:53 日落",
-        routePoints: "131,126 78,129 131,126 218,215 268,266",
-        badges: ["经典地标", "✅ 凯悦度假村已订"],
-        photos: [
-          { src: "images/shiprock.jpg", caption: "Shiprock 荒漠火山孤峰与巨型玄武岩墙", searchQ: "Shiprock Pinnacle New Mexico" }
-        ],
-        links: [
-          { type: "maps", label: "📍 Shiprock 铺装路观景口(IR-13)", url: gMap("36.6152,-108.7385") },
-          { type: "maps", label: "📍 Hyatt Regency Tamaya 导航", url: gMap("Hyatt Regency Tamaya Resort and Spa") }
-        ],
-        timeline: [
-          { time: "09:00", event: "Farmington 退房出发，沿 US-64 西行约 40 分钟前往 Shiprock 区域" },
-          { time: "09:45", event: "从 US-491 南下拐入全程铺装柏油路 Indian Route 13 (IR-13)，穿过巨型黑色火山岩墙豁口安全远眺拍摄 Shiprock（约 30–40 分钟）" },
-          { time: "11:00", event: "沿四车道 US-550 南下（Cuba 至 San Ysidro 公路两侧尽是红白彩绘恶地台地），无需进市区，在 Bernalillo 直接拐入度假村" },
-          { time: "15:15", event: "抵达新墨西哥头牌度假村 Hyatt Regency Tamaya Resort & Spa 办理 2 晚连住，后院直面桑迪亚雪山日落金山" }
-        ],
-        hotelTip: "✅ 已订妥 Hyatt Regency Tamaya Resort & Spa（1.2w 分/晚 × 2 晚，积分房全免每日 $40 Resort Fee 及停车费）。",
-        caution: "在 Shiprock 车轮严禁离开柏油路（通往岩体底部的土路禁止游客进入且违反租车合同），禁飞无人机。"
-      },
-      {
-        id: 8,
-        date: "12/04 周五",
-        short: "D8 帐篷岩+缆车",
-        title: "王牌收官：Kasha-Katuwe 帐篷岩峡谷 + 桑迪亚峰高空缆车日落",
-        driveHours: 1.5,
-        driveText: "约 1.5 小时（度假村短途往返）",
-        miles: "~75 mi",
-        stay: "✅ Hyatt Regency Tamaya (连住第2晚)",
-        sunset: "16:53 日落",
-        routePoints: "268,266 280,238 268,266 282,275",
-        badges: ["✅ 双票已买妥", "3163m 高空日落"],
-        photos: [
-          { src: "images/tent-rocks.jpg", caption: "Kasha-Katuwe Tent Rocks 锥形火山奇岩", searchQ: "Kasha-Katuwe Tent Rocks National Monument" },
-          { src: "images/sandia-tramway.jpg", caption: "Sandia Peak Tramway 直登 3,163 米山巅看日落", searchQ: "Sandia Peak Tramway Albuquerque sunset" }
-        ],
-        links: [
-          { type: "maps", label: "📍 Cochiti 游客中心(帐篷岩报到·28min)", url: gMap("Cochiti Visitor Center NM") },
-          { type: "maps", label: "📍 Sandia Peak 缆车站(20min)", url: gMap("Sandia Peak Tramway Albuquerque") },
-          { type: "google", label: "🔎 Google 搜帐篷岩徒步", url: gSearch("Kasha-Katuwe Tent Rocks Slot Canyon Trail") }
-        ],
-        timeline: [
-          { time: "09:00", event: "从 Tamaya 度假村轻装出发（免退房！），沿 I-25 北上仅 28 分钟直达 Cochiti Visitor Center 核验双票，跟每 15 分钟一班的前导车进山" },
-          { time: "10:00", event: "自由徒步 Kasha-Katuwe Tent Rocks 锥形火山奇岩与一线天窄缝峡谷（约 2–2.5 小时），中午回庄园或周边午餐休整" },
-          { time: "15:15", event: "从度假村开 20 分钟到 Sandia Peak Tramway，乘高空缆车 15 分钟直上海拔 3,163 米山顶，看 16:53 壮阔日落与城市亮灯" },
-          { time: "18:00", event: "下山回 Tamaya 庄园收拾行李，准备次日返程" }
-        ],
-        hotelTip: "✅ 继续住 Hyatt Regency Tamaya 第 2 晚（庄园位于印第安保护地内，私密安全）。",
-        caution: "Tent Rocks 导航务必搜 Cochiti Visitor Center（勿直接导山谷坐标）；3,163 米山顶比山下冷 10–15°C，穿厚羽绒服。"
-      },
-      {
-        id: 9,
-        date: "12/05 周六",
-        short: "D9 满油还车",
-        title: "从容退房 → 满油按时还车 → 返程航班",
-        driveHours: 0.4,
-        driveText: "约 20 – 25 分钟",
-        miles: "~13 mi",
-        stay: "返程温馨的家",
-        sunset: "—",
-        routePoints: "268,277 263,292",
-        badges: ["11:00 卡点还车", "15:38 起飞"],
-        photos: [
-          { src: "images/albuquerque.jpg", caption: "顺利满油还车 · 告别新墨西哥", searchQ: "Albuquerque International Sunport" }
-        ],
-        links: [
-          { type: "maps", label: "📍 ABQ 租车还车中心 (SIXT)", url: gMap("3400 University Blvd SE Albuquerque NM") },
-          { type: "maps", label: "📍 租车中心旁加油站搜索", url: gMap("Gas station near 3400 University Blvd SE Albuquerque NM") }
-        ],
-        timeline: [
-          { time: "09:30", event: "吃完酒店免费早餐后退房，沿 I-25 南下开往机场片区（周六早约 18 分钟）" },
-          { time: "10:10", event: "在机场周边加油站加满油（保留加油小票备查）" },
-          { time: "10:30", event: "抵达 Sunport Car Rental Center (3400 University Blvd SE)，在 11:00 满 7 整天计费截止点前完成 SIXT 交车" },
-          { time: "11:15", event: "乘免费租车接驳大巴 5 分钟到航站楼，从容值机午餐，等候 15:38 起飞" }
-        ],
-        hotelTip: "无新增住宿。",
-        caution: "还车绕车拍一圈外观与油表里程留底，安心闭环。"
-      }
+    const SPOTS = [
+      { d: "11/28", name: "Bosque del Apache", sub: "数万雪雁与沙丘鹤越冬湿地", img: "images/bosque-cranes.jpg", q: "Bosque del Apache National Wildlife Refuge Visitor Center", web: "https://www.fws.gov/refuge/bosque-del-apache" },
+      { d: "11/28", name: "McGinn's PistachioLand", sub: "世界最大开心果地标与冰淇淋", img: "images/pistachioland.jpg", q: "McGinn's PistachioLand Alamogordo NM", web: "https://pistachioland.com/" },
+      { d: "11/28", name: "White Sands National Park", sub: "纯白石膏结晶沙海日落", img: "images/white-sands.jpg", q: "White Sands National Park Visitor Center", web: "https://www.nps.gov/whsa/index.htm" },
+      { d: "11/29", name: "Mexican Canyon Trestle", sub: "海拔 2,640m 林肯森林百年木栈桥", img: "images/cloudcroft-trestle.jpg", q: "Trestle Vista Observation Site Cloudcroft NM", web: "https://www.fs.usda.gov/recarea/lincoln/recarea/?recid=34224" },
+      { d: "11/30", name: "Carlsbad Caverns", sub: "地下 230 米巨型钟乳石宫殿 Big Room", img: "images/carlsbad-caverns.jpg", q: "Carlsbad Caverns National Park Visitor Center", web: "https://www.nps.gov/cave/index.htm" },
+      { d: "12/01", name: "Santa Fe & La Posada", sub: "四百年西南土坯老城与庄园", img: "images/santa-fe.jpg", q: "La Posada de Santa Fe", web: "https://www.marriott.com/en-us/hotels/safak-la-posada-de-santa-fe-a-tribute-portfolio-resort-and-spa/overview/" },
+      { d: "12/01", name: "El Santuario de Chimayó", sub: "挂满感恩拐杖的传奇圣土小堂", img: "images/chimayo.jpg", q: "El Santuario de Chimayo", web: "https://www.holychimayo.us/" },
+      { d: "12/01", name: "Meow Wolf Santa Fe", sub: "House of Eternal Return 异次元迷宫", img: "images/meow-wolf.jpg", q: "Meow Wolf Santa Fe", web: "https://tickets.meowwolf.com/santa-fe/" },
+      { d: "12/02", name: "Bandelier Cliff Dwellings", sub: "峡谷凝灰岩史前崖居与木梯石窟", img: "images/bandelier.jpg", q: "Bandelier National Monument Visitor Center", web: "https://www.nps.gov/band/index.htm" },
+      { d: "12/02", name: "Plaza Blanca", sub: "Abiquiu 纯白尖塔砂岩恶地迷谷", img: "images/plaza-blanca.jpg", q: "Plaza Blanca Abiquiu NM", web: "https://daralislam.org/" },
+      { d: "12/02", name: "Echo Amphitheater", sub: "US-84 路边百米高天然弧形回音壁", img: "images/echo-amphitheater.jpg", q: "Echo Amphitheater Abiquiu NM", web: "https://www.fs.usda.gov/recarea/carson/recarea/?recid=44092" },
+      { d: "12/03", name: "Shiprock Pinnacle", sub: "荒漠拔地 500 米火山孤峰与岩墙", img: "images/shiprock.jpg", q: "36.6152,-108.7385", web: "https://farmingtonnm.org/listings/shiprock-pinnacle" },
+      { d: "12/04", name: "Kasha-Katuwe Tent Rocks", sub: "圆锥火山奇岩群与一线天窄缝峡谷", img: "images/tent-rocks.jpg", q: "Cochiti Visitor Center NM", web: "https://www.recreation.gov/ticket/10065449/ticket/10065449" },
+      { d: "12/04", name: "Sandia Peak Tramway", sub: "15 分钟直登 3,163 米山巅看日落", img: "images/sandia-tramway.jpg", q: "Sandia Peak Tramway Albuquerque", web: "https://sandiapeak.com/" }
     ];
 
     const MAP_NODES = [
-      { name: "ABQ 机场", x: 263, y: 292, dayIdx: 0, type: "stay", labelDx: -56, labelDy: 15 },
-      { name: "Bosque 鹤群", x: 240, y: 413, dayIdx: 1, type: "park", labelDx: -78, labelDy: 4 },
-      { name: "Tamaya 度假村", x: 268, y: 266, dayIdx: 6, type: "stay", labelDx: 10, labelDy: 5 },
-      { name: "PistachioLand", x: 316, y: 492, dayIdx: 1, type: "park", labelDx: -84, labelDy: -5 },
-      { name: "White Sands 白沙", x: 300, y: 514, dayIdx: 1, type: "park", labelDx: -96, labelDy: 6 },
-      { name: "Alamogordo", x: 317, y: 502, dayIdx: 1, type: "stay", labelDx: 9, labelDy: 14 },
-      { name: "Cloudcroft", x: 336, y: 496, dayIdx: 2, type: "park", labelDx: 8, labelDy: -7 },
-      { name: "Carlsbad", x: 461, y: 549, dayIdx: 2, type: "stay", labelDx: 9, labelDy: 4 },
-      { name: "Caverns 大溶洞", x: 444, y: 573, dayIdx: 3, type: "park", labelDx: -40, labelDy: 18 },
-      { name: "Roswell", x: 437, y: 454, dayIdx: 3, type: "stay", labelDx: 10, labelDy: 4 },
-      { name: "Santa Fe (La Posada)", x: 319, y: 228, dayIdx: 4, type: "stay", labelDx: 10, labelDy: 5 },
-      { name: "Chimayó 教堂", x: 320, y: 198, dayIdx: 4, type: "park", labelDx: 9, labelDy: -2 },
-      { name: "Bandelier 崖居", x: 292, y: 215, dayIdx: 5, type: "park", labelDx: -88, labelDy: -4 },
-      { name: "Plaza Blanca", x: 297, y: 175, dayIdx: 5, type: "park", labelDx: 9, labelDy: 3 },
-      { name: "Echo 回音石窟", x: 270, y: 162, dayIdx: 5, type: "park", labelDx: -86, labelDy: -4 },
-      { name: "Farmington", x: 131, y: 126, dayIdx: 5, type: "stay", labelDx: -10, labelDy: 19 },
-      { name: "Shiprock", x: 78, y: 129, dayIdx: 6, type: "park", labelDx: -18, labelDy: -10 },
-      { name: "Tent Rocks 帐篷岩", x: 280, y: 238, dayIdx: 7, type: "park", labelDx: -105, labelDy: 4 }
+      { name: "ABQ", x: 263, y: 292, dayIdx: 0, stay: true, dx: -36, dy: 14 },
+      { name: "Tamaya", x: 268, y: 266, dayIdx: 6, stay: true, dx: 9, dy: 4 },
+      { name: "Bosque", x: 240, y: 413, dayIdx: 1, stay: false, dx: -52, dy: 4 },
+      { name: "Pistachio", x: 316, y: 492, dayIdx: 1, stay: false, dx: -64, dy: -4 },
+      { name: "White Sands", x: 300, y: 514, dayIdx: 1, stay: false, dx: -82, dy: 6 },
+      { name: "Alamogordo", x: 317, y: 502, dayIdx: 1, stay: true, dx: 9, dy: 13 },
+      { name: "Cloudcroft", x: 336, y: 496, dayIdx: 2, stay: false, dx: 8, dy: -6 },
+      { name: "Carlsbad", x: 461, y: 549, dayIdx: 2, stay: true, dx: 9, dy: 4 },
+      { name: "Caverns", x: 444, y: 573, dayIdx: 3, stay: false, dx: -28, dy: 17 },
+      { name: "Roswell", x: 437, y: 454, dayIdx: 3, stay: true, dx: 9, dy: 4 },
+      { name: "Santa Fe", x: 319, y: 228, dayIdx: 4, stay: true, dx: 9, dy: 4 },
+      { name: "Chimayó", x: 320, y: 198, dayIdx: 4, stay: false, dx: 8, dy: -2 },
+      { name: "Bandelier", x: 292, y: 215, dayIdx: 5, stay: false, dx: -66, dy: -3 },
+      { name: "Plaza Blanca", x: 297, y: 175, dayIdx: 5, stay: false, dx: 8, dy: 3 },
+      { name: "Echo", x: 270, y: 162, dayIdx: 5, stay: false, dx: -40, dy: -4 },
+      { name: "Farmington", x: 131, y: 126, dayIdx: 5, stay: true, dx: -10, dy: 18 },
+      { name: "Shiprock", x: 78, y: 129, dayIdx: 6, stay: false, dx: -16, dy: -9 },
+      { name: "Tent Rocks", x: 280, y: 238, dayIdx: 7, stay: false, dx: -76, dy: 4 }
     ];
 
     const HOTELS = [
-      {
-        date: "11/27 周五",
-        area: "ABQ 机场",
-        best: "✅ Holiday Inn & Suites Albuquerque Airport (已订)",
-        marriott: "Sheraton Albuquerque Airport Hotel",
-        ihg: "✅ Holiday Inn & Suites Albuquerque Airport (已订)",
-        qMap: {
-          best: "Holiday Inn & Suites Albuquerque Airport 1501 Sunport Pl",
-          marriott: "Sheraton Albuquerque Airport Hotel",
-          ihg: "Holiday Inn & Suites Albuquerque Airport 1501 Sunport Pl"
-        },
-        pay: "✅ 已用 CSP 预订 (报销 $100 后实付 $46.25)",
-        note: "1501 Sunport Place · 24h 免费班车（落地拨 505-944-2255 召唤接机），次日早也可送租车中心"
-      },
-      {
-        date: "11/28 周六",
-        area: "Alamogordo",
-        best: "⏳ 待订：Fairfield ($155) / HIX ($169) / Home2 ($190)",
-        marriott: "⏳ Fairfield Inn & Suites Alamogordo ($154.75)",
-        ihg: "⏳ Holiday Inn Express & Suites Alamogordo ($169)",
-        qMap: {
-          best: "Fairfield Inn & Suites Alamogordo NM",
-          marriott: "Fairfield Inn & Suites Alamogordo NM",
-          ihg: "Holiday Inn Express & Suites Alamogordo NM"
-        },
-        pay: "⏳ 待订 · 可用第 2 张 CSP 报销 $100",
-        note: "实测含税价：Fairfield $154.75 最省；HIX $169 口碑 ~9.0；Home2 Suites $189.79 全镇最新套房"
-      },
-      {
-        date: "11/29 周日",
-        area: "Carlsbad",
-        best: "⏳ 待订：Hyatt House Carlsbad (凯悦 · $149 税后)",
-        marriott: "TownePlace Suites by Marriott Carlsbad",
-        ihg: "Holiday Inn Express & Suites Carlsbad",
-        qMap: {
-          best: "Hyatt House Carlsbad NM",
-          marriott: "TownePlace Suites by Marriott Carlsbad NM",
-          ihg: "Holiday Inn Express & Suites Carlsbad NM"
-        },
-        pay: "⏳ 待订 · 凯悦官网现金 $149.18 (或 8k 凯悦分)",
-        note: "比同城 IHG ($187–$213) 便宜 $40+，全员含热早，官网直订还可累积凯悦房晚与点亮 Hyatt House 品牌章"
-      },
-      {
-        date: "11/30 周一",
-        area: "Roswell",
-        best: "✅ Holiday Inn Express & Suites Roswell (已订)",
-        marriott: "TownePlace Suites by Marriott Roswell",
-        ihg: "✅ Holiday Inn Express & Suites Roswell (已订)",
-        qMap: {
-          best: "Holiday Inn Express & Suites Roswell NM",
-          marriott: "TownePlace Suites by Marriott Roswell NM",
-          ihg: "Holiday Inn Express & Suites Roswell NM"
-        },
-        pay: "✅ 已用 Delta Gold 预订 (减 $100 后实付 $21.43)",
-        note: "9.2 高分 · 含热早+免费停车 · 11/23 前可免费全额退改"
-      },
-      {
-        date: "12/01 周二",
-        area: "Santa Fe",
-        best: "✅ La Posada de Santa Fe, Tribute Portfolio (已订)",
-        marriott: "✅ La Posada de Santa Fe, Tribute Portfolio (已订)",
-        ihg: "Holiday Inn Express & Suites Santa Fe (备选)",
-        qMap: {
-          best: "La Posada de Santa Fe",
-          marriott: "La Posada de Santa Fe",
-          ihg: "Holiday Inn Express & Suites Santa Fe NM"
-        },
-        pay: "✅ 已用万豪 35k FN + 11k 分锁定",
-        note: "16:00 入住/12:00 退房；含税 $46.13 Resort Fee 已包代客泊车 Valet Parking，步行 5 分钟至老城广场"
-      },
-      {
-        date: "12/02 周三",
-        area: "Farmington",
-        best: "⏳ 待订：TownePlace Suites (万豪) 或 HIX ($112+税)",
-        marriott: "⏳ TownePlace Suites Farmington",
-        ihg: "⏳ Holiday Inn Express Farmington Bloomfield",
-        qMap: {
-          best: "TownePlace Suites by Marriott Farmington NM",
-          marriott: "TownePlace Suites by Marriott Farmington NM",
-          ihg: "Holiday Inn Express & Suites Farmington Bloomfield NM"
-        },
-        pay: "⏳ 待订 · 现金 (~$112–$125+税)",
-        note: "评分近 9.0、免费停车+含热早（可先翻一眼万豪卡或 Chase 卡里的 10%–15% 返现 Offer）"
-      },
-      {
-        date: "12/03 周四",
-        area: "Bernalillo 北郊 (连住1)",
-        best: "✅ Hyatt Regency Tamaya Resort & Spa (已订)",
-        marriott: "SpringHill Suites Albuquerque North",
-        ihg: "Staybridge Suites Albuquerque North",
-        qMap: {
-          best: "Hyatt Regency Tamaya Resort and Spa",
-          marriott: "SpringHill Suites Albuquerque North Journal Center",
-          ihg: "Staybridge Suites Albuquerque North"
-        },
-        pay: "✅ 已用凯悦 1.2w 分/晚锁定 (免 Resort Fee)",
-        note: "新墨西哥头牌印第安庄园度假村，US-550 下来直达，去帐篷岩 28 分钟、去桑迪亚峰缆车 20 分钟"
-      },
-      {
-        date: "12/04 周五",
-        area: "Bernalillo 北郊 (连住2)",
-        best: "✅ Hyatt Regency Tamaya Resort & Spa (连住第2晚)",
-        marriott: "SpringHill Suites Albuquerque North",
-        ihg: "Staybridge Suites Albuquerque North",
-        qMap: {
-          best: "Hyatt Regency Tamaya Resort and Spa",
-          marriott: "SpringHill Suites Albuquerque North Journal Center",
-          ihg: "Staybridge Suites Albuquerque North"
-        },
-        pay: "✅ 已用凯悦 1.2w 分/晚锁定 ($0 自付)",
-        note: "周六早 09:30 退房走 I-25 南下约 25 分钟直达机场租车中心加满油还车"
-      }
+      { date: "11/27 周五", city: "ABQ Airport", name: "Holiday Inn & Suites Albuquerque Airport", q: "Holiday Inn & Suites Albuquerque Airport 1501 Sunport Place", meta: "1501 Sunport Pl · 24h 班车 (505-944-2255)", status: "已订 · $46 (CSP -$100)", ok: true },
+      { date: "11/28 周六", city: "Alamogordo", name: "Fairfield Inn ($155) / HIX ($169) / Home2 ($190)", q: "Fairfield Inn & Suites Alamogordo NM", meta: "全员含早+免费停车 · 距白沙 18 分钟", status: "待订 · 可用第2张 CSP -$100", ok: false },
+      { date: "11/29 周日", city: "Carlsbad", name: "Hyatt House Carlsbad", q: "Hyatt House Carlsbad NM", meta: "凯悦官网直订含早 · 攒房晚+点亮品牌章", status: "待订 · $149 税后 (或 8k 分)", ok: false },
+      { date: "11/30 周一", city: "Roswell", name: "Holiday Inn Express & Suites Roswell", q: "Holiday Inn Express & Suites Roswell NM", meta: "含热早+免费停车 · 11/23 前免费退", status: "已订 · $21 (Delta -$100)", ok: true },
+      { date: "12/01 周二", city: "Santa Fe", name: "La Posada de Santa Fe, Tribute Portfolio", q: "La Posada de Santa Fe", meta: "16:00 入住 / 12:00 退房 · $46 Resort Fee 含 Valet", status: "已订 · 35k FN + 11k 分", ok: true },
+      { date: "12/02 周三", city: "Farmington", name: "TownePlace Suites 或 Holiday Inn Express", q: "TownePlace Suites by Marriott Farmington NM", meta: "含热早+免费停车", status: "待订 · ~$125 税后", ok: false },
+      { date: "12/03 周四", city: "Santa Ana Pueblo", name: "Hyatt Regency Tamaya Resort & Spa (1/2)", q: "Hyatt Regency Tamaya Resort and Spa", meta: "免 Resort Fee 与停车费 · 去帐篷岩 28min", status: "已订 · 12,000 分", ok: true },
+      { date: "12/04 周五", city: "Santa Ana Pueblo", name: "Hyatt Regency Tamaya Resort & Spa (2/2)", q: "Hyatt Regency Tamaya Resort and Spa", meta: "连住免搬行李 · 次日 I-25 去机场 25min", status: "已订 · 12,000 分", ok: true }
     ];
 
     const TODOS = [
-      {
-        id: "cave",
-        tag: "必抢门票",
-        title: "预订 11/30 (周一) 10:00 Carlsbad Caverns 入洞时段票",
-        desc: "在 Recreation.gov 锁定 Timed Entry（每人 $1 预约费 + 门票或国家公园年卡免票），核对最晚报到时间。",
-        url: "https://www.recreation.gov/ticket/234637/ticket/10086811",
-        linkText: "前往 Recreation.gov 预约溶洞"
-      },
-      {
-        id: "tentrocks",
-        tag: "双票缺一不可",
-        title: "预订 12/04 (周五上午) Kasha-Katuwe Tent Rocks 联邦票 + 部落通行证",
-        desc: "现场不售票！① 先在 Recreation.gov 约 BLM 票 ($5+$1)；② 结账页跳转 PurplePass 购买 Cochiti 部落通行证 ($20/人，年卡不免)。当天 08:00–13:00 导航至 Cochiti Visitor Center 报到。",
-        url: "https://www.recreation.gov/ticket/10065449/ticket/10065449",
-        linkText: "前往 Recreation.gov 预约帐篷岩"
-      },
-      {
-        id: "laposada",
-        tag: "35k 房券",
-        title: "用万豪 35k FN 锁定 12/01 (周二) La Posada de Santa Fe 并锁好 11/28 白沙住宿",
-        desc: "11/28 是感恩节周六，Alamogordo 的 Holiday Inn Express 房源紧俏建议最先订；其余各站可订入住前 1–2 天免费取消的弹性房价。",
-        url: "https://www.marriott.com/",
-        linkText: "打开 Marriott 官网"
-      },
-      {
-        id: "plazablanca",
-        tag: "免费领密码",
-        title: "出发前在 Dar al Islam 官网免费登记领取 12/02 Plaza Blanca 铁门密码",
-        desc: "两位成人分别填姓名邮箱即可当场弹出开门密码（Gate Code），截图保存；仅在当天晴好路面干燥时进入。",
-        url: "https://daralislam.org/",
-        linkText: "前往 Dar al Islam 官网登记"
-      },
-      {
-        id: "meowwolf",
-        tag: "按需选订",
-        title: "查看 12/01 (周二下午) Meow Wolf Santa Fe 营业日历",
-        desc: "冬季个别周二可能闭馆维护。若当天开放且想玩，提前买 14:30 或 15:00 时段票；若闭馆则直接在 La Posada 庄园休整逛老城。",
-        url: "https://tickets.meowwolf.com/santa-fe/",
-        linkText: "查看 Meow Wolf 售票日历"
-      },
-      {
-        id: "sixt",
-        tag: "租车合规",
-        title: "11/28 SIXT 提车核实白沙路面条款 & 全程坚守铺装路原则",
-        desc: "确认 Dunes Drive 硬实石膏沙路政策及合法停车区；12/03 Shiprock 仅走 US-491 与 IR-13 柏油路，绝不下土路。",
-        url: "https://www.nps.gov/whsa/planyourvisit/conditions.htm",
-        linkText: "查看白沙官方当前路况"
-      },
-      {
-        id: "weather",
-        tag: "冬季行车",
-        title: "出发前查 11/29 Cloudcroft (US-82) 与 12/02 北线风雪路况 + 备车载干粮",
-        desc: "12/02 去 Bandelier 前在车上备好饮水与简餐；12/04 若遇大风注意看 Sandia Peak 缆车实时运行状态。",
-        url: "https://www.nmroads.com/",
-        linkText: "打开 NMRoads 实时路况"
-      }
+      { id: "pass", title: "电子版国家公园年卡 (America the Beautiful)", sub: "已存入 Apple Wallet · 进园随身带驾照核验姓名", url: "https://www.recreation.gov/pass", link: "已办妥", defaultDone: true },
+      { id: "cave", title: "11/30 Carlsbad Caverns 入洞预约 (09:30–10:30)", sub: "已出票 · 2 人", url: "https://www.recreation.gov/ticket/234637/ticket/10086811", link: "已办妥", defaultDone: true },
+      { id: "tent", title: "12/04 Kasha-Katuwe Tent Rocks 联邦票 + 部落通行证", sub: "双票已出 · 当天 08:00–13:00 导至 Cochiti Visitor Center", url: "https://www.recreation.gov/ticket/10065449/ticket/10065449", link: "已办妥", defaultDone: true },
+      { id: "hotels3", title: "补齐剩余 3 晚单晚住宿 (11/28 · 11/29 · 12/02)", sub: "Alamogordo · Carlsbad (Hyatt House) · Farmington", url: "https://www.hyatt.com/", link: "去预订 ↗", defaultDone: false },
+      { id: "plaza", title: "登记领取 12/02 Plaza Blanca 铁门密码", sub: "两位成人分别填姓名邮箱当场显示 Gate Code · 截图保存", url: "https://daralislam.org/", link: "领密码 ↗", defaultDone: false },
+      { id: "delta_ride", title: "Amex App 激活 Delta 卡 $10/月 Rideshare 报销", sub: "11 月与 12 月各可报 $10 打车费 · 顺查 Resy $50 额度", url: "https://www.americanexpress.com/", link: "去激活 ↗", defaultDone: false },
+      { id: "roads", title: "行前核查白沙 SIXT 条款与 11/29 · 12/02 实时路况", sub: "Cloudcroft (US-82) 与北线风雪状态", url: "https://www.nmroads.com/", link: "NMRoads ↗", defaultDone: false }
     ];
 
-    let activeDayIdx = 0;
-    let currentHotelFilter = "best";
-    const STORAGE_KEY = "nm_2026_shared_todos_v1";
-    let checkedTodos = {};
+    let activeDay = 0;
+    const STORAGE_KEY = "nm_2026_clean_todos_v2";
+    let checked = {};
     try {
-      checkedTodos = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
-    } catch (e) {
-      checkedTodos = {};
-    }
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (raw) {
+        checked = JSON.parse(raw);
+      } else {
+        TODOS.forEach(t => { if (t.defaultDone) checked[t.id] = true; });
+      }
+    } catch (e) {}
 
-    function renderDayPills() {
-      const container = document.getElementById("day-pills");
-      container.innerHTML = DAYS.map((d, idx) => {
-        const cls = idx === activeDayIdx ? "day-pill active" : "day-pill";
-        return `
-          <button data-day="${idx}" class="${cls}">
-            <div class="d-date">${d.date}</div>
-            <div class="d-name">${d.short.split(" ")[1]}</div>
-          </button>
-        `;
-      }).join("");
-
-      container.querySelectorAll(".day-pill").forEach(btn => {
-        btn.addEventListener("click", () => {
-          activeDayIdx = Number(btn.dataset.day);
-          updateItineraryView();
+    function renderDayStrip() {
+      const el = document.getElementById("day-strip");
+      el.innerHTML = DAYS.map((d, i) => `
+        <button data-day="${i}" class="day-tab ${i === activeDay ? 'active' : ''}">
+          <div class="dt-num">${d.date} ${d.wk}</div>
+          <div class="dt-label">${d.tab}</div>
+        </button>
+      `).join("");
+      el.querySelectorAll(".day-tab").forEach(b => {
+        b.addEventListener("click", () => {
+          activeDay = Number(b.dataset.day);
+          updateDayView();
         });
       });
     }
 
     function renderMapNodes() {
-      const layer = document.getElementById("map-nodes-layer");
-      layer.innerHTML = MAP_NODES.map(n => {
-        const isCurrent = n.dayIdx === activeDayIdx;
-        const fill = n.type === "stay" ? "var(--primary)" : "var(--turquoise)";
-        const r = isCurrent ? 7 : 5;
-        const ring = isCurrent
-          ? `<circle cx="${n.x}" cy="${n.y}" r="11.5" fill="none" stroke="${fill}" stroke-width="2" opacity="0.55" />`
-          : "";
+      const g = document.getElementById("map-nodes-layer");
+      g.innerHTML = MAP_NODES.map(n => {
+        const active = n.dayIdx === activeDay;
+        const color = n.stay ? "var(--primary)" : "var(--teal)";
         return `
-          <g class="map-node" data-node-day="${n.dayIdx}">
-            ${ring}
-            <circle cx="${n.x}" cy="${n.y}" r="${r}" fill="${fill}" stroke="var(--card)" stroke-width="1.8" />
-            <text x="${n.x + n.labelDx}" y="${n.y + n.labelDy}" fill="var(--fg)" font-size="11.5" font-weight="${isCurrent ? '700' : '500'}">${n.name}</text>
+          <g class="map-node" data-day="${n.dayIdx}">
+            ${active ? `<circle cx="${n.x}" cy="${n.y}" r="11" fill="none" stroke="${color}" stroke-width="2" opacity="0.5" />` : ""}
+            <circle cx="${n.x}" cy="${n.y}" r="${active ? 6.5 : 4.6}" fill="${color}" stroke="var(--card)" stroke-width="1.6" />
+            <text x="${n.x + n.dx}" y="${n.y + n.dy}" fill="var(--fg)" font-size="11" font-weight="${active ? '700' : '500'}">${n.name}</text>
           </g>
         `;
       }).join("");
-
-      layer.querySelectorAll(".map-node").forEach(el => {
-        el.addEventListener("click", () => {
-          activeDayIdx = Number(el.dataset.nodeDay);
-          updateItineraryView();
+      g.querySelectorAll(".map-node").forEach(node => {
+        node.addEventListener("click", () => {
+          activeDay = Number(node.dataset.day);
+          updateDayView();
         });
       });
     }
 
     function renderDayCard() {
-      const d = DAYS[activeDayIdx];
-      document.getElementById("map-leg-label").textContent = `${d.date} · ${d.miles}`;
+      const d = DAYS[activeDay];
       document.getElementById("active-route-path").setAttribute("points", d.routePoints);
 
-      const twoPhotosCls = d.photos.length > 1 ? "two-photos" : "";
-      const card = document.getElementById("day-detail-card");
+      const card = document.getElementById("day-card");
       card.innerHTML = `
-        <div style="display:flex; flex-wrap:wrap; align-items:flex-start; justify-content:space-between; gap:10px; padding-bottom:12px; border-bottom:1px solid var(--border);">
-          <div>
-            <div style="display:flex; flex-wrap:wrap; gap:6px; align-items:center; margin-bottom:5px;">
-              <span class="badge badge-primary">${d.date}</span>
-              ${d.badges.map(b => `<span class="badge">${b}</span>`).join("")}
-            </div>
-            <h2>${d.title}</h2>
-          </div>
-          <div style="display:flex; gap:6px;">
-            <button id="prev-day" class="btn btn-ghost" ${activeDayIdx === 0 ? "disabled" : ""}>← 前一天</button>
-            <button id="next-day" class="btn btn-ghost" ${activeDayIdx === DAYS.length - 1 ? "disabled" : ""}>后一天 →</button>
-          </div>
-        </div>
-
-        <div class="day-photo-grid ${twoPhotosCls}">
+        <div class="hero-grid ${d.photos.length > 1 ? 'two' : ''}">
           ${d.photos.map(p => `
-            <div class="photo-box">
-              <img src="${p.src}" alt="${p.caption}" loading="lazy" />
-              <div class="photo-caption">
-                <span>${p.caption}</span>
-                <a href="${gSearch(p.searchQ)}" target="_blank" rel="noopener noreferrer">Google 更多图 ↗</a>
-              </div>
-            </div>
-          `).join("")}
-        </div>
-
-        <div class="meta-row">
-          <div class="subcard">
-            <div class="kpi-label">当日纯车程</div>
-            <div style="font-size:13px; font-weight:700; margin-top:2px;">${d.driveText}</div>
-          </div>
-          <div class="subcard">
-            <div class="kpi-label">参考日落 (MST)</div>
-            <div style="font-size:13px; font-weight:700; margin-top:2px;">${d.sunset}</div>
-          </div>
-          <div class="subcard">
-            <div class="kpi-label">当晚落脚点</div>
-            <div style="font-size:13px; font-weight:700; margin-top:2px;">${d.stay}</div>
-          </div>
-        </div>
-
-        <div class="link-group">
-          ${d.links.map(l => `
-            <a class="${l.type === 'maps' ? 'chip-maps' : 'chip-google'}" href="${l.url}" target="_blank" rel="noopener noreferrer">
-              ${l.label} ↗
+            <a class="hero-item" href="${gSearch(p.q)}" target="_blank" rel="noopener noreferrer">
+              <img src="${p.src}" alt="${p.name}" loading="lazy" />
+              <span class="hero-tag">${p.name} ↗</span>
             </a>
           `).join("")}
         </div>
 
-        <div style="font-size:12px; font-weight:700; color:var(--muted); margin-top:4px;">当日时间轴 (MST)</div>
-        <div class="timeline">
-          ${d.timeline.map(item => `
-            <div class="tl-item">
-              <span class="tl-dot"></span>
-              <div class="tl-time">${item.time}</div>
-              <div class="tl-desc">${item.event}</div>
+        <div class="day-body">
+          <div class="day-head">
+            <div>
+              <h2 class="day-title">${d.date} ${d.wk} · ${d.title}</h2>
+              <div class="stat-strip">
+                ${d.stats.map(s => `<span>${s}</span><span class="dot">·</span>`).join("")}
+                <a class="route-jump" href="${d.routeUrl}" target="_blank" rel="noopener noreferrer">当日路线导航 ↗</a>
+              </div>
             </div>
-          `).join("")}
-        </div>
-
-        <div class="two-col" style="padding-top:12px; border-top:1px solid var(--border);">
-          <div class="subcard">
-            <div style="font-size:12.5px; font-weight:700; margin-bottom:4px;">🏨 住宿与积分建议</div>
-            <p class="muted" style="font-size:12.5px;">${d.hotelTip}</p>
+            <div class="arrow-btns">
+              <button id="prev-btn" class="icon-btn" ${activeDay === 0 ? "disabled" : ""} aria-label="前一天">‹</button>
+              <button id="next-btn" class="icon-btn" ${activeDay === DAYS.length - 1 ? "disabled" : ""} aria-label="后一天">›</button>
+            </div>
           </div>
-          <div class="subcard">
-            <div style="font-size:12.5px; font-weight:700; margin-bottom:4px;">⚠️ 当日注意细节</div>
-            <p class="muted" style="font-size:12.5px;">${d.caution}</p>
+
+          <div class="schedule">
+            ${d.stops.map(s => `
+              <div class="sched-row">
+                <span class="sched-time">${s.t}</span>
+                <span>${s.text}</span>
+                <a class="sched-map" href="${gMap(s.map)}" target="_blank" rel="noopener noreferrer">地图 ↗</a>
+              </div>
+            `).join("")}
+          </div>
+
+          <div class="day-foot">
+            <span class="stay-chip">
+              <span class="status-dot ${d.booked ? 'ok' : 'pend'}"></span>
+              ${d.stay}
+            </span>
+            <span class="foot-note">${d.note}</span>
           </div>
         </div>
       `;
 
-      document.getElementById("prev-day").addEventListener("click", () => {
-        if (activeDayIdx > 0) { activeDayIdx--; updateItineraryView(); }
+      document.getElementById("prev-btn").addEventListener("click", () => {
+        if (activeDay > 0) { activeDay--; updateDayView(); }
       });
-      document.getElementById("next-day").addEventListener("click", () => {
-        if (activeDayIdx < DAYS.length - 1) { activeDayIdx++; updateItineraryView(); }
+      document.getElementById("next-btn").addEventListener("click", () => {
+        if (activeDay < DAYS.length - 1) { activeDay++; updateDayView(); }
       });
     }
 
-    function updateItineraryView() {
-      renderDayPills();
+    function updateDayView() {
+      renderDayStrip();
       renderMapNodes();
       renderDayCard();
     }
 
-    function renderSpotsGallery() {
-      const grid = document.getElementById("spots-grid");
-      grid.innerHTML = SPOTS.map(s => `
-        <article class="spot-card">
-          <div class="spot-img-wrap">
+    function renderSpots() {
+      document.getElementById("spots-grid").innerHTML = SPOTS.map(s => `
+        <article class="spot">
+          <div class="spot-pic">
             <img src="${s.img}" alt="${s.name}" loading="lazy" />
-            <span class="spot-day-tag">${s.day}</span>
+            <span class="spot-date">${s.d}</span>
           </div>
-          <div class="spot-body">
-            <h3>${s.name}</h3>
-            <p class="muted" style="font-size:12.5px;">${s.desc}</p>
-            <div class="spot-links">
-              <a class="chip-maps" href="${gMap(s.mapQ)}" target="_blank" rel="noopener noreferrer">📍 Google 地图 ↗</a>
-              <a class="chip-google" href="${gSearch(s.searchQ)}" target="_blank" rel="noopener noreferrer">🔎 Google 搜索 ↗</a>
-              <a class="chip-web" href="${s.web}" target="_blank" rel="noopener noreferrer">🌐 ${s.webLabel} ↗</a>
+          <div class="spot-info">
+            <div>
+              <h3 class="spot-name">${s.name}</h3>
+              <div class="spot-sub">${s.sub}</div>
             </div>
+          </div>
+          <div class="spot-actions">
+            <a href="${gMap(s.q)}" target="_blank" rel="noopener noreferrer">地图 ↗</a>
+            <a href="${gSearch(s.name + ' New Mexico')}" target="_blank" rel="noopener noreferrer" class="muted-link">Google ↗</a>
+            <a href="${s.web}" target="_blank" rel="noopener noreferrer" class="muted-link" style="margin-left:auto;">官网 ↗</a>
           </div>
         </article>
       `).join("");
     }
 
-    function renderHotelsTable() {
-      const titleMap = {
-        best: "混合最优酒店 (万豪+IHG择优)",
-        marriott: "万豪系优选 (Marriott Bonvoy)",
-        ihg: "洲际系优选 (IHG One Rewards)"
-      };
-      document.getElementById("hotel-col-title").textContent = titleMap[currentHotelFilter];
-      document.getElementById("hotel-table-body").innerHTML = HOTELS.map(h => {
-        const isFN = h.date.startsWith("12/01");
-        const q = h.qMap[currentHotelFilter];
-        return `
-          <tr class="${isFN ? 'highlight-row' : ''}">
-            <td style="white-space:nowrap; font-family:ui-monospace,monospace; font-weight:600;">${h.date}</td>
-            <td style="white-space:nowrap;">${h.area}</td>
-            <td>
-              <div style="font-weight:700;">${h[currentHotelFilter]}</div>
-              <div class="hotel-inline-links">
-                <a href="${gMap(q)}" target="_blank" rel="noopener noreferrer">📍 Google 地图</a>
-                <a href="${gSearch(q + ' reviews')}" target="_blank" rel="noopener noreferrer">🔎 Google 评价</a>
-              </div>
-            </td>
-            <td style="font-size:12.5px;">${h.pay}</td>
-            <td class="muted" style="font-size:12.5px;">${h.note}</td>
-          </tr>
-        `;
-      }).join("");
-    }
-
-    function renderDriveBars() {
-      const maxH = 5.0;
-      document.getElementById("drive-bars").innerHTML = DAYS.map(d => {
-        const pct = Math.max(2, Math.round((d.driveHours / maxH) * 100));
-        return `
-          <div class="bar-row">
-            <div style="font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${d.date} · ${d.short.split(" ")[1]}</div>
-            <div class="bar-track"><div class="bar-fill" style="width:${pct}%"></div></div>
-            <div class="muted" style="text-align:right; font-family:ui-monospace,monospace;">${d.driveHours === 0 ? "0h" : "~" + d.driveHours + "h"}</div>
+    function renderHotels() {
+      document.getElementById("hotels-ledger").innerHTML = HOTELS.map(h => `
+        <div class="ledger-row">
+          <div>
+            <div class="l-date">${h.date}</div>
+            <div class="l-city">${h.city}</div>
           </div>
-        `;
-      }).join("");
+          <div class="l-hotel">
+            <a href="${gMap(h.q)}" target="_blank" rel="noopener noreferrer">${h.name} ↗</a>
+            <div class="l-meta">${h.meta}</div>
+          </div>
+          <span class="state-pill ${h.ok ? 'ok' : 'pend'}">
+            <span class="status-dot ${h.ok ? 'ok' : 'pend'}"></span>
+            ${h.status}
+          </span>
+        </div>
+      `).join("");
     }
 
     function renderChecklist() {
-      const doneCount = TODOS.filter(t => checkedTodos[t.id]).length;
-      document.getElementById("todo-badge").textContent = `(${doneCount}/${TODOS.length})`;
+      const done = TODOS.filter(t => checked[t.id]).length;
+      document.getElementById("todo-tab-btn").textContent = `清单 ${done}/${TODOS.length}`;
 
-      const container = document.getElementById("checklist-items");
-      container.innerHTML = TODOS.map(t => {
-        const checked = !!checkedTodos[t.id];
-        return `
-          <div class="todo-item ${checked ? 'done' : ''}">
-            <input type="checkbox" data-todo="${t.id}" ${checked ? "checked" : ""} />
-            <div style="flex:1;">
-              <div style="display:flex; flex-wrap:wrap; align-items:center; gap:8px;">
-                <span class="badge">${t.tag}</span>
-                <span style="font-size:14px; font-weight:700; ${checked ? 'text-decoration:line-through;' : ''}">${t.title}</span>
-              </div>
-              <p class="muted" style="font-size:12.5px; margin-top:4px;">${t.desc}</p>
-              <a class="ext-link" href="${t.url}" target="_blank" rel="noopener noreferrer">${t.linkText} ↗</a>
-            </div>
+      const box = document.getElementById("checklist-box");
+      box.innerHTML = TODOS.map(t => `
+        <div class="check-row ${checked[t.id] ? 'done' : ''}">
+          <input type="checkbox" data-id="${t.id}" ${checked[t.id] ? "checked" : ""} />
+          <div>
+            <div class="c-title">${t.title}</div>
+            <div class="c-sub">${t.sub}</div>
           </div>
-        `;
-      }).join("");
+          <a class="c-link" href="${t.url}" target="_blank" rel="noopener noreferrer">${t.link}</a>
+        </div>
+      `).join("");
 
-      container.querySelectorAll("input[data-todo]").forEach(cb => {
+      box.querySelectorAll("input[data-id]").forEach(cb => {
         cb.addEventListener("change", () => {
-          checkedTodos[cb.dataset.todo] = cb.checked;
-          try { localStorage.setItem(STORAGE_KEY, JSON.stringify(checkedTodos)); } catch (e) {}
+          checked[cb.dataset.id] = cb.checked;
+          try { localStorage.setItem(STORAGE_KEY, JSON.stringify(checked)); } catch (e) {}
           renderChecklist();
         });
       });
     }
 
-    // Main Tabs
-    document.querySelectorAll("#main-tabs .btn").forEach(btn => {
+    document.querySelectorAll("#main-tabs .seg-btn").forEach(btn => {
       btn.addEventListener("click", () => {
-        const target = btn.dataset.tab;
-        document.querySelectorAll("#main-tabs .btn").forEach(b => b.classList.toggle("active", b.dataset.tab === target));
-        document.querySelectorAll(".tab-panel").forEach(p => p.classList.toggle("hidden", p.id !== `tab-${target}`));
+        const tab = btn.dataset.tab;
+        document.querySelectorAll("#main-tabs .seg-btn").forEach(b => b.classList.toggle("active", b.dataset.tab === tab));
+        document.querySelectorAll(".tab-panel").forEach(p => p.classList.toggle("hidden", p.id !== `tab-${tab}`));
       });
     });
 
-    // Hotel Filters
-    document.querySelectorAll(".hfilter-btn").forEach(btn => {
-      btn.addEventListener("click", () => {
-        currentHotelFilter = btn.dataset.hfilter;
-        document.querySelectorAll(".hfilter-btn").forEach(b => b.classList.toggle("active", b.dataset.hfilter === currentHotelFilter));
-        renderHotelsTable();
-      });
-    });
-
-    // Old Route Toggle
-    document.getElementById("toggle-old-route").addEventListener("change", (e) => {
-      document.getElementById("old-route-layer").style.display = e.target.checked ? "block" : "none";
-    });
-
-    // Theme Toggle
     document.getElementById("theme-btn").addEventListener("click", () => {
-      const isDark = document.documentElement.classList.toggle("dark");
-      try { localStorage.setItem("nm_theme", isDark ? "dark" : "light"); } catch (e) {}
+      const d = document.documentElement.classList.toggle("dark");
+      try { localStorage.setItem("nm_theme", d ? "dark" : "light"); } catch (e) {}
     });
 
-    // Share Copy
     document.getElementById("share-btn").addEventListener("click", () => {
       if (navigator.clipboard) {
         navigator.clipboard.writeText(window.location.href).then(() => {
-          const toast = document.getElementById("toast");
-          toast.classList.add("show");
-          setTimeout(() => toast.classList.remove("show"), 2000);
+          const t = document.getElementById("toast");
+          t.classList.add("show");
+          setTimeout(() => t.classList.remove("show"), 1800);
         });
       }
     });
 
-    // Reset Checklist
-    document.getElementById("reset-todos").addEventListener("click", () => {
-      checkedTodos = {};
-      try { localStorage.removeItem(STORAGE_KEY); } catch (e) {}
-      renderChecklist();
-    });
-
-    updateItineraryView();
-    renderSpotsGallery();
-    renderHotelsTable();
-    renderDriveBars();
+    updateDayView();
+    renderSpots();
+    renderHotels();
     renderChecklist();
   </script>
 </body>
