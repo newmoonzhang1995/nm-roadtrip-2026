@@ -2,90 +2,135 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
     <name>2026 新墨西哥冬日奇观环线 (11/27 – 12/05)</name>
-    <description>9天8晚顺畅环线全部核心景点与过夜坐标（全程铺装柏油路 · SIXT 合规）</description>
+    <description>9天8晚顺畅环线全部核心景点、机场租车与入住酒店坐标（D1–D9 按行程时间排序 · 全程铺装柏油路 · SIXT 合规）</description>
     <Placemark>
-      <name>D1/D9 ABQ Sunport 租车中心 (SIXT)</name>
-      <description>3400 University Blvd SE, Albuquerque, NM · 11/28 11:00 提车 / 12/05 10:30 还车</description>
+      <name>D1/D9 Albuquerque International Sunport 航站楼</name>
+      <description>2200 Sunport Blvd SE, Albuquerque, NM 87106 · 11/27 22:56 落地（提取行李后致电 505-944-2255 叫酒店免费 24h 班车） / 12/05 15:38 返程航班起飞</description>
+      <Point><coordinates>-106.6169,35.0492,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>D1 Holiday Inn &amp; Suites Albuquerque Airport</name>
+      <description>1501 Sunport Pl SE, Albuquerque, NM 87106 · 11/27 入住（15:00 入住 / 12:00 退房） · 认准全服务 Holiday Inn（非 Express） · 免费 24h 机场班车 505-944-2255 · 免费自助停车 · 设 Sunport Grille 餐厅</description>
+      <Point><coordinates>-106.6329,35.0496,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>D2/D9 ABQ Sunport 租车中心 (SIXT)</name>
+      <description>3400 University Blvd SE, Albuquerque, NM 87106 · 11/28 11:00 提车出发 / 12/05 10:30 抵达、11:00 前完成满油还车（卡准满 7 整天计费点，保留机场旁加油小票）</description>
       <Point><coordinates>-106.6258,35.0419,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>D2 Bosque del Apache 国家野生动物保护区游客中心</name>
-      <description>11/28 南下顺路 (I-25 San Antonio 出口) · 冬季万鹤越冬巅峰期，在铺装游客中心与观景台停 15–20 分钟（年卡免票，勿进耗时砂石环线以免误白沙日落）</description>
+      <description>1001 State Hwy 1, San Antonio, NM 87832 (I-25 San Antonio 出口) · 11/28 周六南下顺路 · 周末游客中心 08:00–16:30，铺装观景台日间开放 · 国家公园年卡免票 · 越冬沙丘鹤与雪雁巅峰期，仅在铺装游客中心与观景台短停 15–20 分钟（勿进 12 英里砂石环线，确保 SIXT 合规且不误白沙日落）</description>
       <Point><coordinates>-106.8914,33.8041,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>D2 McGinn's PistachioLand 开心果园 (世界最大开心果)</name>
-      <description>11/28 下午南下必经路边 (7320 US-54, Alamogordo) · 停 15 分钟买开心果冰淇淋拍巨型开心果雕像</description>
+      <description>7320 US-54, Alamogordo, NM 88310 · 11/28 下午南下必经路边 · 每日 09:00–17:00 营业 · 短停 15 分钟拍巨型开心果地标、买开心果冰淇淋</description>
       <Point><coordinates>-105.9631,32.9876,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>D2 White Sands National Park 白沙国家公园</name>
-      <description>11/28 下午游玩 1.5h，约 16:57 看日落</description>
+      <description>19955 US-70, Alamogordo, NM 88310 · 11/28 下午漫步石膏沙丘约 1.5h，守候约 16:57 日落 · 游客中心 09:00–17:00，Dunes Drive 07:00 至日落后约 30 分钟清场 · 刷国家公园年卡+驾照免票</description>
       <Point><coordinates>-106.1719,32.7797,0</coordinates></Point>
     </Placemark>
     <Placemark>
+      <name>D2 Home2 Suites by Hilton Alamogordo</name>
+      <description>3450 Mesa Village Dr, Alamogordo, NM 88310 · 11/28 入住（15:00 入住 / 12:00 退房） · 含免费热早餐与免费自助停车 · 距白沙国家公园游客中心约 18–20 分钟车程</description>
+      <Point><coordinates>-105.9729,32.9335,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
       <name>D3 Tunnel Vista Overlook 观景台</name>
-      <description>11/29 US-82 盘山路旁铺装观景台，俯瞰白沙盆地</description>
+      <description>US-82, High Rolls, NM 88325 · 11/29 上午 · US-82 盘山路旁全年开放铺装观景台，俯瞰白沙盆地全景 · 出发前查 NMRoads.com 确认 US-82 山路无冰雪</description>
       <Point><coordinates>-105.8722,32.9562,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>D3 Mexican Canyon Trestle Vista 森林木栈桥观景台</name>
-      <description>11/29 Cloudcroft 进镇前路边铺装观景台，看 1899 年木制铁路栈桥</description>
+      <description>US-82, Cloudcroft, NM 88317 · 11/29 上午 · 海拔 2,640m Cloudcroft 进镇前 US-82 路边全年开放铺装观景台，远眺 1899 年木制铁路栈桥（冬季 FR 24M 谷底支线积雪关闭，仅在此铺装观景台观赏）</description>
       <Point><coordinates>-105.7519,32.9617,0</coordinates></Point>
     </Placemark>
     <Placemark>
+      <name>D3 Hyatt House Carlsbad</name>
+      <description>4019 National Parks Hwy, Carlsbad, NM 88220 · 11/29 入住（15:00 入住 / 12:00 退房） · 含免费热早餐与免费自助停车 · 设晚间 H Bar 餐吧与 24h H Market</description>
+      <Point><coordinates>-104.2325,32.3720,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
       <name>D4 Carlsbad Caverns National Park 卡尔斯巴德大溶洞</name>
-      <description>11/30 预约 10:00 入洞，电梯上下游览 Big Room</description>
+      <description>727 Carlsbad Caverns Hwy, Carlsbad, NM 88220 · 11/30 持 09:30–10:30 预约时段票 + 国家公园年卡与驾照入洞 · 游客中心 09:00–17:00，入洞/下行电梯 09:30–14:30，Big Room 末班上行电梯严格截止 16:45（徒步出洞截止 14:30） · 注意洞区为山地时间（防范手机基站误跳德州中部时间）</description>
       <Point><coordinates>-104.4452,32.1753,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <name>D4 Roswell UFO McDonald's 飞碟麦当劳 (顺路)</name>
-      <description>720 N Main St, Roswell, NM · 北上顺路外观打卡</description>
+      <name>D4 Roswell UFO McDonald's 飞碟麦当劳</name>
+      <description>720 N Main St, Roswell, NM 88201 · 11/30 下午沿 US-285 北上顺路 · 飞碟造型麦当劳外观打卡与简餐补给</description>
       <Point><coordinates>-104.5230,33.4005,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <name>D5 La Posada de Santa Fe (万豪 35k FN)</name>
-      <description>12/01 入住 · 330 E Palace Ave, Santa Fe, NM · 步行 5 分钟至老城广场</description>
-      <Point><coordinates>-105.9333,35.6865,0</coordinates></Point>
+      <name>D4 Holiday Inn Express &amp; Suites Roswell</name>
+      <description>3 Military Heights Dr, Roswell, NM 88201 · 11/30 入住（15:00 入住 / 11:00 退房） · 含免费 Express Start 热早餐与免费自助停车</description>
+      <Point><coordinates>-104.5250,33.4204,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <name>D5 Meow Wolf Santa Fe 喵狼奇幻沉浸馆 (可选)</name>
-      <description>1352 Rufina Cir, Santa Fe, NM · House of Eternal Return</description>
-      <Point><coordinates>-105.9964,35.6542,0</coordinates></Point>
+      <name>D5 La Posada de Santa Fe, a Tribute Portfolio Resort &amp; Spa</name>
+      <description>330 E Palace Ave, Santa Fe, NM 87501 · 12/01 入住（16:00 入住 / 12:00 退房，午后抵达可先交 Valet 寄存行李） · Resort Fee 含不限次代客泊车 (Valet Parking) · 步行 5 分钟至老城广场 Santa Fe Plaza，院内设 Julia 与 Staab House 壁炉餐吧</description>
+      <Point><coordinates>-105.9325,35.6857,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>D5 El Santuario de Chimayó 奇马约圣土小教堂</name>
-      <description>12/01 下午可选 · 15 Santuario Dr, Chimayo, NM · 09:00–17:00 开放，全程柏油路距 Santa Fe 35 分钟</description>
+      <description>15 Santuario Dr, Chimayó, NM 87522 · 12/01 周二下午可选顺访 · 冬季每日 09:00–17:00 开放 · 全程铺装柏油路，距 Santa Fe 约 35 分钟车程（周边餐厅 La Fonda del Santuario 周二定休）</description>
       <Point><coordinates>-105.9317,35.9892,0</coordinates></Point>
     </Placemark>
     <Placemark>
+      <name>D5 Meow Wolf Santa Fe 喵狼奇幻沉浸馆 (可选 · 冬季周二常闭馆)</name>
+      <description>1352 Rufina Cir, Santa Fe, NM 87507 · House of Eternal Return · 注意：非假日冬季周二通常闭馆，12/01 周二下午优先安排 Chimayó 与老城广场（若想前往须提前在 meowwolf.com/visit/santa-fe 核查当日日历）</description>
+      <Point><coordinates>-105.9964,35.6542,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>D6 Anderson Overlook 裂谷观景台</name>
+      <description>NM-502, Los Alamos, NM 87544 · 12/02 上午 · 进 Los Alamos 前 NM-502 路边 24h 开放铺装观景台，俯瞰 Rio Grande 裂谷与 Sangre de Cristo 雪山</description>
+      <Point><coordinates>-106.2330,35.8728,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
       <name>D6 Bandelier National Monument 班德利尔史前崖居</name>
-      <description>12/02 上午 · 冬季免接驳车直开谷底停车场，平路近看崖居爬短木梯</description>
+      <description>15 Entrance Rd, Los Alamos, NM 87544 · 12/02 上午 · 12 月免接驳车，私家车直开谷底 Frijoles Canyon 停车场 · 峡谷日出至日落开放，游客中心 09:00–17:00 · 刷国家公园年卡免票，走平路近看凝灰岩崖居、爬短木梯进石窟</description>
       <Point><coordinates>-106.2708,35.7789,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <name>D6 Plaza Blanca 白色广场奇岩谷 (需提前免费领密码)</name>
-      <description>12/02 中午顺路 · Abiquiu · 出发前在 daralislam.org 免费登记拿铁门密码，晴干天进入</description>
+      <name>D6 Plaza Blanca 白色广场奇岩谷</name>
+      <description>342 County Rd 155, Abiquiu, NM 87510 · 12/02 中午 · 日间开放（约 07:30–17:00） · 出发前须在 daralislam.org/plaza-blanca 为 2 位成人分别免费登记获取铁门密码（当场显示请截图保存） · 门前约 0.5 英里土路，仅限晴干路况进入</description>
       <Point><coordinates>-106.1997,36.2325,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>D6 Echo Amphitheater 回音巨型天然石窟</name>
-      <description>12/02 下午 · US-84 铺装停车场旁，步行 5 分钟进百米高红黄色回音石壁</description>
+      <description>US-84, Abiquiu, NM 87510 · 12/02 下午 · US-84 路边铺装停车场，日出至日落开放（自助缴费 $5/车） · 步行 5 分钟平路直达百米高天然弧形回音石壁</description>
       <Point><coordinates>-106.5339,36.3592,0</coordinates></Point>
     </Placemark>
     <Placemark>
+      <name>D6 Home2 Suites by Hilton Farmington/Bloomfield</name>
+      <description>777 S Browning Pkwy, Farmington, NM 87401 · 12/02 入住（15:00 入住 / 12:00 退房） · 含免费热早餐与免费自助停车 · 紧邻 US-64，次日顺畅衔接 Shiprock 与 US-550</description>
+      <Point><coordinates>-108.1590,36.7231,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
       <name>D7 Shiprock 合法铺装远眺口 (US-491 &amp; IR-13)</name>
-      <description>12/03 上午 · 仅走 US-491 与 IR-13 铺装柏油路穿过火山岩墙，严禁下土路</description>
+      <description>US-491 &amp; IR-13 (Navajo Route 13), Shiprock, NM 87420 · 12/03 上午 · 全天开放公共铺装公路远眺点 · 严格仅在 US-491 与 IR-13 铺装柏油路肩停靠远眺火山孤峰与岩墙，严禁驶入任何土路、严禁徒步靠近神山及禁飞无人机</description>
       <Point><coordinates>-108.7385,36.6152,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <name>D8 Cochiti Visitor Center (Kasha-Katuwe Tent Rocks 报到点)</name>
-      <description>12/04 上午 · 必须先导此游客中心核验联邦票+部落通行证，跟前导车进山</description>
+      <name>D7/D8 Hyatt Regency Tamaya Resort &amp; Spa</name>
+      <description>1300 Tuyuna Trail, Santa Ana Pueblo, NM 87004 · 12/03 &amp; 12/04 连住 2 晚（16:00 入住 / 11:00 退房） · 含免费自助停车 · 院内观桑迪亚山日落金山，设 Santa Ana Café 与 Corn Maiden 餐厅 · 距 Cochiti 游客中心约 28 分钟，D9 沿 I-25 去机场租车中心约 25 分钟</description>
+      <Point><coordinates>-106.5445,35.3506,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>D8 Cochiti Visitor Center (Kasha-Katuwe Tent Rocks 必经报到点)</name>
+      <description>2551 NM-22, Pena Blanca, NM 87041 · 12/04 周五上午（周四至周一开放，12/15 起冬休） · 必须先导航至此报到点！持 08:00–13:00 联邦预约票 + Cochiti 部落通行证核验（07:45–13:00 检票，08:00–13:00 每 15 分钟一班前导车带队进山，16:00 前须离园，禁带宠物与无人机）</description>
       <Point><coordinates>-106.3501,35.6085,0</coordinates></Point>
     </Placemark>
     <Placemark>
+      <name>D8 Kasha-Katuwe Tent Rocks National Monument (帐篷岩步道 · 勿直接导航)</name>
+      <description>Kasha-Katuwe Tent Rocks National Monument, Pena Blanca, NM 87041 · 12/04 上午徒步点（仅供地图方位参考，切勿直接导航至此锁闭铁门！必须先导至 2551 NM-22 Cochiti Visitor Center 跟前导车进入） · 往返约 2–2.5h 走圆锥火山奇岩群与一线天窄缝峡谷</description>
+      <Point><coordinates>-106.4118,35.6625,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
       <name>D8 Sandia Peak Aerial Tramway 桑迪亚峰高空缆车</name>
-      <description>12/04 下午 · 30 Tramway Rd NE, Albuquerque · 15 分钟直上 3,163 米看日落</description>
+      <description>30 Tramway Rd NE, Albuquerque, NM 87122 · 12/04 周五下午 · 12 月初周三至周一营业，09:00–20:00 上山、末班下山 22:00（周二闭馆；11 月秋检已结束恢复运营） · 15 分钟直登 3,163 米山顶看约 16:53 日落与城市亮灯（山顶比谷底低 12–15°C 需穿厚羽绒，遇强风可能临时停运）</description>
       <Point><coordinates>-106.4796,35.1916,0</coordinates></Point>
     </Placemark>
   </Document>

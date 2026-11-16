@@ -19,10 +19,6 @@
       --primary: #c2410c;
       --primary-fg: #ffffff;
       --primary-soft: rgba(194, 65, 12, 0.09);
-      --ok: #15803d;
-      --ok-soft: rgba(21, 128, 61, 0.1);
-      --pend: #b45309;
-      --pend-soft: rgba(180, 83, 9, 0.1);
       --teal: #0f766e;
     }
 
@@ -36,10 +32,6 @@
       --primary: #fb923c;
       --primary-fg: #18130e;
       --primary-soft: rgba(251, 146, 60, 0.14);
-      --ok: #4ade80;
-      --ok-soft: rgba(74, 222, 128, 0.13);
-      --pend: #fbbf24;
-      --pend-soft: rgba(251, 191, 36, 0.13);
       --teal: #2dd4bf;
     }
 
@@ -375,7 +367,7 @@
 
     /* Clean Schedule Rows */
     .schedule {
-      margin: 18px 0;
+      margin: 18px 0 0;
       border-top: 1px solid var(--border);
     }
 
@@ -406,37 +398,69 @@
 
     .sched-map:hover { text-decoration: underline; }
 
-    /* Quiet Footer Bar */
+    /* Quiet Footer: Practical Note & Confirmed Hotel */
     .day-foot {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .day-note {
+      font-size: 12.5px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .stay-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 11px;
+      padding: 11px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .stay-main {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      justify-content: space-between;
-      gap: 10px;
-      font-size: 13px;
-    }
-
-    .stay-chip {
-      display: inline-flex;
-      align-items: center;
       gap: 7px;
+      font-size: 13.5px;
       font-weight: 600;
     }
 
-    .status-dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      display: inline-block;
-      flex-shrink: 0;
+    .stay-icon {
+      color: var(--primary);
+      font-size: 13px;
+      line-height: 1;
     }
 
-    .status-dot.ok { background: var(--ok); }
-    .status-dot.pend { background: var(--pend); }
+    .stay-name {
+      text-decoration: none;
+      color: var(--fg);
+    }
 
-    .foot-note {
+    .stay-name:hover {
+      color: var(--primary);
+      text-decoration: underline;
+    }
+
+    .stay-tag {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 1px 7px;
+      border-radius: 999px;
+      background: var(--primary-soft);
+      color: var(--primary);
+    }
+
+    .stay-meta {
       font-size: 12.5px;
       color: var(--muted);
+      font-variant-numeric: tabular-nums;
     }
 
     /* Spots Grid */
@@ -532,83 +556,6 @@
     .spot-actions a.muted-link { color: var(--muted); }
     .spot-actions a:hover { text-decoration: underline; }
 
-    /* Hotels Ledger */
-    .ledger {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      overflow: hidden;
-    }
-
-    .ledger-row {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 6px;
-      padding: 15px 20px;
-      border-bottom: 1px solid var(--border);
-      align-items: center;
-    }
-
-    .ledger-row:last-child { border-bottom: 0; }
-
-    @media (min-width: 760px) {
-      .ledger-row {
-        grid-template-columns: 155px 1fr auto;
-        gap: 16px;
-      }
-    }
-
-    .l-date {
-      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-      font-size: 13px;
-      font-weight: 600;
-    }
-
-    .l-city {
-      font-size: 12.5px;
-      color: var(--muted);
-    }
-
-    .l-hotel a {
-      font-size: 14.5px;
-      font-weight: 700;
-      text-decoration: none;
-    }
-
-    .l-hotel a:hover { color: var(--primary); }
-
-    .l-meta {
-      font-size: 12.5px;
-      color: var(--muted);
-      margin-top: 2px;
-    }
-
-    .state-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 4px 10px;
-      border-radius: 999px;
-      font-size: 12px;
-      font-weight: 600;
-      white-space: nowrap;
-      justify-self: start;
-    }
-
-    @media (min-width: 760px) {
-      .state-pill { justify-self: end; }
-    }
-
-    .state-pill.ok {
-      background: var(--ok-soft);
-      color: var(--ok);
-    }
-
-    .state-pill.pend {
-      background: var(--pend-soft);
-      color: var(--pend);
-    }
-
     /* Checklist */
     .check-card {
       background: var(--card);
@@ -690,8 +637,8 @@
       </div>
 
       <div class="actions">
-        <a href="https://maps.app.goo.gl/46N5wSXoz6QZwHLM9" target="_blank" rel="noopener noreferrer" class="pill-link accent">Google Maps 收藏夹 ↗</a>
-        <a href="https://www.google.com/maps/dir/3400+University+Blvd+SE,+Albuquerque,+NM/Bosque+del+Apache+National+Wildlife+Refuge+Visitor+Center/McGinn's+PistachioLand,+Alamogordo,+NM/White+Sands+National+Park,+NM/Cloudcroft,+NM/Carlsbad+Caverns+National+Park,+NM/Roswell,+NM/La+Posada+de+Santa+Fe,+NM/Bandelier+National+Monument,+NM/Echo+Amphitheater,+NM/Shiprock,+NM/Hyatt+Regency+Tamaya+Resort+and+Spa" target="_blank" rel="noopener noreferrer" class="pill-link">全程导航 ↗</a>
+        <a href="https://maps.app.goo.gl/UwKMJirn6Rh7T3GZ6" target="_blank" rel="noopener noreferrer" class="pill-link accent">Google Maps 收藏夹 ↗</a>
+        <a href="https://www.google.com/maps/dir/3400+University+Blvd+SE,+Albuquerque,+NM/Bosque+del+Apache+National+Wildlife+Refuge+Visitor+Center/White+Sands+National+Park+Visitor+Center/Carlsbad+Caverns+National+Park+Visitor+Center/330+E+Palace+Ave,+Santa+Fe,+NM/Bandelier+National+Monument+Visitor+Center/36.6152,-108.7385/Cochiti+Visitor+Center,+NM/30+Tramway+Rd+NE,+Albuquerque,+NM/3400+University+Blvd+SE,+Albuquerque,+NM" target="_blank" rel="noopener noreferrer" class="pill-link">全程导航 ↗</a>
         <a href="nm-roadtrip-2026.kml" download="nm-roadtrip-2026.kml" class="pill-link">KML</a>
         <button id="share-btn" class="pill-link">分享</button>
         <button id="theme-btn" class="pill-link" aria-label="切换主题">🌓</button>
@@ -703,7 +650,6 @@
       <nav class="seg-nav" id="main-tabs">
         <button data-tab="itinerary" class="seg-btn active">行程</button>
         <button data-tab="spots" class="seg-btn">图鉴</button>
-        <button data-tab="hotels" class="seg-btn" id="hotels-tab-btn">住宿 8/8</button>
         <button data-tab="checklist" class="seg-btn" id="todo-tab-btn">清单</button>
       </nav>
     </div>
@@ -756,12 +702,7 @@
       <div class="spots-grid" id="spots-grid"></div>
     </section>
 
-    <!-- VIEW 3: HOTELS LEDGER -->
-    <section id="tab-hotels" class="tab-panel hidden">
-      <div class="ledger" id="hotels-ledger"></div>
-    </section>
-
-    <!-- VIEW 4: CHECKLIST -->
+    <!-- VIEW 3: CHECKLIST -->
     <section id="tab-checklist" class="tab-panel hidden">
       <div class="check-card" id="checklist-box"></div>
     </section>
@@ -781,18 +722,22 @@
         tab: "抵达 ABQ",
         title: "抵达 Albuquerque",
         stats: ["0h 车程", "22:56 落地"],
-        routeUrl: gMap("Holiday Inn & Suites Albuquerque Airport 1501 Sunport Place"),
+        routeUrl: "https://www.google.com/maps/dir/Albuquerque+International+Sunport,+2200+Sunport+Blvd+SE,+Albuquerque,+NM+87106/1501+Sunport+Pl+SE,+Albuquerque,+NM+87106",
         routePoints: "263,292",
         photos: [
           { src: "images/albuquerque.jpg", name: "Albuquerque", q: "Albuquerque Sandia Mountains" }
         ],
         stops: [
-          { t: "22:56", text: "落地 ABQ 航站楼，提取行李后致电 505-944-2255 叫 24h 班车", map: "Albuquerque International Sunport" },
-          { t: "23:20", text: "入住 Holiday Inn & Suites Albuquerque Airport (1501 Sunport Pl)", map: "Holiday Inn & Suites Albuquerque Airport 1501 Sunport Place" }
+          { t: "22:56", text: "落地 ABQ 航站楼 (2200 Sunport Blvd SE)，提取行李后致电 505-944-2255 呼叫免费 24h 班车", map: "Albuquerque International Sunport, 2200 Sunport Blvd SE, Albuquerque, NM 87106" },
+          { t: "23:20", text: "抵达机场酒店办理入住休整", map: "Holiday Inn & Suites Albuquerque Airport, 1501 Sunport Pl SE, Albuquerque, NM 87106" }
         ],
-        stay: "Holiday Inn & Suites ABQ Airport",
-        booked: true,
-        note: "认准 1501 Sunport Pl（非 Express）"
+        note: "认准 1501 Sunport Pl SE 全服务 Holiday Inn & Suites（非隔壁 Holiday Inn Express）",
+        hotel: {
+          name: "Holiday Inn & Suites Albuquerque Airport",
+          addr: "1501 Sunport Pl SE, Albuquerque, NM 87106",
+          meta: "15:00 入住 / 12:00 退房 · 24h 机场班车 505-944-2255 · 免费停车",
+          map: "Holiday Inn & Suites Albuquerque Airport, 1501 Sunport Pl SE, Albuquerque, NM 87106"
+        }
       },
       {
         date: "11/28",
@@ -800,22 +745,26 @@
         tab: "白沙日落",
         title: "ABQ → Bosque 鹤群 → 开心果园 → 白沙日落",
         stats: ["252 mi", "4.3h 车程", "16:57 日落"],
-        routeUrl: "https://www.google.com/maps/dir/3400+University+Blvd+SE,+Albuquerque,+NM/Bosque+del+Apache+National+Wildlife+Refuge+Visitor+Center/McGinn's+PistachioLand,+Alamogordo,+NM/White+Sands+National+Park+Visitor+Center/Home2+Suites+by+Hilton+Alamogordo,+NM",
+        routeUrl: "https://www.google.com/maps/dir/3400+University+Blvd+SE,+Albuquerque,+NM+87106/Bosque+del+Apache+National+Wildlife+Refuge+Visitor+Center/7320+US-54,+Alamogordo,+NM+88310/White+Sands+National+Park+Visitor+Center,+19955+US-70,+Alamogordo,+NM+88310/3450+Mesa+Village+Dr,+Alamogordo,+NM+88310",
         routePoints: "263,292 240,413 256,395 305,435 316,492 300,514 317,502",
         photos: [
           { src: "images/white-sands.jpg", name: "White Sands National Park", q: "White Sands National Park sunset" },
           { src: "images/bosque-cranes.jpg", name: "Bosque del Apache", q: "Bosque del Apache Sandhill Cranes" }
         ],
         stops: [
-          { t: "11:00", text: "SIXT 租车中心提车出发 (3400 University Blvd SE)", map: "3400 University Blvd SE Albuquerque NM" },
-          { t: "12:45", text: "Bosque del Apache 游客中心及观景台短停 20 分钟看越冬鹤群", map: "Bosque del Apache National Wildlife Refuge Visitor Center" },
-          { t: "15:05", text: "McGinn's PistachioLand 拍世界最大开心果、买开心果冰淇淋", map: "McGinn's PistachioLand Alamogordo NM" },
-          { t: "15:40", text: "White Sands 国家公园漫步石膏沙丘，守候 16:57 日落", map: "White Sands National Park Visitor Center" },
-          { t: "17:30", text: "抵达 Home2 Suites Alamogordo 入住晚餐", map: "Home2 Suites by Hilton Alamogordo NM" }
+          { t: "11:00", text: "SIXT 租车中心提车出发 (3400 University Blvd SE)", map: "3400 University Blvd SE, Albuquerque, NM 87106" },
+          { t: "12:45", text: "Bosque del Apache 游客中心 (周六 08:00–16:30) 及铺装观景台短停 20 分钟看越冬鹤群", map: "Bosque del Apache National Wildlife Refuge Visitor Center" },
+          { t: "15:05", text: "McGinn's PistachioLand (09:00–17:00) 拍世界最大开心果地标、买开心果冰淇淋", map: "McGinn's PistachioLand, 7320 US-54, Alamogordo, NM 88310" },
+          { t: "15:40", text: "White Sands 国家公园 (游客中心 09:00–17:00，Dunes Dr 07:00 至日落后半小时) 漫步石膏沙丘看 16:57 日落", map: "White Sands National Park Visitor Center, 19955 US-70, Alamogordo, NM 88310" },
+          { t: "17:30", text: "闭园前离园，约 18 分钟车程抵达 Alamogordo 入住晚餐", map: "Home2 Suites by Hilton Alamogordo, 3450 Mesa Village Dr, Alamogordo, NM 88310" }
         ],
-        stay: "Home2 Suites Alamogordo",
-        booked: true,
-        note: "电子年卡免票 · 不进 Bosque 砂石环线"
+        note: "电子年卡 + 驾照免票 · 不驶入 Bosque 12mi 砂石环线（遵守 SIXT 铺装路条款）",
+        hotel: {
+          name: "Home2 Suites by Hilton Alamogordo",
+          addr: "3450 Mesa Village Dr, Alamogordo, NM 88310",
+          meta: "15:00 入住 / 12:00 退房 · 含热早 · 免费停车",
+          map: "Home2 Suites by Hilton Alamogordo, 3450 Mesa Village Dr, Alamogordo, NM 88310"
+        }
       },
       {
         date: "11/29",
@@ -823,19 +772,23 @@
         tab: "林肯森林",
         title: "Alamogordo → Cloudcroft 森林栈桥 → Carlsbad",
         stats: ["150 mi", "3.2h 车程", "16:52 日落"],
-        routeUrl: "https://www.google.com/maps/dir/Home2+Suites+by+Hilton+Alamogordo,+NM/Tunnel+Vista+Observation+Site/Trestle+Vista+Observation+Site,+Cloudcroft,+NM/Hyatt+House+Carlsbad,+NM",
+        routeUrl: "https://www.google.com/maps/dir/3450+Mesa+Village+Dr,+Alamogordo,+NM+88310/Tunnel+Vista+Observation+Site,+US-82,+Cloudcroft,+NM/Trestle+Vista+Observation+Site,+Cloudcroft,+NM/4019+National+Parks+Hwy,+Carlsbad,+NM+88220",
         routePoints: "317,502 336,496 445,498 461,549",
         photos: [
           { src: "images/cloudcroft-trestle.jpg", name: "Mexican Canyon Trestle · Cloudcroft", q: "Mexican Canyon Trestle Cloudcroft" }
         ],
         stops: [
-          { t: "09:00", text: "沿 US-82 盘山穿入 Lincoln National Forest (海拔 2,640m)", map: "Cloudcroft NM" },
-          { t: "09:30", text: "停 Tunnel Vista 俯瞰白沙盆地 & Trestle Vista 看百年森林木栈桥", map: "Trestle Vista Observation Site Cloudcroft NM" },
-          { t: "12:45", text: "经 Artesia 抵达 Hyatt House Carlsbad 入住休整", map: "Hyatt House Carlsbad NM" }
+          { t: "09:00", text: "沿 US-82 盘山穿入 Lincoln National Forest (海拔 2,640m)", map: "Cloudcroft, NM" },
+          { t: "09:30", text: "停 US-82 铺装观景台：Tunnel Vista 俯瞰白沙盆地 & Mexican Canyon Trestle Vista 远眺百年木栈桥", map: "Trestle Vista Observation Site, Cloudcroft, NM" },
+          { t: "12:45", text: "经 Artesia 抵达 Carlsbad 酒店入住休整", map: "Hyatt House Carlsbad, 4019 National Parks Hwy, Carlsbad, NM 88220" }
         ],
-        stay: "Hyatt House Carlsbad",
-        booked: true,
-        note: "出发前查 NMRoads 确认 US-82 无冰雪"
+        note: "冬季 FR 24M 栈桥林道封路，仅在 US-82 路边铺装观景台取景 · 出发前查 NMRoads 确认无冰雪",
+        hotel: {
+          name: "Hyatt House Carlsbad",
+          addr: "4019 National Parks Hwy, Carlsbad, NM 88220",
+          meta: "15:00 入住 / 12:00 退房 · 含热早 · 免费停车 · 晚间 H Bar & 24h H Market",
+          map: "Hyatt House Carlsbad, 4019 National Parks Hwy, Carlsbad, NM 88220"
+        }
       },
       {
         date: "11/30",
@@ -843,41 +796,49 @@
         tab: "大溶洞",
         title: "Carlsbad Caverns 大溶洞 → Roswell",
         stats: ["115 mi", "2.8h 车程", "16:53 日落"],
-        routeUrl: "https://www.google.com/maps/dir/Hyatt+House+Carlsbad,+NM/Carlsbad+Caverns+National+Park+Visitor+Center/720+N+Main+St,+Roswell,+NM/Holiday+Inn+Express+Roswell,+NM",
+        routeUrl: "https://www.google.com/maps/dir/4019+National+Parks+Hwy,+Carlsbad,+NM+88220/Carlsbad+Caverns+National+Park+Visitor+Center,+727+Carlsbad+Caverns+Hwy,+Carlsbad,+NM/720+N+Main+St,+Roswell,+NM+88201/3+Military+Heights+Dr,+Roswell,+NM+88201",
         routePoints: "461,549 444,573 461,549 437,454",
         photos: [
           { src: "images/carlsbad-caverns.jpg", name: "Carlsbad Caverns · Big Room", q: "Carlsbad Caverns Big Room" },
           { src: "images/roswell.jpg", name: "Roswell", q: "Roswell UFO McDonald's" }
         ],
         stops: [
-          { t: "09:00", text: "退房前往溶洞，09:45 到游客中心刷年卡+核验 9:30–10:30 预约票", map: "Carlsbad Caverns National Park Visitor Center" },
-          { t: "10:00", text: "乘电梯直降地下 230m 走 Big Room 环线 (2–2.5h)", map: "Carlsbad Caverns Big Room" },
-          { t: "13:00", text: "沿 US-285 北上，顺路过飞碟麦当劳，15:15 入住 Roswell", map: "720 N Main St Roswell NM" }
+          { t: "09:00", text: "退房前往溶洞，09:45 到游客中心 (09:00–17:00) 出示年卡+驾照核验 09:30–10:30 预约票", map: "Carlsbad Caverns National Park Visitor Center, 727 Carlsbad Caverns Hwy, Carlsbad, NM" },
+          { t: "10:00", text: "乘电梯直降地下 230m 走 Big Room 环线 (2–2.5h；下行末班电梯 14:30，Big Room 上行末班电梯 16:45)", map: "Carlsbad Caverns Big Room" },
+          { t: "13:00", text: "沿 US-285 北上，顺路经停飞碟麦当劳 (720 N Main St)，15:15 抵达 Roswell 入住", map: "720 N Main St, Roswell, NM 88201" }
         ],
-        stay: "Holiday Inn Express Roswell",
-        booked: true,
-        note: "注意洞区手机基站偶跳德州中部时间"
+        note: "溶洞执行山地时间（留意手机信号偶跳德州中部时间） · 徒步出 Natural Entrance 须 14:30 前起行",
+        hotel: {
+          name: "Holiday Inn Express & Suites Roswell",
+          addr: "3 Military Heights Dr, Roswell, NM 88201",
+          meta: "15:00 入住 / 11:00 退房 · 含 Express Start 热早 · 免费停车",
+          map: "Holiday Inn Express & Suites Roswell, 3 Military Heights Dr, Roswell, NM 88201"
+        }
       },
       {
         date: "12/01",
         wk: "周二",
         tab: "Santa Fe",
-        title: "Roswell → Santa Fe 庄园 · Chimayó 教堂 / Meow Wolf",
+        title: "Roswell → Santa Fe 庄园 · Chimayó 圣土教堂",
         stats: ["192 mi", "3.6h 车程", "16:51 日落"],
-        routeUrl: "https://www.google.com/maps/dir/Roswell,+NM/La+Posada+de+Santa+Fe/El+Santuario+de+Chimayo",
+        routeUrl: "https://www.google.com/maps/dir/3+Military+Heights+Dr,+Roswell,+NM+88201/330+E+Palace+Ave,+Santa+Fe,+NM+87501/15+Santuario+Dr,+Chimayo,+NM+87522/330+E+Palace+Ave,+Santa+Fe,+NM+87501",
         routePoints: "437,454 365,315 319,228 320,198 319,228",
         photos: [
-          { src: "images/santa-fe.jpg", name: "Santa Fe Historic Plaza", q: "La Posada de Santa Fe" },
+          { src: "images/santa-fe.jpg", name: "Santa Fe Historic Plaza", q: "Santa Fe Historic Plaza New Mexico" },
           { src: "images/chimayo.jpg", name: "El Santuario de Chimayó", q: "El Santuario de Chimayo" }
         ],
         stops: [
-          { t: "09:00", text: "沿 US-285 北上，13:15 抵 La Posada 交 Valet 泊车寄存行李", map: "La Posada de Santa Fe" },
-          { t: "14:15", text: "可选北上 35 分钟访 Chimayó 百年圣土教堂，或看 Meow Wolf / 逛老城广场", map: "El Santuario de Chimayo" },
-          { t: "17:00", text: "回 La Posada 庄园烤火、用 Resy 晚餐", map: "Santa Fe Plaza" }
+          { t: "09:00", text: "沿 US-285 北上，13:15 抵 La Posada 交 Valet 代客泊车、寄存行李", map: "La Posada de Santa Fe, 330 E Palace Ave, Santa Fe, NM 87501" },
+          { t: "14:00", text: "北上 35 分钟访 El Santuario de Chimayó 百年圣土教堂 (冬季每日 09:00–17:00)，或步行 5 分钟逛老城广场", map: "El Santuario de Chimayo, 15 Santuario Dr, Chimayo, NM 87522" },
+          { t: "17:00", text: "回 La Posada 庄园壁炉酒吧 (Staab House) 烤火与老城晚餐", map: "Santa Fe Plaza, Santa Fe, NM" }
         ],
-        stay: "La Posada de Santa Fe",
-        booked: true,
-        note: "Resort Fee 已含不限次代客泊车"
+        note: "Meow Wolf 冬季周二通常闭馆（若计划前往须提前核查官网日历），周二下午优先游览 Chimayó 与老城广场",
+        hotel: {
+          name: "La Posada de Santa Fe, a Tribute Portfolio Resort & Spa",
+          addr: "330 E Palace Ave, Santa Fe, NM 87501",
+          meta: "16:00 入住 / 12:00 退房 · Resort Fee 含不限次 Valet 代客泊车 · 步行 5min 至广场",
+          map: "La Posada de Santa Fe, 330 E Palace Ave, Santa Fe, NM 87501"
+        }
       },
       {
         date: "12/02",
@@ -885,22 +846,26 @@
         tab: "崖居·白石谷",
         title: "Bandelier 崖居 → Plaza Blanca → Echo 石窟 → Farmington",
         stats: ["228 mi", "4.3h 车程", "16:56 日落"],
-        routeUrl: "https://www.google.com/maps/dir/La+Posada+de+Santa+Fe/Bandelier+National+Monument+Visitor+Center/Plaza+Blanca,+Abiquiu,+NM/Echo+Amphitheater,+NM/Home2+Suites+by+Hilton+Farmington+Bloomfield,+NM",
+        routeUrl: "https://www.google.com/maps/dir/330+E+Palace+Ave,+Santa+Fe,+NM+87501/Anderson+Overlook,+Los+Alamos,+NM/Bandelier+National+Monument+Visitor+Center,+15+Entrance+Rd,+Los+Alamos,+NM+87544/342+County+Rd+155,+Abiquiu,+NM+87510/Echo+Amphitheater,+US-84,+Abiquiu,+NM/777+S+Browning+Pkwy,+Farmington,+NM+87401",
         routePoints: "319,228 292,215 297,175 270,162 195,134 131,126",
         photos: [
           { src: "images/bandelier.jpg", name: "Bandelier Cliff Dwellings", q: "Bandelier National Monument" },
           { src: "images/plaza-blanca.jpg", name: "Plaza Blanca · Abiquiu", q: "Plaza Blanca New Mexico" }
         ],
         stops: [
-          { t: "08:30", text: "退房经 Los Alamos 裂谷观景台前往 Bandelier", map: "Anderson Overlook Los Alamos NM" },
-          { t: "09:20", text: "Bandelier 车直开谷底，走平路近看史前崖居、爬木梯进石窟 (2h)", map: "Bandelier National Monument Visitor Center" },
-          { t: "12:20", text: "Abiquiu 拐入 Plaza Blanca 凭密码进门走白石迷谷 (仅晴干天进入)", map: "Plaza Blanca Abiquiu NM" },
-          { t: "13:50", text: "US-84 路边停 Echo Amphitheater 走 5 分钟进百米回音石壁", map: "Echo Amphitheater Abiquiu NM" },
-          { t: "16:40", text: "日落前抵达 Home2 Suites Farmington 入住", map: "Home2 Suites by Hilton Farmington Bloomfield NM" }
+          { t: "08:30", text: "退房经 NM-502 停 Anderson Overlook 俯瞰格兰德河裂谷", map: "Anderson Overlook, Los Alamos, NM" },
+          { t: "09:20", text: "Bandelier 国家纪念区（12 月私家车免接驳直开谷底停车场；游客中心 09:00–17:00）走崖居与木梯石窟 (2h)", map: "Bandelier National Monument Visitor Center, 15 Entrance Rd, Los Alamos, NM 87544" },
+          { t: "12:20", text: "Abiquiu 拐入 Plaza Blanca (07:30–17:00) 凭铁门密码徒步白石迷谷（末段 0.5mi 土路仅晴干天进入）", map: "342 County Rd 155, Abiquiu, NM 87510" },
+          { t: "13:50", text: "US-84 路边停 Echo Amphitheater ($5/车自助缴费，日出至日落) 走 5 分钟进百米回音石壁", map: "Echo Amphitheater, US-84, Abiquiu, NM" },
+          { t: "16:40", text: "日落前抵达 Farmington 入住休整", map: "Home2 Suites by Hilton Farmington/Bloomfield, 777 S Browning Pkwy, Farmington, NM 87401" }
         ],
-        stay: "Home2 Suites Farmington",
-        booked: true,
-        note: "车上自备简餐 · 提前领 Plaza Blanca 密码"
+        note: "车上自备简餐补给 · 行前在 daralislam.org/plaza-blanca 为 2 位成人分别免费登记领铁门密码",
+        hotel: {
+          name: "Home2 Suites by Hilton Farmington/Bloomfield",
+          addr: "777 S Browning Pkwy, Farmington, NM 87401",
+          meta: "15:00 入住 / 12:00 退房 · 含热早 · 免费停车",
+          map: "Home2 Suites by Hilton Farmington/Bloomfield, 777 S Browning Pkwy, Farmington, NM 87401"
+        }
       },
       {
         date: "12/03",
@@ -908,19 +873,24 @@
         tab: "Shiprock",
         title: "Shiprock 火山神山 → US-550 台地走廊 → Tamaya 度假村",
         stats: ["238 mi", "3.9h 车程", "16:53 日落"],
-        routeUrl: "https://www.google.com/maps/dir/Home2+Suites+by+Hilton+Farmington+Bloomfield,+NM/36.6152,-108.7385/Hyatt+Regency+Tamaya+Resort+and+Spa",
+        routeUrl: "https://www.google.com/maps/dir/777+S+Browning+Pkwy,+Farmington,+NM+87401/36.6152,-108.7385/1300+Tuyuna+Trail,+Santa+Ana+Pueblo,+NM+87004",
         routePoints: "131,126 78,129 131,126 218,215 268,266",
         photos: [
           { src: "images/shiprock.jpg", name: "Shiprock Pinnacle", q: "Shiprock New Mexico" }
         ],
         stops: [
-          { t: "09:00", text: "西行至 US-491 转铺装路 IR-13 穿过火山岩墙远眺拍摄 Shiprock", map: "36.6152,-108.7385" },
-          { t: "11:00", text: "沿四车道 US-550 南下穿过 Cuba 彩绘台地走廊", map: "Cuba NM" },
-          { t: "15:15", text: "Bernalillo 拐入 Hyatt Regency Tamaya 庄园连住 2 晚，看桑迪亚日落金山", map: "Hyatt Regency Tamaya Resort and Spa" }
+          { t: "09:00", text: "西行至 US-491 转铺装公路 IR-13，在铺装路侧停车带远眺拍摄 Shiprock 火山孤峰与放射岩墙", map: "36.6152,-108.7385" },
+          { t: "11:00", text: "沿四车道 US-550 南下穿过 Cuba 彩绘台地走廊", map: "Cuba, NM" },
+          { t: "15:15", text: "Bernalillo 拐入 Hyatt Regency Tamaya 庄园连住 2 晚，傍晚赏桑迪亚山日落金山", map: "Hyatt Regency Tamaya Resort and Spa, 1300 Tuyuna Trail, Santa Ana Pueblo, NM 87004" }
         ],
-        stay: "Hyatt Regency Tamaya (1/2)",
-        booked: true,
-        note: "Shiprock 车轮严禁下土路 · 禁飞无人机"
+        note: "纳瓦霍圣地严守 US-491 / IR-13 铺装公路：严禁驶入土路、严禁徒步靠近岩体、严禁放飞无人机",
+        hotel: {
+          name: "Hyatt Regency Tamaya Resort & Spa",
+          tag: "连住 1/2",
+          addr: "1300 Tuyuna Trail, Santa Ana Pueblo, NM 87004",
+          meta: "16:00 入住 / 11:00 退房 · 含自助停车 · 距 Cochiti 游客中心约 28min",
+          map: "Hyatt Regency Tamaya Resort and Spa, 1300 Tuyuna Trail, Santa Ana Pueblo, NM 87004"
+        }
       },
       {
         date: "12/04",
@@ -928,20 +898,25 @@
         tab: "帐篷岩·缆车",
         title: "Kasha-Katuwe 帐篷岩窄谷 + 桑迪亚峰高空缆车日落",
         stats: ["75 mi", "1.5h 车程", "16:53 日落"],
-        routeUrl: "https://www.google.com/maps/dir/Hyatt+Regency+Tamaya+Resort+and+Spa/Cochiti+Visitor+Center,+NM/Sandia+Peak+Tramway",
+        routeUrl: "https://www.google.com/maps/dir/1300+Tuyuna+Trail,+Santa+Ana+Pueblo,+NM+87004/Cochiti+Visitor+Center,+2551+NM-22,+Pena+Blanca,+NM+87041/30+Tramway+Rd+NE,+Albuquerque,+NM+87122/1300+Tuyuna+Trail,+Santa+Ana+Pueblo,+NM+87004",
         routePoints: "268,266 280,238 268,266 282,275",
         photos: [
           { src: "images/tent-rocks.jpg", name: "Kasha-Katuwe Tent Rocks", q: "Kasha-Katuwe Tent Rocks" },
           { src: "images/sandia-tramway.jpg", name: "Sandia Peak Tramway (3,163m)", q: "Sandia Peak Tramway sunset" }
         ],
         stops: [
-          { t: "09:00", text: "开 28 分钟至 Cochiti Visitor Center 验双票，跟前导车进山", map: "Cochiti Visitor Center NM" },
-          { t: "10:00", text: "徒步 Tent Rocks 圆锥火山奇岩与一线天窄谷 (2–2.5h)", map: "Kasha-Katuwe Tent Rocks National Monument" },
-          { t: "15:15", text: "乘 Sandia Peak 高空缆车 15 分钟登顶 3,163m 看日落与城市亮灯", map: "Sandia Peak Tramway Albuquerque" }
+          { t: "09:00", text: "开 28 分钟必先到 Cochiti Visitor Center (2551 NM-22；08:00–13:00 核验双票，每 15 分钟前导车带队进山)", map: "Cochiti Visitor Center, 2551 NM-22, Pena Blanca, NM 87041" },
+          { t: "10:00", text: "徒步 Tent Rocks 圆锥火山奇岩与一线天窄谷 (2–2.5h；周五正常开放，16:00 前离园)", map: "Kasha-Katuwe Tent Rocks National Monument" },
+          { t: "15:15", text: "乘 Sandia Peak 高空缆车 (30 Tramway Rd NE；周三至周一 09:00–20:00 上山、末班下山 22:00) 登顶 3,163m 看日落", map: "Sandia Peak Tramway, 30 Tramway Rd NE, Albuquerque, NM 87122" }
         ],
-        stay: "Hyatt Regency Tamaya (2/2)",
-        booked: true,
-        note: "山顶比谷底低 12°C+ 需穿厚羽绒"
+        note: "帐篷岩切勿直接导航步道口 · 缆车秋检已于 11/12 结束正常运营，山顶比谷底低 12–15°C 需穿厚羽绒（遇强风可能临时停运）",
+        hotel: {
+          name: "Hyatt Regency Tamaya Resort & Spa",
+          tag: "连住 2/2",
+          addr: "1300 Tuyuna Trail, Santa Ana Pueblo, NM 87004",
+          meta: "连住免搬行李 · 次日经 I-25 约 25min 直达机场租车中心",
+          map: "Hyatt Regency Tamaya Resort and Spa, 1300 Tuyuna Trail, Santa Ana Pueblo, NM 87004"
+        }
       },
       {
         date: "12/05",
@@ -949,37 +924,36 @@
         tab: "满油还车",
         title: "Tamaya 退房 → 满油还车 → 15:38 返程航班",
         stats: ["24 mi", "0.5h 车程", "11:00 还车"],
-        routeUrl: "https://www.google.com/maps/dir/Hyatt+Regency+Tamaya+Resort+and+Spa/3400+University+Blvd+SE,+Albuquerque,+NM",
+        routeUrl: "https://www.google.com/maps/dir/1300+Tuyuna+Trail,+Santa+Ana+Pueblo,+NM+87004/3400+University+Blvd+SE,+Albuquerque,+NM+87106/Albuquerque+International+Sunport,+2200+Sunport+Blvd+SE,+Albuquerque,+NM+87106",
         routePoints: "268,266 263,292",
         photos: [
           { src: "images/albuquerque.jpg", name: "ABQ Sunport Departure", q: "Albuquerque International Sunport" }
         ],
         stops: [
-          { t: "09:30", text: "退房沿 I-25 南下，机场旁加满油留小票", map: "Gas station near 3400 University Blvd SE Albuquerque" },
-          { t: "10:30", text: "抵达 3400 University Blvd SE，11:00 前完成 SIXT 还车", map: "3400 University Blvd SE Albuquerque NM" },
-          { t: "15:38", text: "ABQ 航班起飞返程", map: "Albuquerque International Sunport" }
+          { t: "09:30", text: "退房沿 I-25 南下，在机场附近加油站加满油并保留加油小票", map: "Gas station near 3400 University Blvd SE, Albuquerque, NM" },
+          { t: "10:30", text: "抵达 3400 University Blvd SE 租车中心，11:00 前完成 SIXT 还车并乘接驳车前往航站楼", map: "3400 University Blvd SE, Albuquerque, NM 87106" },
+          { t: "15:38", text: "ABQ 航站楼 (2200 Sunport Blvd SE) 航班起飞返程", map: "Albuquerque International Sunport, 2200 Sunport Blvd SE, Albuquerque, NM 87106" }
         ],
-        stay: "返程",
-        booked: true,
-        note: "卡准 11:00 满 7 整天计费点"
+        note: "11:00 前满油还车（卡准 7 整天计费点，留存加油小票备查）",
+        hotel: null
       }
     ];
 
     const SPOTS = [
-      { d: "11/28", name: "Bosque del Apache", sub: "数万雪雁与沙丘鹤越冬湿地", img: "images/bosque-cranes.jpg", q: "Bosque del Apache National Wildlife Refuge Visitor Center", web: "https://www.fws.gov/refuge/bosque-del-apache" },
-      { d: "11/28", name: "McGinn's PistachioLand", sub: "世界最大开心果地标与冰淇淋", img: "images/pistachioland.jpg", q: "McGinn's PistachioLand Alamogordo NM", web: "https://pistachioland.com/" },
-      { d: "11/28", name: "White Sands National Park", sub: "纯白石膏结晶沙海日落", img: "images/white-sands.jpg", q: "White Sands National Park Visitor Center", web: "https://www.nps.gov/whsa/index.htm" },
-      { d: "11/29", name: "Mexican Canyon Trestle", sub: "海拔 2,640m 林肯森林百年木栈桥", img: "images/cloudcroft-trestle.jpg", q: "Trestle Vista Observation Site Cloudcroft NM", web: "https://www.fs.usda.gov/recarea/lincoln/recarea/?recid=34224" },
-      { d: "11/30", name: "Carlsbad Caverns", sub: "地下 230 米巨型钟乳石宫殿 Big Room", img: "images/carlsbad-caverns.jpg", q: "Carlsbad Caverns National Park Visitor Center", web: "https://www.nps.gov/cave/index.htm" },
-      { d: "12/01", name: "Santa Fe & La Posada", sub: "四百年西南土坯老城与庄园", img: "images/santa-fe.jpg", q: "La Posada de Santa Fe", web: "https://www.marriott.com/en-us/hotels/safak-la-posada-de-santa-fe-a-tribute-portfolio-resort-and-spa/overview/" },
-      { d: "12/01", name: "El Santuario de Chimayó", sub: "挂满感恩拐杖的传奇圣土小堂", img: "images/chimayo.jpg", q: "El Santuario de Chimayo", web: "https://www.holychimayo.us/" },
-      { d: "12/01", name: "Meow Wolf Santa Fe", sub: "House of Eternal Return 异次元迷宫", img: "images/meow-wolf.jpg", q: "Meow Wolf Santa Fe", web: "https://tickets.meowwolf.com/santa-fe/" },
-      { d: "12/02", name: "Bandelier Cliff Dwellings", sub: "峡谷凝灰岩史前崖居与木梯石窟", img: "images/bandelier.jpg", q: "Bandelier National Monument Visitor Center", web: "https://www.nps.gov/band/index.htm" },
-      { d: "12/02", name: "Plaza Blanca", sub: "Abiquiu 纯白尖塔砂岩恶地迷谷", img: "images/plaza-blanca.jpg", q: "Plaza Blanca Abiquiu NM", web: "https://daralislam.org/" },
-      { d: "12/02", name: "Echo Amphitheater", sub: "US-84 路边百米高天然弧形回音壁", img: "images/echo-amphitheater.jpg", q: "Echo Amphitheater Abiquiu NM", web: "https://www.fs.usda.gov/recarea/carson/recarea/?recid=44092" },
-      { d: "12/03", name: "Shiprock Pinnacle", sub: "荒漠拔地 500 米火山孤峰与岩墙", img: "images/shiprock.jpg", q: "36.6152,-108.7385", web: "https://farmingtonnm.org/listings/shiprock-pinnacle" },
-      { d: "12/04", name: "Kasha-Katuwe Tent Rocks", sub: "圆锥火山奇岩群与一线天窄缝峡谷", img: "images/tent-rocks.jpg", q: "Cochiti Visitor Center NM", web: "https://www.recreation.gov/ticket/10065449/ticket/10065449" },
-      { d: "12/04", name: "Sandia Peak Tramway", sub: "15 分钟直登 3,163 米山巅看日落", img: "images/sandia-tramway.jpg", q: "Sandia Peak Tramway Albuquerque", web: "https://sandiapeak.com/" }
+      { d: "11/28", name: "Bosque del Apache", sub: "数万雪雁与沙丘鹤越冬湿地 · 周末游客中心 08:00–16:30", img: "images/bosque-cranes.jpg", q: "Bosque del Apache National Wildlife Refuge Visitor Center", web: "https://www.fws.gov/locations/bosque-del-apache-national-wildlife-refuge" },
+      { d: "11/28", name: "McGinn's PistachioLand", sub: "世界最大开心果地标与冰淇淋 · 每日 09:00–17:00", img: "images/pistachioland.jpg", q: "McGinn's PistachioLand, 7320 US-54, Alamogordo, NM 88310", web: "https://pistachioland.com/" },
+      { d: "11/28", name: "White Sands National Park", sub: "纯白石膏结晶沙海日落 · 07:00 至日落后半小时", img: "images/white-sands.jpg", q: "White Sands National Park Visitor Center, 19955 US-70, Alamogordo, NM 88310", web: "https://www.nps.gov/whsa/index.htm" },
+      { d: "11/29", name: "Mexican Canyon Trestle", sub: "海拔 2,640m 林肯森林百年木栈桥 · US-82 铺装观景台", img: "images/cloudcroft-trestle.jpg", q: "Trestle Vista Observation Site, Cloudcroft, NM", web: "https://www.fs.usda.gov/recarea/lincoln/recarea/?recid=34224" },
+      { d: "11/30", name: "Carlsbad Caverns", sub: "地下 230m 钟乳石宫殿 Big Room · 上行末班电梯 16:45", img: "images/carlsbad-caverns.jpg", q: "Carlsbad Caverns National Park Visitor Center, 727 Carlsbad Caverns Hwy, Carlsbad, NM", web: "https://www.nps.gov/cave/index.htm" },
+      { d: "12/01", name: "Santa Fe Historic Plaza", sub: "四百年西南土坯老城广场与艺术街区", img: "images/santa-fe.jpg", q: "Santa Fe Plaza, Santa Fe, NM", web: "https://santafe.org/" },
+      { d: "12/01", name: "El Santuario de Chimayó", sub: "挂满感恩拐杖的百年圣土小堂 · 冬季每日 09:00–17:00", img: "images/chimayo.jpg", q: "El Santuario de Chimayo, 15 Santuario Dr, Chimayo, NM 87522", web: "https://www.holychimayo.us/" },
+      { d: "12/01", name: "Meow Wolf Santa Fe", sub: "异次元沉浸艺术迷宫 · 冬季周二通常闭馆（行前查日历）", img: "images/meow-wolf.jpg", q: "Meow Wolf Santa Fe, 1352 Rufina Cir, Santa Fe, NM 87507", web: "https://meowwolf.com/visit/santa-fe" },
+      { d: "12/02", name: "Bandelier Cliff Dwellings", sub: "峡谷凝灰岩史前崖居 · 12 月私家车免接驳直达谷底", img: "images/bandelier.jpg", q: "Bandelier National Monument Visitor Center, 15 Entrance Rd, Los Alamos, NM 87544", web: "https://www.nps.gov/band/index.htm" },
+      { d: "12/02", name: "Plaza Blanca", sub: "Abiquiu 纯白尖塔砂岩迷谷 · 07:30–17:00 凭密码进门", img: "images/plaza-blanca.jpg", q: "342 County Rd 155, Abiquiu, NM 87510", web: "https://www.daralislam.org/plaza-blanca" },
+      { d: "12/02", name: "Echo Amphitheater", sub: "US-84 路边百米高天然弧形回音壁 · 日出至日落 ($5/车)", img: "images/echo-amphitheater.jpg", q: "Echo Amphitheater, US-84, Abiquiu, NM", web: "https://www.fs.usda.gov/recarea/carson/recarea/?recid=44092" },
+      { d: "12/03", name: "Shiprock Pinnacle", sub: "荒漠拔地 500m 火山孤峰 · 仅限 US-491 / IR-13 铺装路远眺", img: "images/shiprock.jpg", q: "36.6152,-108.7385", web: "https://farmingtonnm.org/listings/shiprock-pinnacle" },
+      { d: "12/04", name: "Kasha-Katuwe Tent Rocks", sub: "圆锥火山奇岩与窄缝峡谷 · 08:00–13:00 Cochiti 验双票跟车", img: "images/tent-rocks.jpg", q: "Cochiti Visitor Center, 2551 NM-22, Pena Blanca, NM 87041", web: "https://www.recreation.gov/ticket/10065448/ticket/10065449" },
+      { d: "12/04", name: "Sandia Peak Tramway", sub: "15 分钟直登 3,163m 山巅 · 周三至周一 09:00–20:00 上山", img: "images/sandia-tramway.jpg", q: "Sandia Peak Tramway, 30 Tramway Rd NE, Albuquerque, NM 87122", web: "https://sandiapeak.com/" }
     ];
 
     const MAP_NODES = [
@@ -1003,29 +977,17 @@
       { name: "Tent Rocks", x: 280, y: 238, dayIdx: 7, stay: false, dx: -76, dy: 4 }
     ];
 
-    const HOTELS = [
-      { date: "11/27 周五", city: "ABQ Airport", name: "Holiday Inn & Suites Albuquerque Airport", q: "Holiday Inn & Suites Albuquerque Airport 1501 Sunport Place", meta: "1501 Sunport Pl · 24h 班车 (505-944-2255)", status: "已订 · $46 (CSP -$100)", ok: true },
-      { date: "11/28 周六", city: "Alamogordo", name: "Home2 Suites by Hilton Alamogordo", q: "Home2 Suites by Hilton Alamogordo NM", meta: "3400 N White Sands Blvd · 含热早+免费停车 · 距白沙 18min", status: "已订", ok: true },
-      { date: "11/29 周日", city: "Carlsbad", name: "Hyatt House Carlsbad", q: "Hyatt House Carlsbad NM", meta: "4019 National Parks Hwy · 含热早+免费停车 · 15:00 入住", status: "已订 · $149", ok: true },
-      { date: "11/30 周一", city: "Roswell", name: "Holiday Inn Express & Suites Roswell", q: "Holiday Inn Express & Suites Roswell NM", meta: "含热早+免费停车 · 11/23 前免费退", status: "已订 · $21 (Delta -$100)", ok: true },
-      { date: "12/01 周二", city: "Santa Fe", name: "La Posada de Santa Fe, Tribute Portfolio", q: "La Posada de Santa Fe", meta: "16:00 入住 / 12:00 退房 · $46 Resort Fee 含 Valet", status: "已订 · 35k FN + 11k 分", ok: true },
-      { date: "12/02 周三", city: "Farmington", name: "Home2 Suites by Hilton Farmington/Bloomfield", q: "Home2 Suites by Hilton Farmington Bloomfield NM", meta: "777 S Browning Pkwy · 含热早+免费停车 · 顺路衔接 US-550", status: "已订", ok: true },
-      { date: "12/03 周四", city: "Santa Ana Pueblo", name: "Hyatt Regency Tamaya Resort & Spa (1/2)", q: "Hyatt Regency Tamaya Resort and Spa", meta: "免 Resort Fee 与停车费 · 去帐篷岩 28min", status: "已订 · 12,000 分", ok: true },
-      { date: "12/04 周五", city: "Santa Ana Pueblo", name: "Hyatt Regency Tamaya Resort & Spa (2/2)", q: "Hyatt Regency Tamaya Resort and Spa", meta: "连住免搬行李 · 次日 I-25 去机场 25min", status: "已订 · 12,000 分", ok: true }
-    ];
-
     const TODOS = [
-      { id: "pass", title: "电子版国家公园年卡 (America the Beautiful)", sub: "已存入 Apple Wallet · 进园随身带驾照核验姓名", url: "https://www.recreation.gov/pass", link: "已办妥", defaultDone: true },
-      { id: "cave", title: "11/30 Carlsbad Caverns 入洞预约 (09:30–10:30)", sub: "已出票 · 2 人", url: "https://www.recreation.gov/ticket/234637/ticket/10086811", link: "已办妥", defaultDone: true },
-      { id: "tent", title: "12/04 Kasha-Katuwe Tent Rocks 联邦票 + 部落通行证", sub: "双票已出 · 当天 08:00–13:00 导至 Cochiti Visitor Center", url: "https://www.recreation.gov/ticket/10065449/ticket/10065449", link: "已办妥", defaultDone: true },
-      { id: "hotels8", title: "全程 8 晚酒店预订", sub: "ABQ · Alamogordo · Carlsbad · Roswell · Santa Fe · Farmington · Tamaya ×2", url: "#hotels", link: "已齐备", defaultDone: true },
-      { id: "plaza", title: "登记领取 12/02 Plaza Blanca 铁门密码", sub: "两位成人分别填姓名邮箱当场显示 Gate Code · 截图保存", url: "https://daralislam.org/", link: "领密码 ↗", defaultDone: false },
-      { id: "delta_ride", title: "Amex App 激活 Delta 卡 $10/月 Rideshare 报销", sub: "11 月与 12 月各可报 $10 打车费 · 顺查 Resy $50 额度", url: "https://www.americanexpress.com/", link: "去激活 ↗", defaultDone: false },
-      { id: "roads", title: "行前核查白沙 SIXT 条款与 11/29 · 12/02 实时路况", sub: "Cloudcroft (US-82) 与北线风雪状态", url: "https://www.nmroads.com/", link: "NMRoads ↗", defaultDone: false }
+      { id: "pass", title: "电子版国家公园年卡 (America the Beautiful)", sub: "已存入 Apple Wallet · 进园随身带实体驾照核验姓名", url: "https://www.recreation.gov/pass", link: "年卡说明 ↗", defaultDone: true },
+      { id: "cave", title: "11/30 Carlsbad Caverns 入洞定时预约 (09:30–10:30)", sub: "2 人预约票已出 · 游客中心 09:00–17:00，Big Room 上行末班电梯 16:45", url: "https://www.recreation.gov/ticket/234637/ticket/10086811", link: "预约页 ↗", defaultDone: true },
+      { id: "tent", title: "12/04 Kasha-Katuwe Tent Rocks 联邦票 + Cochiti 部落通行证", sub: "双票已出 · 当天 08:00–13:00 必先到 Cochiti Visitor Center (2551 NM-22) 跟前导车进山", url: "https://www.recreation.gov/ticket/10065448/ticket/10065449", link: "预约页 ↗", defaultDone: true },
+      { id: "plaza", title: "登记领取 12/02 Plaza Blanca 铁门密码", sub: "2 位成人需分别填写姓名邮箱当场显示 Gate Code · 截图保存", url: "https://www.daralislam.org/plaza-blanca", link: "领密码 ↗", defaultDone: false },
+      { id: "delta_ride", title: "按需激活 Amex Delta 卡 $10/月 Rideshare 报销", sub: "如往返机场搭乘 Uber / Lyft，出行前在 Amex App 激活（11 月与 12 月各 $10）", url: "https://www.americanexpress.com/", link: "Amex ↗", defaultDone: false },
+      { id: "roads", title: "行前核查 NMRoads 实时路况与 SIXT 铺装路条款", sub: "重点查看 11/29 Cloudcroft (US-82) 冰雪状态，全程仅走铺装公路", url: "https://www.nmroads.com/", link: "NMRoads ↗", defaultDone: false }
     ];
 
     let activeDay = 0;
-    const STORAGE_KEY = "nm_2026_clean_todos_v2";
+    const STORAGE_KEY = "nm_2026_clean_todos_v3";
     let checked = {};
     try {
       const raw = localStorage.getItem(STORAGE_KEY);
@@ -1115,11 +1077,17 @@
           </div>
 
           <div class="day-foot">
-            <span class="stay-chip">
-              <span class="status-dot ${d.booked ? 'ok' : 'pend'}"></span>
-              ${d.stay}
-            </span>
-            <span class="foot-note">${d.note}</span>
+            ${d.note ? `<div class="day-note">${d.note}</div>` : ""}
+            ${d.hotel ? `
+              <div class="stay-card">
+                <div class="stay-main">
+                  <span class="stay-icon" aria-hidden="true">☾</span>
+                  <a class="stay-name" href="${gMap(d.hotel.map)}" target="_blank" rel="noopener noreferrer">${d.hotel.name} ↗</a>
+                  ${d.hotel.tag ? `<span class="stay-tag">${d.hotel.tag}</span>` : ""}
+                </div>
+                <div class="stay-meta">${d.hotel.addr} · ${d.hotel.meta}</div>
+              </div>
+            ` : ""}
           </div>
         </div>
       `;
@@ -1160,27 +1128,6 @@
       `).join("");
     }
 
-    function renderHotels() {
-      const bookedCount = HOTELS.filter(h => h.ok).length;
-      document.getElementById("hotels-tab-btn").textContent = `住宿 ${bookedCount}/${HOTELS.length}`;
-      document.getElementById("hotels-ledger").innerHTML = HOTELS.map(h => `
-        <div class="ledger-row">
-          <div>
-            <div class="l-date">${h.date}</div>
-            <div class="l-city">${h.city}</div>
-          </div>
-          <div class="l-hotel">
-            <a href="${gMap(h.q)}" target="_blank" rel="noopener noreferrer">${h.name} ↗</a>
-            <div class="l-meta">${h.meta}</div>
-          </div>
-          <span class="state-pill ${h.ok ? 'ok' : 'pend'}">
-            <span class="status-dot ${h.ok ? 'ok' : 'pend'}"></span>
-            ${h.status}
-          </span>
-        </div>
-      `).join("");
-    }
-
     function renderChecklist() {
       const done = TODOS.filter(t => checked[t.id]).length;
       document.getElementById("todo-tab-btn").textContent = `清单 ${done}/${TODOS.length}`;
@@ -1193,20 +1140,9 @@
             <div class="c-title">${t.title}</div>
             <div class="c-sub">${t.sub}</div>
           </div>
-          ${t.url.startsWith("#")
-            ? `<a class="c-link" href="${t.url}" data-goto="${t.url.slice(1)}">${t.link}</a>`
-            : `<a class="c-link" href="${t.url}" target="_blank" rel="noopener noreferrer">${t.link}</a>`
-          }
+          <a class="c-link" href="${t.url}" target="_blank" rel="noopener noreferrer">${t.link}</a>
         </div>
       `).join("");
-
-      box.querySelectorAll("a[data-goto]").forEach(a => {
-        a.addEventListener("click", e => {
-          e.preventDefault();
-          const btn = document.querySelector(`#main-tabs .seg-btn[data-tab="${a.dataset.goto}"]`);
-          if (btn) btn.click();
-        });
-      });
 
       box.querySelectorAll("input[data-id]").forEach(cb => {
         cb.addEventListener("change", () => {
@@ -1242,7 +1178,6 @@
 
     updateDayView();
     renderSpots();
-    renderHotels();
     renderChecklist();
   </script>
 </body>
