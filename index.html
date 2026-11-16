@@ -703,7 +703,7 @@
       <nav class="seg-nav" id="main-tabs">
         <button data-tab="itinerary" class="seg-btn active">行程</button>
         <button data-tab="spots" class="seg-btn">图鉴</button>
-        <button data-tab="hotels" class="seg-btn" id="hotels-tab-btn">住宿 7/8</button>
+        <button data-tab="hotels" class="seg-btn" id="hotels-tab-btn">住宿 8/8</button>
         <button data-tab="checklist" class="seg-btn" id="todo-tab-btn">清单</button>
       </nav>
     </div>
@@ -885,7 +885,7 @@
         tab: "崖居·白石谷",
         title: "Bandelier 崖居 → Plaza Blanca → Echo 石窟 → Farmington",
         stats: ["228 mi", "4.3h 车程", "16:56 日落"],
-        routeUrl: "https://www.google.com/maps/dir/La+Posada+de+Santa+Fe/Bandelier+National+Monument+Visitor+Center/Plaza+Blanca,+Abiquiu,+NM/Echo+Amphitheater,+NM/Farmington,+NM",
+        routeUrl: "https://www.google.com/maps/dir/La+Posada+de+Santa+Fe/Bandelier+National+Monument+Visitor+Center/Plaza+Blanca,+Abiquiu,+NM/Echo+Amphitheater,+NM/Home2+Suites+by+Hilton+Farmington+Bloomfield,+NM",
         routePoints: "319,228 292,215 297,175 270,162 195,134 131,126",
         photos: [
           { src: "images/bandelier.jpg", name: "Bandelier Cliff Dwellings", q: "Bandelier National Monument" },
@@ -896,10 +896,10 @@
           { t: "09:20", text: "Bandelier 车直开谷底，走平路近看史前崖居、爬木梯进石窟 (2h)", map: "Bandelier National Monument Visitor Center" },
           { t: "12:20", text: "Abiquiu 拐入 Plaza Blanca 凭密码进门走白石迷谷 (仅晴干天进入)", map: "Plaza Blanca Abiquiu NM" },
           { t: "13:50", text: "US-84 路边停 Echo Amphitheater 走 5 分钟进百米回音石壁", map: "Echo Amphitheater Abiquiu NM" },
-          { t: "16:40", text: "日落前抵达 Farmington 入住", map: "Farmington NM" }
+          { t: "16:40", text: "日落前抵达 Home2 Suites Farmington 入住", map: "Home2 Suites by Hilton Farmington Bloomfield NM" }
         ],
-        stay: "Farmington · 待订",
-        booked: false,
+        stay: "Home2 Suites Farmington",
+        booked: true,
         note: "车上自备简餐 · 提前领 Plaza Blanca 密码"
       },
       {
@@ -908,7 +908,7 @@
         tab: "Shiprock",
         title: "Shiprock 火山神山 → US-550 台地走廊 → Tamaya 度假村",
         stats: ["238 mi", "3.9h 车程", "16:53 日落"],
-        routeUrl: "https://www.google.com/maps/dir/Farmington,+NM/36.6152,-108.7385/Hyatt+Regency+Tamaya+Resort+and+Spa",
+        routeUrl: "https://www.google.com/maps/dir/Home2+Suites+by+Hilton+Farmington+Bloomfield,+NM/36.6152,-108.7385/Hyatt+Regency+Tamaya+Resort+and+Spa",
         routePoints: "131,126 78,129 131,126 218,215 268,266",
         photos: [
           { src: "images/shiprock.jpg", name: "Shiprock Pinnacle", q: "Shiprock New Mexico" }
@@ -1009,7 +1009,7 @@
       { date: "11/29 周日", city: "Carlsbad", name: "Hyatt House Carlsbad", q: "Hyatt House Carlsbad NM", meta: "4019 National Parks Hwy · 含热早+免费停车 · 15:00 入住", status: "已订 · $149", ok: true },
       { date: "11/30 周一", city: "Roswell", name: "Holiday Inn Express & Suites Roswell", q: "Holiday Inn Express & Suites Roswell NM", meta: "含热早+免费停车 · 11/23 前免费退", status: "已订 · $21 (Delta -$100)", ok: true },
       { date: "12/01 周二", city: "Santa Fe", name: "La Posada de Santa Fe, Tribute Portfolio", q: "La Posada de Santa Fe", meta: "16:00 入住 / 12:00 退房 · $46 Resort Fee 含 Valet", status: "已订 · 35k FN + 11k 分", ok: true },
-      { date: "12/02 周三", city: "Farmington", name: "TownePlace Suites 或 Holiday Inn Express", q: "TownePlace Suites by Marriott Farmington NM", meta: "含热早+免费停车", status: "待订 · ~$125 税后", ok: false },
+      { date: "12/02 周三", city: "Farmington", name: "Home2 Suites by Hilton Farmington/Bloomfield", q: "Home2 Suites by Hilton Farmington Bloomfield NM", meta: "777 S Browning Pkwy · 含热早+免费停车 · 顺路衔接 US-550", status: "已订", ok: true },
       { date: "12/03 周四", city: "Santa Ana Pueblo", name: "Hyatt Regency Tamaya Resort & Spa (1/2)", q: "Hyatt Regency Tamaya Resort and Spa", meta: "免 Resort Fee 与停车费 · 去帐篷岩 28min", status: "已订 · 12,000 分", ok: true },
       { date: "12/04 周五", city: "Santa Ana Pueblo", name: "Hyatt Regency Tamaya Resort & Spa (2/2)", q: "Hyatt Regency Tamaya Resort and Spa", meta: "连住免搬行李 · 次日 I-25 去机场 25min", status: "已订 · 12,000 分", ok: true }
     ];
@@ -1018,7 +1018,7 @@
       { id: "pass", title: "电子版国家公园年卡 (America the Beautiful)", sub: "已存入 Apple Wallet · 进园随身带驾照核验姓名", url: "https://www.recreation.gov/pass", link: "已办妥", defaultDone: true },
       { id: "cave", title: "11/30 Carlsbad Caverns 入洞预约 (09:30–10:30)", sub: "已出票 · 2 人", url: "https://www.recreation.gov/ticket/234637/ticket/10086811", link: "已办妥", defaultDone: true },
       { id: "tent", title: "12/04 Kasha-Katuwe Tent Rocks 联邦票 + 部落通行证", sub: "双票已出 · 当天 08:00–13:00 导至 Cochiti Visitor Center", url: "https://www.recreation.gov/ticket/10065449/ticket/10065449", link: "已办妥", defaultDone: true },
-      { id: "hotels3", title: "预订最后 1 晚住宿 (12/02 Farmington)", sub: "Farmington 单晚过夜", url: "https://www.marriott.com/", link: "去预订 ↗", defaultDone: false },
+      { id: "hotels8", title: "全程 8 晚酒店预订", sub: "ABQ · Alamogordo · Carlsbad · Roswell · Santa Fe · Farmington · Tamaya ×2", url: "#hotels", link: "已齐备", defaultDone: true },
       { id: "plaza", title: "登记领取 12/02 Plaza Blanca 铁门密码", sub: "两位成人分别填姓名邮箱当场显示 Gate Code · 截图保存", url: "https://daralislam.org/", link: "领密码 ↗", defaultDone: false },
       { id: "delta_ride", title: "Amex App 激活 Delta 卡 $10/月 Rideshare 报销", sub: "11 月与 12 月各可报 $10 打车费 · 顺查 Resy $50 额度", url: "https://www.americanexpress.com/", link: "去激活 ↗", defaultDone: false },
       { id: "roads", title: "行前核查白沙 SIXT 条款与 11/29 · 12/02 实时路况", sub: "Cloudcroft (US-82) 与北线风雪状态", url: "https://www.nmroads.com/", link: "NMRoads ↗", defaultDone: false }
@@ -1031,9 +1031,10 @@
       const raw = localStorage.getItem(STORAGE_KEY);
       if (raw) {
         checked = JSON.parse(raw);
-      } else {
-        TODOS.forEach(t => { if (t.defaultDone) checked[t.id] = true; });
       }
+      TODOS.forEach(t => {
+        if (checked[t.id] === undefined && t.defaultDone) checked[t.id] = true;
+      });
     } catch (e) {}
 
     function renderDayStrip() {
@@ -1192,9 +1193,20 @@
             <div class="c-title">${t.title}</div>
             <div class="c-sub">${t.sub}</div>
           </div>
-          <a class="c-link" href="${t.url}" target="_blank" rel="noopener noreferrer">${t.link}</a>
+          ${t.url.startsWith("#")
+            ? `<a class="c-link" href="${t.url}" data-goto="${t.url.slice(1)}">${t.link}</a>`
+            : `<a class="c-link" href="${t.url}" target="_blank" rel="noopener noreferrer">${t.link}</a>`
+          }
         </div>
       `).join("");
+
+      box.querySelectorAll("a[data-goto]").forEach(a => {
+        a.addEventListener("click", e => {
+          e.preventDefault();
+          const btn = document.querySelector(`#main-tabs .seg-btn[data-tab="${a.dataset.goto}"]`);
+          if (btn) btn.click();
+        });
+      });
 
       box.querySelectorAll("input[data-id]").forEach(cb => {
         cb.addEventListener("change", () => {
